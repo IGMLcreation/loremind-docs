@@ -5,50 +5,50 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '100 % auto-hébergé',
+    emoji: '🔒',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Vos campagnes, fiches et lore restent sur votre machine. Aucun cloud,
+        aucune télémétrie, aucun compte à créer.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'IA locale ou distante',
+    emoji: '🧠',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Faites tourner Ollama en local pour une confidentialité totale, ou
+        branchez OpenAI / Anthropic pour plus de puissance.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Multi-systèmes JDR',
+    emoji: '🎲',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Gérez plusieurs campagnes avec leurs propres règles, fiches de
+        personnages, lore et mémoire IA contextuelle.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, emoji, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
+      <div className={clsx(styles.featureCard, 'text--center')}>
+        <div className={styles.featureEmoji} role="img" aria-label={title}>
+          {emoji}
+        </div>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>

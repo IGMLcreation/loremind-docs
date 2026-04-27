@@ -1,30 +1,179 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Thème LoreMind — palette violette sombre cohérente avec l'application Angular.
+ * Couleurs de référence (web/src/styles*) :
+ *   bg principal : #0a0a14   accent primaire : #6c63ff   violet clair : #a5b4fc
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Primaire violet (mode clair — légèrement plus saturé pour le contraste) */
+  --ifm-color-primary: #6c63ff;
+  --ifm-color-primary-dark: #5b52e0;
+  --ifm-color-primary-darker: #4f46c8;
+  --ifm-color-primary-darkest: #3f3aa3;
+  --ifm-color-primary-light: #837cff;
+  --ifm-color-primary-lighter: #9a93ff;
+  --ifm-color-primary-lightest: #c7c2ff;
+
+  /* Polices et typographie */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --ifm-heading-font-weight: 700;
+
+  /* Code */
+  --ifm-code-font-size: 92%;
+  --ifm-code-background: rgba(108, 99, 255, 0.08);
+  --docusaurus-highlighted-code-line-bg: rgba(108, 99, 255, 0.12);
+
+  /* Bordures arrondies un peu plus marquées (cohérent avec .btn de l'app) */
+  --ifm-button-border-radius: 8px;
+  --ifm-card-border-radius: 12px;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Mode sombre — couleurs LoreMind exactes */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #a5b4fc;
+  --ifm-color-primary-dark: #8b9aef;
+  --ifm-color-primary-darker: #7682e0;
+  --ifm-color-primary-darkest: #5b52e0;
+  --ifm-color-primary-light: #c0cbff;
+  --ifm-color-primary-lighter: #d4dbff;
+  --ifm-color-primary-lightest: #e8ecff;
+
+  --ifm-background-color: #0a0a14;
+  --ifm-background-surface-color: #12121f;
+  --ifm-navbar-background-color: rgba(10, 10, 20, 0.85);
+  --ifm-footer-background-color: #050509;
+
+  --ifm-color-content: #e0e0e0;
+  --ifm-color-content-secondary: #9ca3af;
+  --ifm-heading-color: #ffffff;
+
+  --ifm-toc-border-color: rgba(108, 99, 255, 0.15);
+  --ifm-color-emphasis-200: #1f2937;
+  --ifm-color-emphasis-300: #374151;
+
+  --ifm-code-background: rgba(108, 99, 255, 0.12);
+  --docusaurus-highlighted-code-line-bg: rgba(108, 99, 255, 0.18);
+
+  --ifm-link-color: #a5b4fc;
+  --ifm-link-hover-color: #c0cbff;
+}
+
+/* ============================================================
+ * Navbar — effet glassmorphism léger pour matcher l'app
+ * ============================================================ */
+[data-theme='dark'] .navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(108, 99, 255, 0.12);
+}
+
+/* ============================================================
+ * Hero — gradient violet/sombre pour la page d'accueil
+ * ============================================================ */
+.hero--primary {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #6c63ff 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .hero--primary {
+  background: linear-gradient(135deg, #0a0a14 0%, #1e1b4b 50%, #4f46c8 100%);
+}
+
+.hero--primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(108, 99, 255, 0.25),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.hero--primary .hero__title,
+.hero--primary .hero__subtitle {
+  color: #ffffff;
+  position: relative;
+}
+
+.hero--primary .hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero--primary .hero__subtitle {
+  opacity: 0.9;
+  font-size: 1.4rem;
+}
+
+/* ============================================================
+ * Boutons — cohérents avec .btn-primary / .btn-secondary de l'app
+ * ============================================================ */
+.button--secondary {
+  background: #6c63ff;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.button--secondary:hover {
+  background: #5b52e0;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.button--outline.button--secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.button--outline.button--secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+/* ============================================================
+ * Cards / sidebar items — touche violette sur l'élément actif
+ * ============================================================ */
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background: rgba(108, 99, 255, 0.12);
+  color: #a5b4fc;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background: rgba(108, 99, 255, 0.06);
+}
+
+/* Code inline — léger fond violet */
+code:not([class*='language-']) {
+  background: var(--ifm-code-background);
+  border: 1px solid rgba(108, 99, 255, 0.15);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.88em;
+}
+
+/* Blockquotes / admonitions — accent violet */
+[data-theme='dark'] .alert--info {
+  --ifm-alert-background-color: rgba(108, 99, 255, 0.08);
+  --ifm-alert-border-color: #6c63ff;
+  --ifm-alert-foreground-color: #c0cbff;
+}
+
+/* Tables un peu plus aérées */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+[data-theme='dark'] table thead {
+  background: rgba(108, 99, 255, 0.1);
 }

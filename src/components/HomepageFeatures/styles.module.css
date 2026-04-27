@@ -1,11 +1,27 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureEmoji {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(0 0 20px rgba(108, 99, 255, 0.25));
+}
+
+.featureCard {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid rgba(108, 99, 255, 0.12);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  height: 100%;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.featureCard:hover {
+  border-color: rgba(108, 99, 255, 0.4);
+  transform: translateY(-2px);
 }

@@ -35,17 +35,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/IGMLcreation/loremind-docs/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl: 'https://github.com/IGMLcreation/loremind-docs/tree/main/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -53,11 +43,21 @@ const config: Config = {
     ],
   ],
 
+  plugins: ['plugin-image-zoom'],
+
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      respectPrefersColorScheme: false,
+    },
+    imageZoom: {
+      selector: '.markdown :not(em) > img',
+      options: {
+        margin: 24,
+        background: 'rgba(10, 10, 20, 0.92)',
+        scrollOffset: 40,
+      },
     },
     navbar: {
       title: 'LoreMind',
@@ -72,7 +72,6 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/IGMLcreation/LoreMind',
           label: 'GitHub',
@@ -102,15 +101,6 @@ const config: Config = {
             {
               label: 'Démo',
               href: 'https://loremind-demo.igmlcreation.fr',
-            },
-          ],
-        },
-        {
-          title: 'Plus',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
             },
           ],
         },
