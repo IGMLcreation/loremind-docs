@@ -1,9 +1,13 @@
 ---
 sidebar_position: 1
-title: Windows 10 / 11
+title: Windows
 ---
 
-# Installation sur Windows 10 / 11
+import Callout from '@site/src/components/Callout';
+
+# Installation sur Windows
+
+![Installeur Windows de LoreMind](/img/screenshots/install_windows/Install_windows.png)
 
 L'installeur Windows automatise l'intégralité du setup : WSL2, Docker Desktop, génération du `.env` sécurisé, lancement de la stack.
 
@@ -12,6 +16,12 @@ L'installeur Windows automatise l'intégralité du setup : WSL2, Docker Desktop,
 - Windows 10 (version 2004+) ou Windows 11.
 - Compte avec droits administrateur.
 - Connexion Internet pour télécharger Docker Desktop et les images.
+
+<Callout type="warning" title="Prérequis matériel pour l'IA en local">
+Pour faire tourner l'IA en local via Ollama, prévoir un PC avec **au moins 16 Go de RAM** et un processeur / carte graphique modernes.
+
+Avec un modèle léger comme `gemma3:e2b`, 16 Go de RAM et un CPU/GPU récent suffisent, mais l'inférence restera lente. Pour un confort réel, viser 32 Go de RAM et une carte NVIDIA récente.
+</Callout>
 
 ## Procédure
 
@@ -24,17 +34,25 @@ L'installeur Windows automatise l'intégralité du setup : WSL2, Docker Desktop,
 
 3. Acceptez le prompt UAC.
 
+
+
 ## Ce que fait l'installeur
 
 1. Vérifie / installe **WSL2** (un reboot peut être nécessaire — relancer le script après).
 2. Vérifie / installe **Docker Desktop** via `winget`.
-3. Vous demande quelques choix (compte admin, fournisseur LLM, mode Ollama, mises à jour auto).
-4. Génère `%LOCALAPPDATA%\LoreMind\.env` avec des mots de passe aléatoires.
-5. Lance la stack et ouvre `http://localhost:8081` dans votre navigateur.
+3. C'est la partie la plus importante : le programme vous demande de choisir le nom d'utilisateur / mot de passe
+pour votre compte administrateur. Le navigateur vous demandera ces informations lorsque vous vous connecterez à l'application
+(ceci est fait pour sécuriser la partie settings entre autre).
+4. Lorsqu'on vous demande le choix entre ollama et 1min.ai lors de l'installation, 
+vous pouvez laisser vide. Ollama sera utilisé en premier par défaut.
+5. Une fois ceci fait, l'application va tenter d'installer ollama si vous le souhaitez : voir la section
+[Configurer Ollama](./ollama) (moteur LLM local) de la doc.
+6. Génère `%LOCALAPPDATA%\LoreMind\.env` avec des mots de passe aléatoires.
+7. Lance la stack et ouvre `http://localhost:8081` dans votre navigateur.
 
-:::info Pourquoi `install.bat` ?
+<Callout type="info" title="Pourquoi install.bat ?">
 Le `.bat` sert juste à lancer `install.ps1` proprement (UAC + ExecutionPolicy adaptée à la session, sans modifier les paramètres système). Il est purement déclaratif et auditable en quelques lignes.
-:::
+</Callout>
 
 ## Faux positifs antivirus
 

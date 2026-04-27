@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'LoreMind',
   tagline: 'Documentation officielle de LoreMind',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Logo.png',
 
   future: {
     v4: true,
@@ -63,7 +63,7 @@ const config: Config = {
       title: 'LoreMind',
       logo: {
         alt: 'LoreMind Logo',
-        src: 'img/logo.svg',
+        src: 'img/Logo.png',
       },
       items: [
         {

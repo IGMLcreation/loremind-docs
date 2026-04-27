@@ -1,18 +1,19 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import {ShieldCheck, Sparkles, Dices, type LucideIcon} from 'lucide-react';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  emoji: string;
+  Icon: LucideIcon;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: '100 % auto-hébergé',
-    emoji: '🔒',
+    Icon: ShieldCheck,
     description: (
       <>
         Vos campagnes, fiches et lore restent sur votre machine. Aucun cloud,
@@ -22,17 +23,17 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'IA locale ou distante',
-    emoji: '🧠',
+    Icon: Sparkles,
     description: (
       <>
         Faites tourner Ollama en local pour une confidentialité totale, ou
-        branchez OpenAI / Anthropic pour plus de puissance.
+        branchez une IA distante (actuellement 1min.ai supporté).
       </>
     ),
   },
   {
     title: 'Multi-systèmes JDR',
-    emoji: '🎲',
+    Icon: Dices,
     description: (
       <>
         Gérez plusieurs campagnes avec leurs propres règles, fiches de
@@ -42,12 +43,12 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, emoji, description}: FeatureItem) {
+function Feature({title, Icon, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className={clsx(styles.featureCard, 'text--center')}>
-        <div className={styles.featureEmoji} role="img" aria-label={title}>
-          {emoji}
+        <div className={styles.featureIconWrap}>
+          <Icon className={styles.featureIcon} strokeWidth={1.5} aria-hidden />
         </div>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>

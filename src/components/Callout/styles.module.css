@@ -1,0 +1,107 @@
+.callout {
+  display: flex;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  border: 1px solid var(--callout-border);
+  background: var(--callout-bg);
+  color: var(--ifm-color-content);
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  border-radius: 8px;
+  background: var(--callout-icon-bg);
+  color: var(--callout-icon-color);
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--callout-title-color);
+}
+
+.body :global(p:last-child) {
+  margin-bottom: 0;
+}
+
+.body :global(p:first-child) {
+  margin-top: 0;
+}
+
+/* Type info — violet LoreMind */
+.info {
+  --callout-border: rgba(108, 99, 255, 0.3);
+  --callout-bg: rgba(108, 99, 255, 0.07);
+  --callout-icon-bg: rgba(108, 99, 255, 0.15);
+  --callout-icon-color: #a5b4fc;
+  --callout-title-color: #c0cbff;
+}
+
+/* Type tip — teal/menthe doux */
+.tip {
+  --callout-border: rgba(45, 212, 191, 0.3);
+  --callout-bg: rgba(45, 212, 191, 0.06);
+  --callout-icon-bg: rgba(45, 212, 191, 0.15);
+  --callout-icon-color: #5eead4;
+  --callout-title-color: #99f6e4;
+}
+
+/* Type warning — ambré */
+.warning {
+  --callout-border: rgba(245, 158, 11, 0.35);
+  --callout-bg: rgba(245, 158, 11, 0.07);
+  --callout-icon-bg: rgba(245, 158, 11, 0.18);
+  --callout-icon-color: #fbbf24;
+  --callout-title-color: #fcd34d;
+}
+
+/* Type danger — rouge */
+.danger {
+  --callout-border: rgba(239, 68, 68, 0.35);
+  --callout-bg: rgba(239, 68, 68, 0.07);
+  --callout-icon-bg: rgba(239, 68, 68, 0.18);
+  --callout-icon-color: #f87171;
+  --callout-title-color: #fca5a5;
+}
+
+/* Mode clair — bordures et fonds plus marqués */
+[data-theme='light'] .callout {
+  --ifm-color-content: #1f2937;
+}
+
+[data-theme='light'] .info {
+  --callout-bg: rgba(108, 99, 255, 0.05);
+  --callout-icon-color: #6c63ff;
+  --callout-title-color: #4f46c8;
+}
+
+[data-theme='light'] .tip {
+  --callout-bg: rgba(20, 184, 166, 0.05);
+  --callout-icon-color: #14b8a6;
+  --callout-title-color: #0f766e;
+}
+
+[data-theme='light'] .warning {
+  --callout-bg: rgba(245, 158, 11, 0.06);
+  --callout-icon-color: #d97706;
+  --callout-title-color: #92400e;
+}
+
+[data-theme='light'] .danger {
+  --callout-bg: rgba(239, 68, 68, 0.06);
+  --callout-icon-color: #dc2626;
+  --callout-title-color: #991b1b;
+}

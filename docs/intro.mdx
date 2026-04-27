@@ -2,21 +2,30 @@
 sidebar_position: 1
 ---
 
-# Bienvenue sur LoreMind
+import {ShieldCheck, Sparkles, Dices, Container, RefreshCw} from 'lucide-react';
+import IconFeature, {IconFeatureList} from '@site/src/components/IconFeature';
 
-**LoreMind** est un assistant de jeu de rôle auto-hébergé qui combine gestion de campagnes, fiches de personnages, lore et IA locale pour vous aider à animer vos parties.
+# Bienvenue dans la documentation de LoreMind
+
+**LoreMind** est un assistant de jeu de rôle auto-hébergé qui combine gestion de campagnes, fiches de personnages, lore
+et IA locale pour vous aider à préparer vos parties.
 
 ## Caractéristiques principales
 
-- 🎲 **Multi-systèmes** — gérez plusieurs campagnes avec leurs propres règles JDR.
-- 🧠 **IA locale ou distante** — Ollama embarqué ou modèles OpenAI/Anthropic au choix.
-- 🔒 **100 % auto-hébergé** — vos données restent sur votre machine.
-- 🐳 **Installation Docker en une commande** — Windows, Linux, macOS.
-- 🔄 **Mises à jour automatiques** optionnelles via Watchtower.
+<IconFeatureList>
+  <IconFeature Icon={Dices} title="Multi-systèmes">gérez plusieurs campagnes avec leurs propres règles JDR.</IconFeature>
+  <IconFeature Icon={Sparkles} title="IA locale ou distante">Ollama embarqué ou IA distante au choix (actuellement 1min.ai supporté).</IconFeature>
+  <IconFeature Icon={ShieldCheck} title="100 % auto-hébergé">vos données restent sur votre machine.</IconFeature>
+  <IconFeature Icon={Container} title="Installation Docker en une commande">Windows, Linux, macOS.</IconFeature>
+  <IconFeature Icon={RefreshCw} title="Mises à jour automatiques">optionnelles via Watchtower.</IconFeature>
+</IconFeatureList>
 
 ## Par où commencer ?
 
-- **Vous voulez installer LoreMind ?** → [Guide d'installation](/docs/installation/windows)
+- **Vous voulez installer LoreMind ?** 
+- → [Guide d'installation pour Windows](/docs/installation/windows)
+- → [Guide d'installation pour Linux](/docs/installation/linux)
+
 - **Vous voulez voir avant d'installer ?** → [Démo en ligne](https://loremind-demo.igmlcreation.fr)
 - **Vous cherchez le code source ?** → [GitHub](https://github.com/IGMLcreation/LoreMind)
 
