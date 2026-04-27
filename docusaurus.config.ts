@@ -35,7 +35,24 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/IGMLcreation/loremind-docs/tree/main/',
         },
-        blog: false,
+        blog: {
+          path: 'blog',
+          routeBasePath: 'devlog',
+          blogTitle: 'Devlog LoreMind',
+          blogDescription: 'Journal de bord du développement de LoreMind — features, coulisses, choix techniques.',
+          blogSidebarTitle: 'Articles récents',
+          blogSidebarCount: 10,
+          postsPerPage: 10,
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom', 'json'],
+            title: 'Devlog LoreMind',
+            description: 'Suivez le développement de LoreMind',
+            copyright: `Copyright © ${new Date().getFullYear()} IGMLcreation — LoreMind.`,
+            language: 'fr',
+          },
+          editUrl: 'https://github.com/IGMLcreation/loremind-docs/tree/main/',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -73,6 +90,11 @@ const config: Config = {
           label: 'Documentation',
         },
         {
+          to: '/devlog',
+          label: 'Devlog',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/IGMLcreation/LoreMind',
           label: 'GitHub',
           position: 'right',
@@ -88,6 +110,10 @@ const config: Config = {
             {
               label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Devlog',
+              to: '/devlog',
             },
           ],
         },
