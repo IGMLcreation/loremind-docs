@@ -1,0 +1,8 @@
+{
+  "label": "Campagne",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "campagne/index"
+  }
+}
