@@ -45,7 +45,7 @@ Les deux écrans rendent dynamiquement le formulaire selon le template.
 Tous les champs sont optionnels — vous pouvez créer une fiche avec juste un
 nom, et la compléter au fil de l'eau (ou demander à l'IA de proposer).
 
-## Affichage WorldAnvil
+## Affichage
 
 Cliquer sur la carte d'un PJ ou PNJ depuis la vue campagne ouvre la
 **fiche détaillée** :
