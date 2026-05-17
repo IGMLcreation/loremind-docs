@@ -35,7 +35,17 @@ Pour les champs IMAGE, plusieurs **layouts** sont disponibles :
 :::tip
 Pour changer le type de champs, cliquez sur le bouton "Texte" ou "Image" à coté de votre champs
 et ça va switcher sur un l'autre type disponible.
+Vous pouvez également changer l'ordre des champs en cliquant sur le bouton "↑" ou "↓" à coté de votre champs.
 :::
+
+## Modification d'un template
+
+Vous pouvez simplement modifier un template en cliquant sur ce dernier dans la section template.
+
+## Suppression d'un template
+
+Vous pouvez supprimer un template en cliquant sur le bouton "Supprimer" en haut à droite lorsque vous
+êtes revenu sur la page de ce dernier.
 
 ## Bonnes pratiques
 

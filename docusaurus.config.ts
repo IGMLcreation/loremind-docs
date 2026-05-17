@@ -63,7 +63,7 @@ const config: Config = {
   plugins: ['plugin-image-zoom'],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/loremind-social-card.png',
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: false,
