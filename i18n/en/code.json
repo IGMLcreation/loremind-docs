@@ -325,5 +325,45 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.tagline": {
+    "message": "The official LoreMind documentation",
+    "description": "The homepage hero subtitle"
+  },
+  "homepage.cta.install": {
+    "message": "Install LoreMind",
+    "description": "The install call-to-action button"
+  },
+  "homepage.cta.demo": {
+    "message": "View the demo",
+    "description": "The demo call-to-action button"
+  },
+  "homepage.meta.description": {
+    "message": "The official documentation of LoreMind, the self-hosted tabletop RPG assistant.",
+    "description": "The homepage <meta> description for SEO"
+  },
+  "homepage.feature.selfhosted.title": {
+    "message": "100% self-hosted",
+    "description": "Feature card title"
+  },
+  "homepage.feature.selfhosted.description": {
+    "message": "Your campaigns, sheets and lore stay on your machine. No cloud, no telemetry, no account to create.",
+    "description": "Feature card description"
+  },
+  "homepage.feature.ai.title": {
+    "message": "Local or remote AI",
+    "description": "Feature card title"
+  },
+  "homepage.feature.ai.description": {
+    "message": "Run Ollama locally for full privacy, or plug in a remote AI (currently 1min.ai supported).",
+    "description": "Feature card description"
+  },
+  "homepage.feature.multisystem.title": {
+    "message": "Multi-system TTRPG",
+    "description": "Feature card title"
+  },
+  "homepage.feature.multisystem.description": {
+    "message": "Manage several campaigns each with their own rules, character sheets, lore and contextual AI memory.",
+    "description": "Feature card description"
   }
 }
