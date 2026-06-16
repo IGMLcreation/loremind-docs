@@ -95,6 +95,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          href: 'https://loremind-patreon.igmlcreation.fr',
+          label: '⭐ Espace Patrons',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/IGMLcreation/LoreMind',
           label: 'GitHub',
           position: 'right',
@@ -115,6 +120,10 @@ const config: Config = {
               label: 'Devlog',
               to: '/devlog',
             },
+            {
+              label: '⭐ Espace Patrons',
+              href: 'https://loremind-patreon.igmlcreation.fr',
+            },
           ],
         },
         {
@@ -127,6 +136,10 @@ const config: Config = {
             {
               label: 'Démo',
               href: 'https://loremind-demo.igmlcreation.fr',
+            },
+            {
+              label: 'Soutenir sur Patreon',
+              href: 'https://www.patreon.com/c/IGMLCreation',
             },
           ],
         },
