@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Installation": {
+    "message": "Installation",
+    "description": "The label for category 'Installation' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Installation.link.generated-index.title": {
+    "message": "Installing LoreMind",
+    "description": "The generated-index page title for category 'Installation' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Installation.link.generated-index.description": {
+    "message": "Choose your operating system to follow the matching installation guide.",
+    "description": "The generated-index page description for category 'Installation' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Lore": {
+    "message": "Lore",
+    "description": "The label for category 'Lore' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Campagne": {
+    "message": "Campaign",
+    "description": "The label for category 'Campagne' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Game System": {
+    "message": "Game System",
+    "description": "The label for category 'Game System' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Assistant IA": {
+    "message": "AI Assistant",
+    "description": "The label for category 'Assistant IA' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category 'Configuration' in sidebar 'tutorialSidebar'"
+  }
+}

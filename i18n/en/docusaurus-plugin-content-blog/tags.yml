@@ -1,0 +1,29 @@
+devlog:
+  label: Devlog
+  permalink: /devlog
+  description: Journal hebdomadaire du développement de LoreMind.
+
+release:
+  label: Release
+  permalink: /release
+  description: Annonces de nouvelles versions de LoreMind.
+
+coulisses:
+  label: Coulisses
+  permalink: /coulisses
+  description: Choix de design, décisions techniques, retours d'expérience.
+
+tutoriel:
+  label: Tutoriel
+  permalink: /tutoriel
+  description: Guides pratiques pour tirer le meilleur de LoreMind.
+
+ia:
+  label: IA
+  permalink: /ia
+  description: Articles autour de l'intelligence artificielle locale et de Ollama.
+
+jdr:
+  label: JDR
+  permalink: /jdr
+  description: Articles liés au jeu de rôle et aux pratiques de table.

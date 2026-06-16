@@ -1,0 +1,40 @@
+---
+sidebar_position: 1
+---
+
+import {ShieldCheck, Sparkles, Dices, Container, RefreshCw} from 'lucide-react';
+import IconFeature, {IconFeatureList} from '@site/src/components/IconFeature';
+
+# Welcome to the LoreMind documentation
+
+**LoreMind** is a self-hosted tabletop RPG assistant that combines campaign management, character sheets, lore
+and local AI to help you prepare your games.
+
+## Key features
+
+<IconFeatureList>
+  <IconFeature Icon={Dices} title="Multi-system">manage several campaigns each with their own TTRPG rules.</IconFeature>
+  <IconFeature Icon={Sparkles} title="Local or remote AI">embedded Ollama or remote AI as you prefer (currently 1min.ai supported).</IconFeature>
+  <IconFeature Icon={ShieldCheck} title="100% self-hosted">your data stays on your machine.</IconFeature>
+  <IconFeature Icon={Container} title="One-command Docker install">Windows, Linux, macOS.</IconFeature>
+  <IconFeature Icon={RefreshCw} title="Automatic updates">optional, via Watchtower.</IconFeature>
+</IconFeatureList>
+
+## Where to start?
+
+- **Want to install LoreMind?** 
+- → [Installation guide for Windows](/docs/installation/windows)
+- → [Installation guide for Linux](/docs/installation/linux)
+
+- **Want to take a look before installing?** → [Online demo](https://loremind-demo.igmlcreation.fr)
+- **Looking for the source code?** → [GitHub](https://github.com/IGMLcreation/LoreMind)
+
+## Architecture
+
+LoreMind is made up of three services that communicate through Docker Compose:
+
+- **Core** — Java/Spring Boot backend (business API, Postgres + MinIO persistence).
+- **Brain** — Python/FastAPI service dedicated to AI (LLM orchestration, RAG).
+- **Web** — Angular user interface.
+
+Optionally, a fourth **Ollama** service can be started to serve the LLM models locally.

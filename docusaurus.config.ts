@@ -24,7 +24,11 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr'],
+    locales: ['fr', 'en'],
+    localeConfigs: {
+      fr: {label: 'Français', htmlLang: 'fr-FR', path: 'fr'},
+      en: {label: 'English', htmlLang: 'en-US', path: 'en'},
+    },
   },
 
   presets: [
@@ -97,6 +101,10 @@ const config: Config = {
         {
           href: 'https://loremind-patreon.igmlcreation.fr',
           label: '⭐ Espace Patrons',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
         {
