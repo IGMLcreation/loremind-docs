@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "LoreMind Devlog",
+    "message": "DM Loremind Devlog",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "Development log of LoreMind — features, behind the scenes, technical choices.",
+    "message": "Development log of DM Loremind — features, behind the scenes, technical choices.",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {

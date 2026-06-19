@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Assistant IA
 
-LoreMind embarque un assistant IA contextuel : sur n'importe quelle entité
+DM Loremind embarque un assistant IA contextuel : sur n'importe quelle entité
 (page Lore, scène, PJ, PNJ, arc, chapitre…), un bouton ✨ ouvre un panneau
 latéral où vous pouvez dialoguer avec un modèle de langage qui **connaît
 l'entité ouverte**.

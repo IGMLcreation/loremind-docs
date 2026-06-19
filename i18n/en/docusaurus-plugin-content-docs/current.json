@@ -8,7 +8,7 @@
     "description": "The label for category 'Installation' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Installation.link.generated-index.title": {
-    "message": "Installing LoreMind",
+    "message": "Installing DM Loremind",
     "description": "The generated-index page title for category 'Installation' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Installation.link.generated-index.description": {

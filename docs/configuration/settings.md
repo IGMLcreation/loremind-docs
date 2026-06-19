@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Settings — paramètres applicatifs
 
-L'écran **Settings** centralise les paramètres globaux de LoreMind.
+L'écran **Settings** centralise les paramètres globaux de DM Loremind.
 
 ## IA
 

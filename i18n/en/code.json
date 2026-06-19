@@ -327,11 +327,11 @@
     "description": "The title of the tag list page"
   },
   "homepage.tagline": {
-    "message": "The official LoreMind documentation",
+    "message": "The official DM Loremind documentation",
     "description": "The homepage hero subtitle"
   },
   "homepage.cta.install": {
-    "message": "Install LoreMind",
+    "message": "Install DM Loremind",
     "description": "The install call-to-action button"
   },
   "homepage.cta.demo": {
@@ -339,7 +339,7 @@
     "description": "The demo call-to-action button"
   },
   "homepage.meta.description": {
-    "message": "The official documentation of LoreMind, the self-hosted tabletop RPG assistant.",
+    "message": "The official documentation of DM Loremind, the self-hosted tabletop RPG assistant.",
     "description": "The homepage <meta> description for SEO"
   },
   "homepage.feature.selfhosted.title": {

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Settings — application settings
 
-The **Settings** screen centralizes LoreMind's global settings.
+The **Settings** screen centralizes DM Loremind's global settings.
 
 ## AI
 

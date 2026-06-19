@@ -28,10 +28,10 @@ rm -rf ~/.local/share/loremind
 
 ### Windows
 
-Delete the `%LOCALAPPDATA%\LoreMind\` folder via File Explorer or in PowerShell:
+Delete the `%LOCALAPPDATA%\DM Loremind\` folder via File Explorer or in PowerShell:
 
 ```powershell
-Remove-Item -Recurse -Force "$env:LOCALAPPDATA\LoreMind"
+Remove-Item -Recurse -Force "$env:LOCALAPPDATA\DM Loremind"
 ```
 
 ## Undo Ollama hardening (host mode only)

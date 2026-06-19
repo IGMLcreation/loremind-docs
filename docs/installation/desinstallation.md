@@ -28,10 +28,10 @@ rm -rf ~/.local/share/loremind
 
 ### Windows
 
-Supprimez le dossier `%LOCALAPPDATA%\LoreMind\` via l'explorateur ou en PowerShell :
+Supprimez le dossier `%LOCALAPPDATA%\DM Loremind\` via l'explorateur ou en PowerShell :
 
 ```powershell
-Remove-Item -Recurse -Force "$env:LOCALAPPDATA\LoreMind"
+Remove-Item -Recurse -Force "$env:LOCALAPPDATA\DM Loremind"
 ```
 
 ## Annuler la sécurisation Ollama (mode hôte uniquement)

@@ -7,7 +7,7 @@ import Callout from '@site/src/components/Callout';
 
 # Installation on Windows
 
-![LoreMind Windows installer](/img/screenshots/install_windows/Install_windows.png)
+![DM Loremind Windows installer](/img/screenshots/install_windows/Install_windows.png)
 
 The Windows installer automates the entire setup: WSL2, Docker Desktop, generation of the secure `.env` file, and launching the stack.
 
@@ -25,7 +25,7 @@ With a lightweight model such as `gemma3:e2b`, 16 GB of RAM and a recent CPU/GPU
 
 ## Procedure
 
-1. **Download the files** from the [GitHub repo](https://github.com/IGMLcreation/LoreMind/tree/main/installers) into a single folder (for example `Downloads\LoreMind\`):
+1. **Download the files** from the [GitHub repo](https://github.com/IGMLcreation/LoreMind/tree/main/installers) into a single folder (for example `Downloads\DM Loremind\`):
    - [`install.bat`](https://raw.githubusercontent.com/IGMLcreation/LoreMind/main/installers/install.bat) — launcher
    - [`install.ps1`](https://raw.githubusercontent.com/IGMLcreation/LoreMind/main/installers/install.ps1) — main script
    - [`secure-host-ollama.ps1`](https://raw.githubusercontent.com/IGMLcreation/LoreMind/main/installers/secure-host-ollama.ps1) — *only if you already have Ollama installed on your PC*
@@ -47,7 +47,7 @@ for your administrator account. The browser will ask you for these credentials w
 you can leave it empty. Ollama will be used first by default.
 5. Once this is done, the application will attempt to install ollama if you wish: see the
 [Configure Ollama](./ollama) section (local LLM engine) of the documentation.
-6. Generates `%LOCALAPPDATA%\LoreMind\.env` with random passwords.
+6. Generates `%LOCALAPPDATA%\DM Loremind\.env` with random passwords.
 7. Launches the stack and opens `http://localhost:8081` in your browser.
 
 <Callout type="info" title="Why install.bat?">

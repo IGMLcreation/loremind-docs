@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Player and Non-Player Characters
 
-LoreMind separates **PCs** (Player Characters) from **NPCs** (Non-Player Characters)
+DM Loremind separates **PCs** (Player Characters) from **NPCs** (Non-Player Characters)
 into two distinct entities — their business invariants differ (an NPC can
 have an "alive/dead/missing" status, a faction affiliation, a
 player-side visibility… none of which makes sense for a PC).

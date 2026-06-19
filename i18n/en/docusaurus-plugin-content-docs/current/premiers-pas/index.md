@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Getting started
 
-This guide walks you through the main features of LoreMind in about ten
+This guide walks you through the main features of DM Loremind in about ten
 minutes: creating a world (Lore), a campaign, a character, and triggering your
 first exchange with the AI.
 
-> Prerequisite: LoreMind is installed and accessible. If that is not the case,
+> Prerequisite: DM Loremind is installed and accessible. If that is not the case,
 > start with the [installation guide](/docs/installation/windows).
 
 :::warning
@@ -18,7 +18,7 @@ you go tinkering inside docker.
 
 ## 1. Choose a game system
 
-On first launch, LoreMind ships with three demo systems:
+On first launch, DM Loremind ships with three demo systems:
 
 - **Nimble (excerpt)**
 - **D&D 5e SRD (excerpt)**

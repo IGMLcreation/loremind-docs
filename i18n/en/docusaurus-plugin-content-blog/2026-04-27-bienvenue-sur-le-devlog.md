@@ -1,11 +1,11 @@
 ---
 slug: bienvenue-sur-le-devlog
-title: Welcome to the LoreMind Devlog
+title: Welcome to the DM Loremind Devlog
 authors: [igmlcreation]
 tags: [devlog, coulisses]
 ---
 
-This devlog is where I post the changes between versions of the LoreMind application.
+This devlog is where I post the changes between versions of the DM Loremind application.
 
 The idea: a regular, written check-in, without hype or jargon — just what's happening in the project, and why.
 
@@ -13,7 +13,7 @@ The idea: a regular, written check-in, without hype or jargon — just what's ha
 
 ## Why a devlog?
 
-LoreMind is a solo, open source project with a fairly precise vision: a tabletop RPG tool that respects the **sovereignty of your data** (100% local AI via Ollama, or cloud chosen by the user), designed **by a GM for GMs**, and not by a startup that's just discovering tabletop RPGs.
+DM Loremind is a solo, open source project with a fairly precise vision: a tabletop RPG tool that respects the **sovereignty of your data** (100% local AI via Ollama, or cloud chosen by the user), designed **by a GM for GMs**, and not by a startup that's just discovering tabletop RPGs.
 
 But a vision needs to be told. A Git changelog is useful for developers; it doesn't make a GM want to try the tool. The devlog is the bridge between the code and the game table.
 

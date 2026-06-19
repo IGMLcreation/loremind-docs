@@ -25,10 +25,10 @@ Le choix du fournisseur LLM se fait dans **Settings → IA**.
 
 1. Installer Ollama (un guide dédié existe : [Ollama](/docs/installation/ollama))
 2. Télécharger un modèle : `ollama pull llama3.1:8b` (ou autre)
-3. Dans LoreMind → **Settings → IA → Ollama**, renseigner l'URL (par défaut `http://localhost:11434`)
+3. Dans DM Loremind → **Settings → IA → Ollama**, renseigner l'URL (par défaut `http://localhost:11434`)
 4. Sélectionner le modèle dans la liste auto-détectée
 
-Le pull du modèle peut aussi être déclenché depuis l'UI LoreMind.
+Le pull du modèle peut aussi être déclenché depuis l'UI DM Loremind.
 
 ## 1min.ai (cloud)
 
@@ -50,12 +50,12 @@ OpenAI GPT-4, Google Gemini, Mistral, etc. via un seul abonnement.
 **Configuration** :
 
 1. Créer un compte 1min.ai et récupérer une clé API
-2. Dans LoreMind → **Settings → IA → 1min.ai**, coller la clé
+2. Dans DM Loremind → **Settings → IA → 1min.ai**, coller la clé
 3. La liste des modèles s'auto-charge, regroupée par fournisseur
 
 ## Quel modèle choisir ?
 
-Pour LoreMind, en pratique :
+Pour DM Loremind, en pratique :
 
 - **Tâches simples** (résumer une scène, proposer 3 idées) : Llama 3.1 8B, Claude Haiku 3.5, GPT-4o-mini suffisent
 - **Tâches narratives** (écrire une backstory cohérente) : Claude Sonnet, GPT-4o donnent les meilleurs résultats

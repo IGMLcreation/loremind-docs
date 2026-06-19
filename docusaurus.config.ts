@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'LoreMind',
-  tagline: 'Documentation officielle de LoreMind',
+  title: 'DM Loremind',
+  tagline: 'Documentation officielle de DM Loremind',
   favicon: 'img/Logo.png',
 
   future: {
@@ -42,17 +42,17 @@ const config: Config = {
         blog: {
           path: 'blog',
           routeBasePath: 'devlog',
-          blogTitle: 'Devlog LoreMind',
-          blogDescription: 'Journal de bord du développement de LoreMind — features, coulisses, choix techniques.',
+          blogTitle: 'Devlog DM Loremind',
+          blogDescription: 'Journal de bord du développement de DM Loremind — features, coulisses, choix techniques.',
           blogSidebarTitle: 'Articles récents',
           blogSidebarCount: 10,
           postsPerPage: 10,
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom', 'json'],
-            title: 'Devlog LoreMind',
-            description: 'Suivez le développement de LoreMind',
-            copyright: `Copyright © ${new Date().getFullYear()} IGMLcreation — LoreMind.`,
+            title: 'Devlog DM Loremind',
+            description: 'Suivez le développement de DM Loremind',
+            copyright: `Copyright © ${new Date().getFullYear()} IGMLcreation — DM Loremind.`,
             language: 'fr',
           },
           editUrl: 'https://github.com/IGMLcreation/loremind-docs/tree/main/',
@@ -81,9 +81,9 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'LoreMind',
+      title: 'DM Loremind',
       logo: {
-        alt: 'LoreMind Logo',
+        alt: 'DM Loremind Logo',
         src: 'img/Logo.png',
       },
       items: [
@@ -152,7 +152,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} IGMLcreation — LoreMind. Contenu sous licence CC BY-SA 4.0.`,
+      copyright: `Copyright © ${new Date().getFullYear()} IGMLcreation — DM Loremind. Contenu sous licence CC BY-SA 4.0.`,
     },
     prism: {
       theme: prismThemes.github,

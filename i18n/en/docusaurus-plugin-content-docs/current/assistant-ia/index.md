@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # AI Assistant
 
-LoreMind ships with a contextual AI assistant: on any entity
+DM Loremind ships with a contextual AI assistant: on any entity
 (Lore page, scene, PC, NPC, arc, chapter…), a ✨ button opens a side
 panel where you can chat with a language model that **knows
 the open entity**.

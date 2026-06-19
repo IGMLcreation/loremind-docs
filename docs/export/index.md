@@ -7,7 +7,7 @@ sidebar_position: 1
 > ⚠️ Cette section décrit une **feature en cours de développement**.
 > Le contenu sera mis à jour au fil des releases.
 
-L'export permet de sortir de LoreMind pour :
+L'export permet de sortir de DM Loremind pour :
 
 - **Imprimer** une fiche PJ ou un Lore (PDF)
 - **Sauvegarder** votre travail (markdown, JSON)

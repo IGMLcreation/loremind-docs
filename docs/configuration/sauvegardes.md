@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Sauvegardes et restauration
 
-LoreMind stocke ses données dans **PostgreSQL** (campagnes, lore, fiches,
+DM Loremind stocke ses données dans **PostgreSQL** (campagnes, lore, fiches,
 images en référence) et sur le **système de fichiers** (binaires des images
 uploadées).
 
@@ -50,4 +50,4 @@ Redémarrer ensuite le stack : `docker compose restart`.
 
 - **Sauvegarde avant chaque mise à jour majeure** (release `0.X.0` → `0.Y.0`)
 - **Test de restauration trimestriel** — un backup non testé est un faux backup
-- **Externalisez** — copier les backups hors de la machine LoreMind (NAS, cloud chiffré)
+- **Externalisez** — copier les backups hors de la machine DM Loremind (NAS, cloud chiffré)

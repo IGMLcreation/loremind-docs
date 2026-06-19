@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Génération de pages Lore
 
-Au-delà du chat libre, LoreMind permet de **générer ou regénérer un champ
+Au-delà du chat libre, DM Loremind permet de **générer ou regénérer un champ
 spécifique** d'une page Lore via un bouton dédié.
 
 ## Workflow

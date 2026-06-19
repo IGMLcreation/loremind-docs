@@ -7,7 +7,7 @@ sidebar_position: 1
 > ⚠️ This section describes a **feature under development**.
 > The content will be updated as releases progress.
 
-Export lets you take data out of LoreMind to:
+Export lets you take data out of DM Loremind to:
 
 - **Print** a PC sheet or a Lore entry (PDF)
 - **Back up** your work (Markdown, JSON)

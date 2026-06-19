@@ -5,7 +5,7 @@ title: Ollama Configuration
 
 # Configuring Ollama
 
-[Ollama](https://ollama.com) is the engine that lets you run LLM models locally on your machine. LoreMind offers three modes depending on your setup.
+[Ollama](https://ollama.com) is the engine that lets you run LLM models locally on your machine. DM Loremind offers three modes depending on your setup.
 
 ## Which mode should you choose?
 
@@ -15,7 +15,7 @@ During installation, the installer asks two successive questions.
 
 #### Answer: **Yes** → secure host mode
 
-The installer automatically calls the `secure-host-ollama.{sh,ps1}` helper, which configures your existing Ollama so that it is reachable by the LoreMind Docker container **without being exposed to the local network or the Internet**.
+The installer automatically calls the `secure-host-ollama.{sh,ps1}` helper, which configures your existing Ollama so that it is reachable by the DM Loremind Docker container **without being exposed to the local network or the Internet**.
 
 - **Linux**: Ollama listens on the Docker gateway IP (`172.17.0.1` by default). This IP is never routed outside the machine. The systemd override is written to `/etc/systemd/system/ollama.service.d/loremind-host.conf`.
 - **Windows**: Ollama listens on `0.0.0.0` (technically required with Docker Desktop), but the Windows firewall is configured to **only allow** the loopback and the Docker Desktop subnets. The added rules are prefixed `LoreMind-Ollama-*`.
@@ -41,7 +41,7 @@ docker exec -it loremind-ollama ollama list
 
 #### Answer: **No** → deferred mode
 
-No Ollama configuration is applied. The installer finishes without Ollama. You configure Ollama later via LoreMind's **Settings** page by entering the URL of your Ollama server.
+No Ollama configuration is applied. The installer finishes without Ollama. You configure Ollama later via DM Loremind's **Settings** page by entering the URL of your Ollama server.
 
 ## Running the hardening helper manually
 
@@ -60,7 +60,7 @@ bash secure-host-ollama.sh
 
 ```powershell
 .\secure-host-ollama.ps1
-# Then edit .env (in %LOCALAPPDATA%\LoreMind\):
+# Then edit .env (in %LOCALAPPDATA%\DM Loremind\):
 #   OLLAMA_BASE_URL=http://host.docker.internal:11434
 # And: docker compose up -d
 ```

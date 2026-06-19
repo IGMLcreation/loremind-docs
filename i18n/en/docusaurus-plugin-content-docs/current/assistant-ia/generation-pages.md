@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Generating Lore Pages
 
-Beyond free chat, LoreMind lets you **generate or regenerate a specific
+Beyond free chat, DM Loremind lets you **generate or regenerate a specific
 field** of a Lore page through a dedicated button.
 
 ## Workflow

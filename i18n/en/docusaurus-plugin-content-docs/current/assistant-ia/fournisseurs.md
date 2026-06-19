@@ -25,10 +25,10 @@ The LLM provider is selected in **Settings → AI**.
 
 1. Install Ollama (a dedicated guide is available: [Ollama](/docs/installation/ollama))
 2. Download a model: `ollama pull llama3.1:8b` (or another)
-3. In LoreMind → **Settings → AI → Ollama**, enter the URL (default `http://localhost:11434`)
+3. In DM Loremind → **Settings → AI → Ollama**, enter the URL (default `http://localhost:11434`)
 4. Select the model from the auto-detected list
 
-The model pull can also be triggered from the LoreMind UI.
+The model pull can also be triggered from the DM Loremind UI.
 
 ## 1min.ai (cloud)
 
@@ -50,12 +50,12 @@ OpenAI GPT-4, Google Gemini, Mistral, etc. through a single subscription.
 **Configuration**:
 
 1. Create a 1min.ai account and obtain an API key
-2. In LoreMind → **Settings → AI → 1min.ai**, paste the key
+2. In DM Loremind → **Settings → AI → 1min.ai**, paste the key
 3. The model list loads automatically, grouped by provider
 
 ## Which model should you choose?
 
-For LoreMind, in practice:
+For DM Loremind, in practice:
 
 - **Simple tasks** (summarizing a scene, suggesting 3 ideas): Llama 3.1 8B, Claude Haiku 3.5, GPT-4o-mini are enough
 - **Narrative tasks** (writing a coherent backstory): Claude Sonnet, GPT-4o give the best results

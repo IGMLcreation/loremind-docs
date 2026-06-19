@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Configuration
 
-This section covers LoreMind's advanced settings and maintenance once the
+This section covers DM Loremind's advanced settings and maintenance once the
 application is installed.
 
 ## In this section

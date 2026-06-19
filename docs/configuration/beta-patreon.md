@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Bêta privée Patreon
 
-Les soutiens Patreon de LoreMind ont accès à un canal de **pré-release** :
+Les soutiens Patreon de DM Loremind ont accès à un canal de **pré-release** :
 les nouvelles fonctionnalités y sont déployées en avant-première, avant la
 version stable.
 
@@ -12,13 +12,13 @@ version stable.
 
 1. Vous souscrivez au tier Patreon donnant accès à la bêta
 2. Vous obtenez un **token de licence** (clé JWT) sur votre espace Patreon
-3. Dans LoreMind, **Settings → Licence**, vous collez le token
+3. Dans DM Loremind, **Settings → Licence**, vous collez le token
 4. L'application bascule automatiquement sur le canal `:beta` au prochain check de mise à jour
 
 ## Architecture (en bref)
 
 - Un **relais Cloudflare Workers** signe et délivre les tokens JWT à partir des données Patreon
-- LoreMind valide la signature localement (clé publique embarquée) — pas d'appel réseau pour vérifier la licence
+- DM Loremind valide la signature localement (clé publique embarquée) — pas d'appel réseau pour vérifier la licence
 - Les images bêta sont sur un canal GHCR privé, accessibles via les credentials Docker injectés par le token
 
 ## Mise à jour automatique

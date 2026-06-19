@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Backup and Restore
 
-LoreMind stores its data in **PostgreSQL** (campaigns, lore, sheets,
+DM Loremind stores its data in **PostgreSQL** (campaigns, lore, sheets,
 image references) and on the **file system** (binaries of uploaded
 images).
 
@@ -50,4 +50,4 @@ Then restart the stack: `docker compose restart`.
 
 - **Back up before every major update** (release `0.X.0` → `0.Y.0`)
 - **Quarterly restore test** — an untested backup is a fake backup
-- **Off-site it** — copy backups off the LoreMind machine (NAS, encrypted cloud)
+- **Off-site it** — copy backups off the DM Loremind machine (NAS, encrypted cloud)

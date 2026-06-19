@@ -41,7 +41,7 @@ And finally, configure the Docker runtime for Nvidia:
 sudo nvidia-ctk runtime configure --runtime=docker
 ```
 
-## Installing LoreMind
+## Installing DM Loremind
 
 Grab the installer from the GitHub repository:
 
@@ -49,7 +49,7 @@ https://github.com/IGMLcreation/LoreMind/tree/main/installers
 
 => Get the install.sh and secure-host-ollama.sh files.
 The install.sh file is the bash script we'll run for the installation, and secure-host-ollama.sh is a script that secures the communication
-between LoreMind and Ollama in case you installed Ollama separately.
+between DM Loremind and Ollama in case you installed Ollama separately.
 
 ## Allowing the .sh files to run
 You need to make the .sh files executable on your machine in order to run them. In the terminal, go to wherever your files are and run:
@@ -74,7 +74,7 @@ machine, you may encounter an initial error due to insufficient permissions for 
 
 1. Installs **Docker** via the official `get.docker.com` script if absent.
 2. Adds the current user to the `docker` group (relogin required the 1st time).
-3. Installs LoreMind in `~/.local/share/loremind`.
+3. Installs DM Loremind in `~/.local/share/loremind`.
 4. Generates a `.env` file with random passwords.
 5. Starts the stack and opens `http://localhost:8081`.
 

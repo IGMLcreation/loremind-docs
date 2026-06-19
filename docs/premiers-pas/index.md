@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Premiers pas
 
-Ce guide vous fait découvrir les principales fonctionnalités de LoreMind en
+Ce guide vous fait découvrir les principales fonctionnalités de DM Loremind en
 une dizaine de minutes : créer un univers (Lore), une campagne, un personnage,
 et déclencher votre premier échange avec l'IA.
 
-> Pré-requis : LoreMind est installé et accessible. Si ce n'est pas le cas,
+> Pré-requis : DM Loremind est installé et accessible. Si ce n'est pas le cas,
 > commencez par le [guide d'installation](/docs/installation/windows).
 
 :::warning
@@ -18,7 +18,7 @@ si vous allez bidouiller dans docker.
 
 ## 1. Choisir un système de jeu
 
-Au premier lancement, LoreMind est livré avec trois systèmes de démonstration :
+Au premier lancement, DM Loremind est livré avec trois systèmes de démonstration :
 
 - **Nimble (extrait)**
 - **D&D 5e SRD (extrait)**

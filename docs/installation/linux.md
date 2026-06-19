@@ -41,7 +41,7 @@ Et enfin, configurez le runtime docker pour nvidia :
 sudo nvidia-ctk runtime configure --runtime=docker
 ```
 
-## Installation de LoreMind
+## Installation de DM Loremind
 
 Prendre l'installeur sur le dépôt github :
 
@@ -74,7 +74,7 @@ machine, vous pouvez rencontrer une première erreur à cause des droits insuffi
 
 1. Installe **Docker** via le script officiel `get.docker.com` si absent.
 2. Ajoute l'utilisateur courant au groupe `docker` (relogin nécessaire la 1ʳᵉ fois).
-3. Installe LoreMind dans `~/.local/share/loremind`.
+3. Installe DM Loremind dans `~/.local/share/loremind`.
 4. Génère un `.env` avec des mots de passe aléatoires.
 5. Lance la stack et ouvre `http://localhost:8081`.
 

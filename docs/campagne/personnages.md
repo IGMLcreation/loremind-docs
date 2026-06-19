@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Personnages joueurs et non-joueurs
 
-LoreMind sépare les **PJ** (Player Characters) des **PNJ** (Non-Player Characters)
+DM Loremind sépare les **PJ** (Player Characters) des **PNJ** (Non-Player Characters)
 en deux entités distinctes — leurs invariants métier diffèrent (un PNJ peut
 avoir un statut "vivant/mort/disparu", une faction d'appartenance, une
 visibilité côté joueurs… ce qui n'a pas de sens pour un PJ).
