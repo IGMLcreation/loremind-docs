@@ -355,7 +355,7 @@
     "description": "Feature card title"
   },
   "homepage.feature.ai.description": {
-    "message": "Run Ollama locally for full privacy, or plug in a remote AI (currently 1min.ai supported).",
+    "message": "Run Ollama locally for total privacy, or plug in a remote AI (1min.ai, Mistral, Google AI Studio or OpenRouter).",
     "description": "Feature card description"
   },
   "homepage.feature.multisystem.title": {
@@ -365,5 +365,229 @@
   "homepage.feature.multisystem.description": {
     "message": "Manage several campaigns each with their own rules, character sheets, lore and contextual AI memory.",
     "description": "Feature card description"
+  },
+  "home.hero.tagline": {
+    "message": "The Game Master's digital codex",
+    "description": "Hero subtitle"
+  },
+  "home.hero.pitch": {
+    "message": "Campaigns, lore, character sheets and rules brought together in a single workshop running locally on your PC — with a local or cloud AI that knows your world.",
+    "description": "Hero one-liner"
+  },
+  "home.hero.cta.download": {
+    "message": "Download",
+    "description": "Download CTA"
+  },
+  "home.hero.cta.demo": {
+    "message": "Watch the demo",
+    "description": "Demo CTA"
+  },
+  "home.hero.cta.github": {
+    "message": "Source code",
+    "description": "GitHub CTA"
+  },
+  "home.hero.trust.selfhosted": {
+    "message": "100% self-hosted",
+    "description": "Hero trust badge"
+  },
+  "home.hero.trust.oss": {
+    "message": "Open source (AGPL-3.0)",
+    "description": "Hero trust badge"
+  },
+  "home.hero.trust.ai": {
+    "message": "Local or cloud AI",
+    "description": "Hero trust badge"
+  },
+  "home.cap.lore.t": {
+    "message": "Lore, your knowledge base",
+    "description": "Capability title"
+  },
+  "home.cap.lore.d": {
+    "message": "Pages, folders and templates to build your world. All linked in a navigable graph.",
+    "description": "Capability description"
+  },
+  "home.cap.graph.t": {
+    "message": "The knowledge graph",
+    "description": "Capability title"
+  },
+  "home.cap.graph.d": {
+    "message": "Your characters and lore interconnect based on the pages you've linked together.",
+    "description": "Capability description"
+  },
+  "home.cap.rules.t": {
+    "message": "Import rules or a campaign from PDF",
+    "description": "Capability title"
+  },
+  "home.cap.rules.d": {
+    "message": "With AI, digest a rulebook in minutes to build your game system. You can also import a campaign to create it in a fraction of the time.",
+    "description": "Capability description"
+  },
+  "home.cap.chat.t": {
+    "message": "Chat grounded in your sources",
+    "description": "Capability title"
+  },
+  "home.cap.chat.d": {
+    "message": "Ask your questions; answers cite your documents and take the context of your lore and campaign into account.",
+    "description": "Capability description"
+  },
+  "home.cap.npc.t": {
+    "message": "Sheets & NPCs",
+    "description": "Capability title"
+  },
+  "home.cap.npc.d": {
+    "message": "Characters, enemies, items, random tables — each system with its own rules.",
+    "description": "Capability description"
+  },
+  "home.cap.campaign.t": {
+    "message": "Campaigns & sessions",
+    "description": "Capability title"
+  },
+  "home.cap.campaign.d": {
+    "message": "Arcs, chapters, scenes and tracked sessions, with an AI memory unique to each table.",
+    "description": "Capability description"
+  },
+  "home.grimoire.kicker": {
+    "message": "What is DM Loremind?",
+    "description": "Section kicker"
+  },
+  "home.grimoire.title": {
+    "message": "A complete workshop to run your games",
+    "description": "Section title"
+  },
+  "home.shot.dash.t": {
+    "message": "Your table at a glance",
+    "description": "Showcase title"
+  },
+  "home.shot.dash.d": {
+    "message": "A dashboard bringing together campaigns, lore and shortcuts — built to prep fast and improvise with confidence.",
+    "description": "Showcase description"
+  },
+  "home.shot.lore.t": {
+    "message": "A world that links itself together",
+    "description": "Showcase title"
+  },
+  "home.shot.lore.d": {
+    "message": "Organize lore into folders and linked pages; the AI leans on it to answer in your world's own tone.",
+    "description": "Showcase description"
+  },
+  "home.final.title": {
+    "message": "Open the codex",
+    "description": "Final CTA title"
+  },
+  "home.final.text": {
+    "message": "Installable in one double-click (desktop) or via Docker (homelab). Free and open source — support development on Patreon for betas and behind-the-scenes.",
+    "description": "Final CTA text"
+  },
+  "home.final.cta.install": {
+    "message": "Install now",
+    "description": "Final CTA button"
+  },
+  "home.final.cta.patreon": {
+    "message": "Support on Patreon",
+    "description": "Final CTA button"
+  },
+  "home.meta.description": {
+    "message": "DM Loremind: the self-hosted workshop for Game Masters — lore, campaigns, sheets and AI grounded in your own rules.",
+    "description": "Homepage <meta> description for SEO"
+  },
+  "download.meta.title": {
+    "message": "Download",
+    "description": "Download page tab title"
+  },
+  "download.meta.desc": {
+    "message": "Download the latest version of DM Loremind for Windows and Linux.",
+    "description": "Download page meta description"
+  },
+  "download.title": {
+    "message": "Download DM Loremind",
+    "description": "Download page title"
+  },
+  "download.subtitle": {
+    "message": "Free and open source. Pick your platform.",
+    "description": "Download page subtitle"
+  },
+  "download.latest": {
+    "message": "Latest version",
+    "description": "Latest release badge"
+  },
+  "download.win.name": {
+    "message": "Windows",
+    "description": "Platform name"
+  },
+  "download.win.desc": {
+    "message": ".msi installer — double-click, nothing else to install.",
+    "description": "Platform description"
+  },
+  "download.linux.name": {
+    "message": "Linux",
+    "description": "Platform name"
+  },
+  "download.linux.desc": {
+    "message": "Portable AppImage — any distro: chmod +x then double-click.",
+    "description": "Platform description"
+  },
+  "download.btn": {
+    "message": "Download",
+    "description": "Download button"
+  },
+  "download.loading": {
+    "message": "Looking up the latest version…",
+    "description": "Loading state"
+  },
+  "download.fallback": {
+    "message": "See releases on GitHub",
+    "description": "Fallback link when API fails"
+  },
+  "download.help": {
+    "message": "Need help installing? See the",
+    "description": "Help note prefix"
+  },
+  "download.help.link": {
+    "message": "installation guide",
+    "description": "Help note link text"
+  },
+  "home.showcase.kicker": {
+    "message": "Preview",
+    "description": "Showcase section kicker"
+  },
+  "home.showcase.title": {
+    "message": "The workshop in pictures",
+    "description": "Showcase section title"
+  },
+  "home.showcase.pending": {
+    "message": "Preview coming soon",
+    "description": "Showcase placeholder"
+  },
+  "home.shot.npc.t": {
+    "message": "NPCs ready to take the stage",
+    "description": "Showcase title"
+  },
+  "home.shot.npc.d": {
+    "message": "Characters, enemies and items structured by system — hand-crafted or AI-generated, always at hand mid-session.",
+    "description": "Showcase description"
+  },
+  "home.shot.import.t": {
+    "message": "A rulebook digested by AI",
+    "description": "Showcase title"
+  },
+  "home.shot.import.d": {
+    "message": "Import a rules or campaign PDF: the AI extracts its structure in minutes to build your game system.",
+    "description": "Showcase description"
+  },
+  "home.shot.sessions.t": {
+    "message": "Run your games, keep the thread",
+    "description": "Showcase title"
+  },
+  "home.shot.sessions.d": {
+    "message": "Arcs, chapters, scenes and tracked sessions: prep, play, and find every detail from one game to the next.",
+    "description": "Showcase description"
+  },
+  "home.shot.chat.t": {
+    "message": "An AI that masters your world",
+    "description": "Showcase title"
+  },
+  "home.shot.chat.d": {
+    "message": "Chat with an assistant grounded in YOUR sources — rules, lore, campaign. It draws on your documents and stays in your world's tone.",
+    "description": "Showcase description"
   }
 }

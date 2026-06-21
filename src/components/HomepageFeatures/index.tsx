@@ -2,7 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';
-import {ShieldCheck, Sparkles, Dices, type LucideIcon} from 'lucide-react';
+import {ShieldCheck, Sparkles, Cog, type LucideIcon} from 'lucide-react';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Icon: Sparkles,
     description: (
       <Translate id="homepage.feature.ai.description" description="Feature card description">
-        Faites tourner Ollama en local pour une confidentialité totale, ou branchez une IA distante (actuellement 1min.ai supporté).
+        Faites tourner Ollama en local pour une confidentialité totale, ou branchez une IA distante (1min.ai ; Mistral ; Google AI studio ou openRouter).
       </Translate>
     ),
   },
@@ -44,7 +44,7 @@ const FeatureList: FeatureItem[] = [
         Multi-systèmes JDR
       </Translate>
     ),
-    Icon: Dices,
+    Icon: Cog,
     description: (
       <Translate id="homepage.feature.multisystem.description" description="Feature card description">
         Gérez plusieurs campagnes avec leurs propres règles, fiches de personnages, lore et mémoire IA contextuelle.

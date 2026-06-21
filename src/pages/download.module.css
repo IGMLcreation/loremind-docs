@@ -1,0 +1,107 @@
+/* Page /download — cartes Windows (.msi) / Linux (.AppImage), version GitHub live. */
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 4.5rem 1rem 5.5rem;
+  text-align: center;
+}
+.title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  margin-bottom: 1.4rem;
+  font-size: 1.1rem;
+  color: var(--ifm-color-content-secondary);
+}
+.versionBadge {
+  display: inline-block;
+  margin-bottom: 2.6rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 999px;
+}
+.versionBadge:hover {
+  text-decoration: none;
+  border-color: rgba(108, 99, 255, 0.6);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.75rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid rgba(108, 99, 255, 0.15);
+  border-radius: 16px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  border-color: rgba(108, 99, 255, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px -16px rgba(108, 99, 255, 0.3);
+}
+.glyph {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.cardName {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.cardDesc {
+  flex: 1;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--ifm-color-content-secondary);
+}
+.dlBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+  background: #6c63ff;
+  border: none;
+  box-shadow: 0 10px 26px -10px rgba(108, 99, 255, 0.7);
+  transition: background 0.2s, transform 0.15s;
+}
+.dlBtn:hover {
+  background: #5b52e0;
+  color: #fff;
+  transform: translateY(-1px);
+}
+.size {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.dlBtnGhost {
+  color: var(--ifm-color-content);
+  background: transparent;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+.dlBtnGhost:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.note {
+  margin-top: 2.6rem;
+  font-size: 0.95rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .cards { grid-template-columns: 1fr; }
+}

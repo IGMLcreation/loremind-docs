@@ -1,22 +1,367 @@
-/* Hero LoreMind */
+/* =========================================================================
+ * Landing « Codex Numérique » — hero arcane (anneau runique + graphe de lore),
+ * grille de capacités, showcase, CTA final. Cohérent palette violette/sombre.
+ * ========================================================================= */
+
+/* ---------- Hero ---------- */
 .heroBanner {
-  padding: 6rem 0 5rem;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 7rem 0 6rem;
+  text-align: center;
+}
+.heroInner {
+  position: relative;
+  z-index: 2;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 3rem 1.5rem;
-  }
+/* Fond : graphe de connaissances animé (écho au graphe de lore). */
+.constellation {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+  pointer-events: none;
+}
+.edges line {
+  stroke: rgba(165, 180, 252, 0.22);
+  stroke-width: 0.12;
+}
+.nodes circle {
+  fill: #c7c2ff;
+  animation: twinkle 3.6s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; }
+  50%      { opacity: 1; }
 }
 
+/* ---------- Sceau : anneau runique + logo ---------- */
+.sigil {
+  position: relative;
+  width: 172px;
+  height: 172px;
+  margin: 0 auto 1.75rem;
+}
+.runeRing {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  animation: spin 64s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(108, 99, 255, 0.35));
+}
+.ringOuter,
+.ringInner {
+  fill: none;
+}
+.ringOuter {
+  stroke: rgba(165, 180, 252, 0.4);
+  stroke-width: 1;
+  stroke-dasharray: 2 7;
+}
+.ringInner {
+  stroke: rgba(108, 99, 255, 0.55);
+  stroke-width: 1;
+  stroke-dasharray: 1 6;
+}
+.runeText {
+  fill: rgba(199, 194, 255, 0.85);
+  font-size: 12.5px;
+  letter-spacing: 2.5px;
+}
+.sigilLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 96px;
+  height: 96px;
+  border-radius: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 26px rgba(108, 99, 255, 0.6));
+  animation: float 7s ease-in-out infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes float {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50%      { transform: translate(-50%, calc(-50% - 7px)); }
+}
+
+/* ---------- Hero : textes ---------- */
+.heroTitle {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(180deg, #ffffff 0%, #c0cbff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heroSubtitle {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.heroPitch {
+  max-width: 640px;
+  margin: 1.2rem auto 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* ---------- Boutons ---------- */
 .buttons {
+  display: flex;
+  gap: 0.85rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.btnPrimary,
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background 0.2s, transform 0.15s, border-color 0.2s, box-shadow 0.2s;
+}
+.btnPrimary {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  box-shadow: 0 10px 26px -10px rgba(108, 99, 255, 0.75);
+}
+.btnPrimary:hover {
+  background: #5b52e0;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.btnGhost {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border: 1px solid rgba(199, 194, 255, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.btnGhost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(199, 194, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ---------- Trustline ---------- */
+.trustline {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.9rem 0 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: rgba(199, 194, 255, 0.85);
+}
+.trustline span { white-space: nowrap; }
+
+/* ---------- Section : titres ---------- */
+.sectionHead {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+.kicker {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 999px;
+}
+.sectionTitle {
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 0;
+}
+
+/* ---------- Grille « le grimoire » ---------- */
+.grimoire {
+  padding: 5rem 0 1rem;
+}
+.spellCard {
+  height: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1.8rem 1.5rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid rgba(108, 99, 255, 0.14);
+  border-radius: 14px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.spellCard:hover {
+  border-color: rgba(108, 99, 255, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px -16px rgba(108, 99, 255, 0.35);
+}
+.spellIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.1rem;
+  color: #a5b4fc;
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  border-radius: 13px;
+}
+.spellTitle {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.spellDesc {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* ---------- Showcase ---------- */
+.showcase {
+  padding: 5.5rem 0 6rem;
+  border-top: 1px solid rgba(108, 99, 255, 0.1);
+}
+.shotList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+/* Chaque ligne = un panneau contenu (fond + bordure) pour bien séparer les démos. */
+.shotRow {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2.75rem 3rem;
+  background: rgba(124, 116, 255, 0.03);
+  border: 1px solid rgba(108, 99, 255, 0.1);
+  border-radius: 20px;
+}
+.shotRowAlt {
+  grid-template-columns: 1.15fr 1fr;
+}
+.shotRowAlt .shotText { order: 2; }
+.shotRowAlt .shotFrame { order: 1; }
+.shotTitle {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin-bottom: 0.8rem;
+}
+.shotDesc {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ifm-color-content-secondary);
+}
+.shotFrame {
+  position: relative;
+  overflow: hidden;
+  background: #12121f;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.7);
+}
+.shotDots {
+  display: flex;
+  gap: 6px;
+  padding: 10px 14px;
+  background: rgba(108, 99, 255, 0.07);
+  border-bottom: 1px solid rgba(108, 99, 255, 0.12);
+}
+.shotDots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(199, 194, 255, 0.4);
+}
+.shotFrame img,
+.shotFrame video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Placeholder « Aperçu à venir » tant qu'aucun média n'est fourni. */
+.shotPlaceholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+  min-height: 230px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(108, 99, 255, 0.05) 0 14px,
+    transparent 14px 28px
+  );
+}
+
+/* ---------- CTA final ---------- */
+.finalCta {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4f46c8 100%);
+}
+[data-theme='dark'] .finalCta {
+  background: linear-gradient(135deg, #0a0a14 0%, #1e1b4b 55%, #4f46c8 130%);
+}
+.finalCta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(108, 99, 255, 0.3), transparent 60%);
+  pointer-events: none;
+}
+.finalInner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.finalTitle {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+.finalText {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 996px) {
+  .heroBanner { padding: 4rem 1rem 3rem; }
+  .shotRow,
+  .shotRowAlt { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.75rem 1.5rem; }
+  .shotRowAlt .shotText,
+  .shotRowAlt .shotFrame { order: 0; }
+}
+
+/* ---------- Accessibilité : respecte prefers-reduced-motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .runeRing,
+  .sigilLogo,
+  .nodes circle {
+    animation: none !important;
+  }
 }

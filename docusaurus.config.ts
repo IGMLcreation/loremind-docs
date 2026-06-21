@@ -84,7 +84,7 @@ const config: Config = {
       title: 'DM Loremind',
       logo: {
         alt: 'DM Loremind Logo',
-        src: 'img/Logo.png',
+        src: 'img/app-logo.png',
       },
       items: [
         {
