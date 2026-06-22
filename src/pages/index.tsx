@@ -16,6 +16,8 @@ import {
   Download,
   PlayCircle,
   Heart,
+  BookOpen,
+  ChevronDown,
   type LucideIcon,
 } from 'lucide-react';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -25,6 +27,7 @@ import styles from './index.module.css';
 // Liens canoniques (cf. docusaurus.config.ts).
 const LINKS = {
   download: '/download',
+  docs: '/docs/intro',
   demo: 'https://loremind-demo.igmlcreation.fr',
   github: 'https://github.com/IGMLcreation/LoreMind',
   patreon: 'https://www.patreon.com/c/IGMLCreation',
@@ -104,6 +107,10 @@ function HomepageHeader(): ReactNode {
             <Download size={18} aria-hidden />
             <Translate id="home.hero.cta.download" description="Download CTA">Télécharger</Translate>
           </Link>
+          <Link className={clsx('button button--lg', styles.btnGhost)} to={LINKS.docs}>
+            <BookOpen size={18} aria-hidden />
+            <Translate id="home.hero.cta.docs" description="Docs CTA">Documentation</Translate>
+          </Link>
           <Link className={clsx('button button--lg', styles.btnGhost)} href={LINKS.demo}>
             <PlayCircle size={18} aria-hidden />
             <Translate id="home.hero.cta.demo" description="Demo CTA">Voir la démo</Translate>
@@ -117,6 +124,14 @@ function HomepageHeader(): ReactNode {
           <span>✦ <Translate id="home.hero.trust.oss">Open source (AGPL-3.0)</Translate></span>
           <span>✦ <Translate id="home.hero.trust.ai">IA locale ou cloud</Translate></span>
         </p>
+        <button
+          type="button"
+          className={styles.scrollCue}
+          aria-label={translate({id: 'home.hero.scroll.aria', message: 'Faire défiler vers le bas'})}
+          onClick={() => window.scrollTo({top: window.innerHeight * 0.85, behavior: 'smooth'})}>
+          <span><Translate id="home.hero.scroll" description="Scroll cue label">Découvrir</Translate></span>
+          <ChevronDown size={22} aria-hidden />
+        </button>
       </div>
     </header>
   );
@@ -194,31 +209,32 @@ const SHOWCASE: Shot[] = [
   {
     src: '/img/screenshots/dashboard.png',
     video: '/video/dashboard.mp4',
-    title: <Translate id="home.shot.dash.t">Votre table, d'un coup d'œil</Translate>,
+    title: <Translate id="home.shot.dash.t">Votre univers, d'un coup d'œil</Translate>,
     desc: <Translate id="home.shot.dash.d">Un tableau de bord qui rassemble campagnes, lore et raccourcis — pensé pour préparer vite et improviser sereinement.</Translate>,
   },
   {
     src: '/img/screenshots/lore/Lore_accueil.png',
-    title: <Translate id="home.shot.lore.t">Un univers qui se relie tout seul</Translate>,
-    desc: <Translate id="home.shot.lore.d">Organisez le lore en dossiers et pages reliées ; l'IA s'appuie dessus pour répondre dans le ton de votre monde.</Translate>,
+    video: '/video/Lore_demo.mp4',
+    title: <Translate id="home.shot.lore.t">Un espace pour les gouverner tous, et dans les ténèbres les lier</Translate>,
+    desc: <Translate id="home.shot.lore.d">A partir des templates, organisez votre lore en pages liées les unes aux autres. L'IA s'appuie dessus pour répondre à vos questions dans votre univers.</Translate>,
   },
   {
-    // ▸ À ACTIVER : dépose static/img/screenshots/npc.png puis ajoute  src: '/img/screenshots/npc.png'
+    video: '/video/PNJ_PJ_demo.mp4',
     title: <Translate id="home.shot.npc.t">Des PNJ prêts à entrer en scène</Translate>,
-    desc: <Translate id="home.shot.npc.d">Personnages, ennemis et objets structurés par système — créés à la main ou générés par l'IA, toujours à portée de main en pleine partie.</Translate>,
+    desc: <Translate id="home.shot.npc.d">Personnages, ennemis et objets structurés par système — créés de toute pièce par vous, toujours à portée de main en pleine partie.</Translate>,
   },
   {
-    // ▸ À ACTIVER (vidéo conseillée) : dépose static/video/import.mp4 puis ajoute  video: '/video/import.mp4'
+    video: '/video/Import.mp4',
     title: <Translate id="home.shot.import.t">Un livre de règles digéré par l'IA</Translate>,
     desc: <Translate id="home.shot.import.d">Importez un PDF de règles ou de campagne : l'IA en extrait la structure en quelques minutes pour bâtir votre système de jeu.</Translate>,
   },
   {
-    // ▸ À ACTIVER : dépose static/img/screenshots/sessions.png puis ajoute  src: '/img/screenshots/sessions.png'
+    video: '/video/campagne_loremind.mp4',
     title: <Translate id="home.shot.sessions.t">Menez vos parties, gardez le fil</Translate>,
     desc: <Translate id="home.shot.sessions.d">Arcs, chapitres, scènes et sessions suivies : préparez, jouez, et retrouvez chaque détail d'une partie à l'autre.</Translate>,
   },
   {
-    // ▸ À ACTIVER (vidéo conseillée, climax) : dépose static/video/chat.mp4 puis ajoute  video: '/video/chat.mp4'
+    video: '/video/chat.mp4',
     title: <Translate id="home.shot.chat.t">Une IA qui maîtrise votre univers</Translate>,
     desc: <Translate id="home.shot.chat.d">Discutez avec un assistant ancré sur VOS sources — règles, lore, campagne. Il s'appuie sur vos documents et reste dans le ton de votre monde.</Translate>,
   },

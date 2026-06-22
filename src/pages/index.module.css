@@ -4,15 +4,42 @@
  * ========================================================================= */
 
 /* ---------- Hero ---------- */
+/* Hauteur = contenu (pas plein écran) : sur PC la section suivante dépasse en bas,
+   ce qui invite à scroller, et le « Découvrir » reste toujours visible. */
 .heroBanner {
   position: relative;
   overflow: hidden;
-  padding: 7rem 0 6rem;
+  padding: 3.25rem 0 2.5rem;
   text-align: center;
 }
 .heroInner {
   position: relative;
   z-index: 2;
+}
+
+/* Indicateur « on peut scroller » — EN FLUX juste sous les badges (jamais coupé),
+   chevron qui rebondit, cliquable. Centré par le text-align du hero. */
+.scrollCue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 1.6rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(199, 194, 255, 0.8);
+  background: none;
+  border: none;
+  cursor: pointer;
+  animation: cueBounce 2.2s ease-in-out infinite;
+}
+.scrollCue:hover { color: #fff; }
+@keyframes cueBounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(7px); }
 }
 
 /* Fond : graphe de connaissances animé (écho au graphe de lore). */
@@ -350,7 +377,15 @@
 
 /* ---------- Responsive ---------- */
 @media screen and (max-width: 996px) {
-  .heroBanner { padding: 4rem 1rem 3rem; }
+  .heroBanner { padding: 2.25rem 1rem 2rem; }
+  /* Sceau + textes plus compacts sur mobile → le hero tient sur un écran et le
+     « Découvrir » reste atteignable. */
+  .sigil { width: 116px; height: 116px; margin-bottom: 1rem; }
+  .sigilLogo { width: 66px; height: 66px; }
+  .heroPitch { font-size: 0.98rem; margin-top: 0.9rem; }
+  .buttons { margin-top: 1.4rem; gap: 0.6rem; }
+  .trustline { margin-top: 1.3rem; }
+  .scrollCue { margin-top: 1.2rem; }
   .shotRow,
   .shotRowAlt { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.75rem 1.5rem; }
   .shotRowAlt .shotText,
@@ -361,7 +396,8 @@
 @media (prefers-reduced-motion: reduce) {
   .runeRing,
   .sigilLogo,
-  .nodes circle {
+  .nodes circle,
+  .scrollCue {
     animation: none !important;
   }
 }

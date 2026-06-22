@@ -455,7 +455,7 @@
     "description": "Section title"
   },
   "home.shot.dash.t": {
-    "message": "Your table at a glance",
+    "message": "Your world at a glance",
     "description": "Showcase title"
   },
   "home.shot.dash.d": {
@@ -463,11 +463,11 @@
     "description": "Showcase description"
   },
   "home.shot.lore.t": {
-    "message": "A world that links itself together",
+    "message": "One space to rule them all, and in the darkness bind them",
     "description": "Showcase title"
   },
   "home.shot.lore.d": {
-    "message": "Organize lore into folders and linked pages; the AI leans on it to answer in your world's own tone.",
+    "message": "Starting from templates, organize your lore into interlinked pages. The AI draws on them to answer your questions within your world.",
     "description": "Showcase description"
   },
   "home.final.title": {
@@ -563,7 +563,7 @@
     "description": "Showcase title"
   },
   "home.shot.npc.d": {
-    "message": "Characters, enemies and items structured by system — hand-crafted or AI-generated, always at hand mid-session.",
+    "message": "Characters, enemies and items structured by system — crafted entirely by you, always at hand mid-session.",
     "description": "Showcase description"
   },
   "home.shot.import.t": {
@@ -589,5 +589,17 @@
   "home.shot.chat.d": {
     "message": "Chat with an assistant grounded in YOUR sources — rules, lore, campaign. It draws on your documents and stays in your world's tone.",
     "description": "Showcase description"
+  },
+  "home.hero.cta.docs": {
+    "message": "Documentation",
+    "description": "Docs CTA"
+  },
+  "home.hero.scroll": {
+    "message": "Discover",
+    "description": "Scroll cue label"
+  },
+  "home.hero.scroll.aria": {
+    "message": "Scroll down",
+    "description": "Scroll cue aria-label"
   }
 }
