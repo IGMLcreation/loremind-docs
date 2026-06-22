@@ -17,7 +17,11 @@ type Release = {tag_name: string; html_url: string; assets: Asset[]};
 type Status = 'loading' | 'ok' | 'error';
 
 function findAsset(rel: Release | undefined, ext: string): Asset | undefined {
-  return rel?.assets.find((a) => a.name.toLowerCase().endsWith(ext));
+  // On exige "loremind" dans le nom : une release peut contenir d'autres .AppImage
+  // (ex. appimagetool-x86_64.AppImage, l'outil de packaging) qu'il ne faut PAS proposer.
+  return rel?.assets.find(
+    (a) => a.name.toLowerCase().endsWith(ext) && a.name.toLowerCase().includes('loremind'),
+  );
 }
 function mb(bytes?: number): string {
   return bytes ? `${Math.round(bytes / 1048576)} Mo` : '';
