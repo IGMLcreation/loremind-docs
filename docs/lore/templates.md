@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Templates et types de champs
@@ -22,10 +22,12 @@ Un nouvelle page avec un template de base va alors s'ouvrir au milieu de l'écra
 
 | Type | Usage | Rendu |
 |------|-------|-------|
-| **TEXT** | Texte libre, paragraphes (Histoire, Description) | Textarea |
-| **IMAGE** | Galerie d'images (illustrations, cartes) | Galerie configurable |
+| **Texte** | Texte libre, paragraphes (Histoire, Description) | Zone de texte |
+| **Image** | Galerie d'images (illustrations, cartes) | Galerie configurable |
+| **Liste clé/valeur** | Paires libellé → valeur, libellés figés au template (ex. Population, Superficie, Climat) | Liste de champs label/valeur |
+| **Tableau** | Données tabulaires en lignes et colonnes (ex. ressources, statistiques) | Tableau éditable |
 
-Pour les champs IMAGE, plusieurs **layouts** sont disponibles :
+Pour les champs **Image**, plusieurs **layouts** sont disponibles :
 
 - **GALLERY** — grille de vignettes (par défaut)
 - **HERO** — première image en bandeau, suivantes en petit
@@ -33,9 +35,9 @@ Pour les champs IMAGE, plusieurs **layouts** sont disponibles :
 - **CAROUSEL** — défilement horizontal
 
 :::tip
-Pour changer le type de champs, cliquez sur le bouton "Texte" ou "Image" à coté de votre champs
-et ça va switcher sur un l'autre type disponible.
-Vous pouvez également changer l'ordre des champs en cliquant sur le bouton "↑" ou "↓" à coté de votre champs.
+Pour changer le type d'un champ, utilisez le **menu déroulant** à côté du champ
+(Texte, Image, Liste clé/valeur, Tableau).
+Vous pouvez aussi réordonner les champs avec les boutons **↑** / **↓** à côté de chacun.
 :::
 
 ## Modification d'un template

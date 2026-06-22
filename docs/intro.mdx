@@ -2,39 +2,29 @@
 sidebar_position: 1
 ---
 
-import {ShieldCheck, Sparkles, Dices, Container, RefreshCw} from 'lucide-react';
+import {ShieldCheck, Sparkles, Dices, Download, RefreshCw} from 'lucide-react';
 import IconFeature, {IconFeatureList} from '@site/src/components/IconFeature';
 
 # Bienvenue dans la documentation de DM Loremind
 
 **DM Loremind** est un assistant de jeu de rôle auto-hébergé qui combine gestion de campagnes, fiches de personnages, lore
-et IA locale pour vous aider à préparer vos parties.
+et IA (locale ou cloud) pour vous aider à préparer vos parties.
 
 ## Caractéristiques principales
 
 <IconFeatureList>
   <IconFeature Icon={Dices} title="Multi-systèmes">gérez plusieurs campagnes avec leurs propres règles JDR.</IconFeature>
-  <IconFeature Icon={Sparkles} title="IA locale ou distante">Ollama embarqué ou IA distante au choix (actuellement 1min.ai supporté).</IconFeature>
+  <IconFeature Icon={Sparkles} title="IA locale ou cloud">Ollama en local pour une confidentialité totale, ou une IA cloud au choix : 1min.ai, Mistral, Google AI Studio, OpenRouter.</IconFeature>
   <IconFeature Icon={ShieldCheck} title="100 % auto-hébergé">vos données restent sur votre machine.</IconFeature>
-  <IconFeature Icon={Container} title="Installation Docker en une commande">Windows, Linux, macOS.</IconFeature>
-  <IconFeature Icon={RefreshCw} title="Mises à jour automatiques">optionnelles via Watchtower.</IconFeature>
+  <IconFeature Icon={Download} title="Installation double-clic ou Docker">installeur Windows (.msi) ou AppImage Linux en double-clic, ou Docker pour un homelab.</IconFeature>
+  <IconFeature Icon={RefreshCw} title="Mises à jour">notification intégrée en mode bureau (releases GitHub), ou automatiques via Watchtower en Docker.</IconFeature>
 </IconFeatureList>
 
 ## Par où commencer ?
 
-- **Vous voulez installer DM Loremind ?** 
-- → [Guide d'installation pour Windows](/docs/installation/windows)
-- → [Guide d'installation pour Linux](/docs/installation/linux)
-
+- **Le plus simple — installeur double-clic :** → [**Télécharger DM Loremind**](/download) (Windows `.msi` / Linux `.AppImage`, rien d'autre à installer).
+- **Auto-hébergement / homelab (Docker) :**
+  - → [Guide d'installation Docker — Windows](/docs/installation/docker#windows)
+  - → [Guide d'installation Docker — Linux](/docs/installation/docker#linux)
 - **Vous voulez voir avant d'installer ?** → [Démo en ligne](https://loremind-demo.igmlcreation.fr)
 - **Vous cherchez le code source ?** → [GitHub](https://github.com/IGMLcreation/LoreMind)
-
-## Architecture
-
-DM Loremind est composé de trois services qui communiquent via Docker Compose :
-
-- **Core** — backend Java/Spring Boot (API métier, persistance Postgres + MinIO).
-- **Brain** — service Python/FastAPI dédié à l'IA (orchestration LLM, RAG).
-- **Web** — interface utilisateur Angular.
-
-Optionnellement, un quatrième service **Ollama** peut être lancé pour servir les modèles LLM en local.

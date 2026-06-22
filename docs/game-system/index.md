@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# Game System
+# Systèmes de JDR
 
-Un **Game System** représente un système de JDR (D&D 5e, Nimble, Cthulhu,
+Un **Système de JDR** regroupe les règles d'un jeu (D&D 5e, Nimble, Cthulhu,
 votre homebrew…). Il porte deux choses :
 
 1. **Les règles** — markdown structuré par titres H2, sélectivement injecté dans les prompts IA
 2. **Les templates de fiches PJ et PNJ** — structure des champs (texte, nombre, images, listes clé/valeur)
 
-Une campagne référence un Game System ; toutes les fiches PJ/PNJ de cette
+Une campagne référence un Système de JDR ; toutes les fiches PJ/PNJ de cette
 campagne suivent les templates du système.
 
 ## Pourquoi séparer les systèmes ?

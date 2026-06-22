@@ -25,7 +25,7 @@ au lancement de l'application ce qui est normal (et donc juste le bouton "nouvea
 (sous-dossiers) ou des pages. Ils servent à l'organisation de votre monde.
 - **Page** — une fiche typée par un **Template**. Une page "Cité de Vaeril" peut avoir des champs Histoire, Population, Factions, etc.
 Le template sera un template "cité" pour une telle page par exemple.
-- **Template** — la structure d'une page. Vous définissez les champs (texte, image, nombre, liste clé/valeur). Tous les templates appartiennent à un Lore.
+- **Template** — la structure d'une page. Vous définissez les champs (texte, image, liste clé/valeur, tableau). Tous les templates appartiennent à un Lore.
 
 ## Pourquoi des templates ?
 

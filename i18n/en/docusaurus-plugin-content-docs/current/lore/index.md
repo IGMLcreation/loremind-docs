@@ -25,7 +25,7 @@ when you launch the application, which is normal (and therefore only the "new lo
 (subfolders) or pages. They are used to organize your world.
 - **Page** — a sheet typed by a **Template**. A "City of Vaeril" page can have History, Population, Factions fields, etc.
 The template would be a "city" template for such a page, for example.
-- **Template** — the structure of a page. You define the fields (text, image, number, key/value list). All templates belong to a Lore.
+- **Template** — the structure of a page. You define the fields (text, image, key/value list, table). All templates belong to a Lore.
 
 ## Why templates?
 

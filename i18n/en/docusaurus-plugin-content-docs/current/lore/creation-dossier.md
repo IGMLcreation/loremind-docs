@@ -25,9 +25,9 @@ the parent will then be pre-selected in the form.
 
 A **Create a new folder** page opens with the following fields:
 
-- **Folder name** *(required)* — for example `Personnages`, `Cités`,
+- **Folder name** *(required)* — for example `Characters`, `Cities`,
   `Factions`. Prefer a **category** name rather than a concrete entity:
-  a `Cités` folder will contain several city pages, not the other way around.
+  a `Cities` folder will contain several city pages, not the other way around.
 - **Parent folder** *(optional)* — leave empty to create a folder at the
   root of the Lore, or choose an existing folder to create a subfolder.
 - **Icon** — choose from the grid of icons provided. It's a

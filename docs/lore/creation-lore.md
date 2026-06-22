@@ -23,7 +23,7 @@ et les pages qu'il contient :
 
 ![accueil lore](/img/screenshots/lore/creation-lore/accueil_lore.png)
 
-Vous pouvez alors créer votre premier ou votre premier template.
+Vous pouvez alors créer votre première page ou votre premier template.
 
 :::warning
 Avant de créer une page, il faut créer soit le dossier parent, soit le template.

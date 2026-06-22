@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Templates and field types
@@ -22,10 +22,12 @@ A new page with a basic template will then open in the middle of the screen:
 
 | Type | Usage | Rendering |
 |------|-------|-------|
-| **TEXT** | Free text, paragraphs (History, Description) | Textarea |
-| **IMAGE** | Image gallery (illustrations, maps) | Configurable gallery |
+| **Text** | Free text, paragraphs (History, Description) | Textarea |
+| **Image** | Image gallery (illustrations, maps) | Configurable gallery |
+| **Key/value list** | Label → value pairs, labels fixed at the template level (e.g. Population, Area, Climate) | List of label/value fields |
+| **Table** | Tabular data in rows and columns (e.g. resources, statistics) | Editable table |
 
-For IMAGE fields, several **layouts** are available:
+For **Image** fields, several **layouts** are available:
 
 - **GALLERY** — grid of thumbnails (default)
 - **HERO** — first image as a banner, the following ones small
@@ -33,9 +35,9 @@ For IMAGE fields, several **layouts** are available:
 - **CAROUSEL** — horizontal scrolling
 
 :::tip
-To change the field type, click the "Text" or "Image" button next to your field
-and it will switch to the other available type.
-You can also change the order of fields by clicking the "↑" or "↓" button next to your field.
+To change a field's type, use the **dropdown menu** next to the field
+(Text, Image, Key/value list, Table).
+You can also reorder the fields with the **↑** / **↓** buttons next to each one.
 :::
 
 ## Editing a template

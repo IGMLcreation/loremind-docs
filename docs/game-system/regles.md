@@ -32,17 +32,31 @@ Côté UI, l'éditeur propose des sections par défaut :
 Vous êtes libre d'en ajouter d'autres. Mais **gardez à l'esprit** :
 
 > Le module **Lore** sert à décrire l'univers (factions, lieux, légendes).
-> Le **Game System** ne doit décrire que les **mécaniques de jeu**, pas le lore.
+> Le **Système de JDR** ne doit décrire que les **mécaniques de jeu**, pas le lore.
 > Cette séparation est volontaire — l'IA injecte les règles dans des contextes
 > différents du lore, mélanger les deux dégrade la pertinence des prompts.
 
 ## Sélection contextuelle pour l'IA
 
-Quand vous demandez à l'IA de générer une scène impliquant du combat, le
-back-end **n'injecte pas tout le markdown** — il sélectionne automatiquement
-les sections pertinentes (ex: `## Combat` + `## Monstres`) selon l'intention
-détectée. Ça réduit drastiquement la taille du prompt et améliore la qualité.
+Quand vous demandez à l'IA de générer du contenu, l'application **n'injecte pas
+tout le markdown** : elle ne retient que les sections pertinentes pour réduire la
+taille du prompt et améliorer la qualité.
 
-Le mapping intention → sections est codé en dur côté backend
-(`GameSystemContextSelector`). Les noms de sections H2 doivent donc rester
-**cohérents avec les noms suggérés** pour bénéficier de cette sélection.
+Il n'y a **ni détection sémantique d'intention, ni embeddings** ici. Le besoin est
+simplement déduit du **type d'entité** que vous générez :
+
+- **Scène** → injecte les sections **## Combat** + **## Monstres**
+- **Chapitre** → injecte **## Combat** + **## Classes**
+- **Arc** (et cas générique) → injecte **toutes** les sections
+
+La correspondance se fait par **sous-chaîne sur le titre H2** (insensible à la
+casse), avec des alias FR + EN limités à **combat / classe(s) / monstre(s)**.
+
+:::warning
+Conséquence : des sections comme **Stats**, **Magie** ou **Progression** ne sont
+jamais sélectionnées seules. Elles ne remontent que via les **arcs**, qui
+injectent toutes les sections.
+:::
+
+C'est pourquoi il faut **nommer vos sections H2 clairement** (Combat, Classes,
+Monstres) pour bénéficier de cette sélection.

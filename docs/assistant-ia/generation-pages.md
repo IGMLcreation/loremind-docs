@@ -25,8 +25,8 @@ Génération ciblée :
 
 ## Champs concernés
 
-- **TEXT** uniquement — les champs IMAGE / NUMBER / KEY_VALUE_LIST ne sont pas générés par l'IA
-- L'IA peut s'appuyer sur la valeur des autres champs (texte ou numérique) comme contexte
+- **Texte** uniquement — les champs Image / Liste clé-valeur / Tableau ne sont pas générés par l'IA
+- L'IA peut s'appuyer sur la valeur des autres champs **texte** comme contexte
 
 ## Astuces
 

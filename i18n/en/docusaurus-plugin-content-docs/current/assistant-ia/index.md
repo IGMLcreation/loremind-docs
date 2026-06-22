@@ -20,13 +20,16 @@ The AI does not replace the GM — it assists them. Typical use cases:
 
 ## Supported providers
 
-Two LLM providers can be configured in the **Settings**:
+Five LLM providers can be configured in the **Settings → AI** — one local and four cloud:
 
-- **Ollama** — local execution (100% private, your data never leaves your machine). Requires a machine with a graphics card.
-- **1min.ai** — aggregator cloud service (Anthropic, OpenAI, Google, Mistral…). A paid 1min.ai account is required.
+- **Ollama** *(local)* — 100% private execution, your data never leaves your machine. Ideal with a GPU (works on CPU, but slowly).
+- **1min.ai** *(cloud)* — aggregator (Anthropic, OpenAI, Google, Mistral…) through a single paid subscription.
+- **Mistral** *(cloud)* — Mistral AI's API (European models, good in French).
+- **Gemini / Google AI Studio** *(cloud)* — Google's Gemini models; **free API key** on aistudio.google.com.
+- **OpenRouter** *(cloud)* — multi-provider router, with **free models** available.
 
 The choice is made globally (one active provider at a time), with a model
-selected by default. You can switch at any time.
+selected by default. You can switch at any time. Details: [Provider configuration](/docs/assistant-ia/fournisseurs).
 
 ## Context injected automatically
 
@@ -42,6 +45,6 @@ You **don't need** to manually re-paste this context — it is computed for you.
 
 ## Detailed pages
 
-- [Provider configuration](/docs/assistant-ia/fournisseurs) — Ollama and 1min.ai
+- [Provider configuration](/docs/assistant-ia/fournisseurs) — Ollama, 1min.ai, Mistral, Gemini, OpenRouter
 - [Lore page generation](/docs/assistant-ia/generation-pages) — fill / regenerate template fields
 - [Prompting best practices](/docs/assistant-ia/bonnes-pratiques) — for better results

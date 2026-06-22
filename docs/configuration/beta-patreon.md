@@ -10,10 +10,15 @@ version stable.
 
 ## Comment ça marche
 
-1. Vous souscrivez au tier Patreon donnant accès à la bêta
-2. Vous obtenez un **token de licence** (clé JWT) sur votre espace Patreon
-3. Dans DM Loremind, **Settings → Licence**, vous collez le token
-4. L'application bascule automatiquement sur le canal `:beta` au prochain check de mise à jour
+1. Vous souscrivez au **tier Patreon** donnant accès à la bêta.
+2. Dans DM Loremind, ouvrez **Paramètres → section Mises à jour → canal bêta (Patreon)**.
+3. Cliquez sur **Connecter Patreon** : une page d'autorisation OAuth s'ouvre. Après autorisation, un **token de licence** (clé JWT) vous est retourné.
+4. **Collez le token** dans le champ prévu, puis **activez le canal bêta**.
+5. Lancez la bascule avec **Passer en bêta** : l'application récupère les images bêta privées et **recrée les conteneurs** sur ce canal.
+
+:::info[Le token vient du relais, pas de votre espace Patreon]
+Vous ne récupérez pas le JWT « à la main » sur le site Patreon : c'est le relais OAuth qui le génère et vous le renvoie après autorisation. Vous n'avez qu'à le coller dans le champ.
+:::
 
 ## Architecture (en bref)
 
@@ -23,13 +28,20 @@ version stable.
 
 ## Mise à jour automatique
 
-Si vous utilisez Watchtower (recommandé), il pull la dernière `:beta` à
-chaque check. Pas d'intervention manuelle.
+Une fois sur le canal bêta, si vous utilisez **Watchtower** (recommandé), il
+récupère la dernière image `:beta` à chaque check. La **bascule de canal**
+(stable ↔ bêta), elle, passe par la recréation des conteneurs déclenchée depuis
+**Paramètres → Mises à jour** — pas seulement par Watchtower.
 
 ## Revenir au canal stable
 
-Retirez le token dans Settings → Licence. Au prochain check, l'application
-re-vérifie le canal `:latest` et restaure les images publiques.
+Deux possibilités depuis **Paramètres → section Mises à jour** :
 
-> ⚠️ Les versions bêta peuvent contenir des bugs ou des breaking changes.
-> Sauvegardez avant de basculer si vous y tenez.
+- **Revenir au stable** — rebascule sur les images publiques `:latest` (recrée les conteneurs).
+- **Déconnecter Patreon** — retire le token de licence de l'application.
+
+:::warning
+Les versions bêta peuvent contenir des bugs ou des *breaking changes*.
+Sauvegardez vos données (voir [Sauvegardes et restauration](/docs/configuration/sauvegardes))
+avant de basculer.
+:::

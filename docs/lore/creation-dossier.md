@@ -63,7 +63,7 @@ Contrairement au bouton +Dossier, le bouton de gauche vous permet de créer un d
 dossier parent associé.
 :::
 
-3. Et enfin, vous pouvez vous rendre dans votre dossier créer, vous aurez alors une page ressemblant à ça :
+3. Et enfin, vous pouvez vous rendre dans le dossier créé : vous aurez alors une page ressemblant à ça :
 
 ![Vue dossier](/img/screenshots/lore/dossiers/vue_dossier.png)
 

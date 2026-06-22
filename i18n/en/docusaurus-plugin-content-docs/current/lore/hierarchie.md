@@ -31,10 +31,11 @@ Vermoria (Lore)
 
 ## Links between pages
 
-You can reference one page from another via the `app-lore-link-picker` picker.
-Links are stored by ID, so they are resilient to renames.
+You can reference one page from another via the **link selector**.
+Links are stored by identifier, so they are resilient to renames.
 
 ## Sidebar and search
 
 The Lore sidebar presents the collapsible tree. For large volumes,
-searching by name (coming soon) will be more efficient than manual navigation.
+the **global search** (shortcut `Ctrl + K`) is more efficient than manual
+navigation: it searches across lores, folders and pages.

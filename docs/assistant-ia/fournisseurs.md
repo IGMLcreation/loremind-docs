@@ -53,6 +53,34 @@ OpenAI GPT-4, Google Gemini, Mistral, etc. via un seul abonnement.
 2. Dans DM Loremind → **Settings → IA → 1min.ai**, coller la clé
 3. La liste des modèles s'auto-charge, regroupée par fournisseur
 
+## Mistral (cloud)
+
+L'API de [Mistral AI](https://mistral.ai) — modèles européens, particulièrement bons en français et pour produire du JSON fidèle.
+
+1. Créer un compte sur [console.mistral.ai](https://console.mistral.ai) et générer une clé API.
+2. Dans DM Loremind → **Settings → IA → Mistral**, coller la clé.
+3. Sélectionner le modèle (ex. `mistral-large-latest`).
+
+## Gemini / Google AI Studio (cloud)
+
+Les modèles **Gemini** de Google, via l'API de [Google AI Studio](https://aistudio.google.com).
+
+**Avantage** : une **clé API gratuite** (sans carte bancaire), un quota généreux et un très grand contexte — pratique pour les imports volumineux.
+
+1. Aller sur [aistudio.google.com](https://aistudio.google.com) → **Get API key**.
+2. Dans DM Loremind → **Settings → IA → Gemini**, coller la clé.
+3. Sélectionner le modèle (ex. `gemini-2.0-flash`).
+
+## OpenRouter (cloud)
+
+[OpenRouter](https://openrouter.ai) route vos requêtes vers des dizaines de modèles (Anthropic, OpenAI, Google, Meta…) via une seule clé.
+
+**Avantage** : des **modèles gratuits** disponibles. Pour rester gratuit, choisissez un modèle marqué « gratuit », ou le routeur `openrouter/free` qui en sélectionne un automatiquement. Pour les imports (gros documents), préférez un modèle gratuit à **grand contexte**.
+
+1. Créer un compte sur [openrouter.ai](https://openrouter.ai) et générer une clé API.
+2. Dans DM Loremind → **Settings → IA → OpenRouter**, coller la clé.
+3. Sélectionner le modèle.
+
 ## Quel modèle choisir ?
 
 Pour DM Loremind, en pratique :

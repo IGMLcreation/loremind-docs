@@ -31,10 +31,11 @@ Vermoria (Lore)
 
 ## Liens entre pages
 
-Vous pouvez référencer une page depuis une autre via le picker `app-lore-link-picker`.
-Les liens sont stockés par ID, donc résistants aux renommages.
+Vous pouvez référencer une page depuis une autre via le **sélecteur de liens**.
+Les liens sont stockés par identifiant, donc résistants aux renommages.
 
 ## Sidebar et recherche
 
 La sidebar du Lore présente l'arborescence repliable. Pour les gros volumes,
-la recherche par nom (à venir) sera plus efficace que la navigation manuelle.
+la **recherche globale** (raccourci `Ctrl + K`) est plus efficace que la navigation
+manuelle : elle cherche dans les lores, les dossiers et les pages.

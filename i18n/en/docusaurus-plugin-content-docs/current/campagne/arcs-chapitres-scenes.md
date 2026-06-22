@@ -11,6 +11,7 @@ Three levels for structuring your story, with increasing granularity.
 An arc is a large narrative arch. Available fields:
 
 - **Name** and **synopsis** — the arc's pitch
+- **Structure** — *Linear* (chapters in sequence) or *Hub* (chapters freely accessible from a central point)
 - **Themes** — recurring motifs (e.g. "betrayal", "descent into hell")
 - **Stakes** — what is at stake for the PCs
 - **GM notes** — secrets, twists, info not to reveal to the players
@@ -28,6 +29,7 @@ Specific fields:
 - **GM notes** — preparation, transitions
 - **Player objectives** — what the PCs must accomplish / discover
 - **Narrative stakes** — what may tip over in this chapter
+- **Prerequisites** — unlock conditions: an activated **flag**, a **completed chapter**, or a **number of sessions reached**. As long as they are not met, the chapter stays locked (see [Playthroughs & session tracking](/docs/campagne/parties)).
 
 ## Scene
 
@@ -39,8 +41,15 @@ to generate narrative content. Specific fields:
 - **Narration to players** — text to read out/improvise to set the scene
 - **Secret GM notes** — only displayed to you
 - **Choices and consequences** — possible alternatives
-- **Combat difficulty** and **enemies** — if applicable
-- **Branches** — narrative exits toward other scenes
+- **Combat difficulty** and **enemies** — free note, and/or enemies linked from the [bestiary](/docs/campagne/ennemis)
+- **Illustrations** and **maps** — galleries of mood images
+- **Branches** — narrative exits toward other scenes (see [Narrative branches](/docs/campagne/branches))
+
+:::info[Explorable location (dungeon mode)]
+A scene can contain **rooms**: as soon as it has at least one, it switches to a **dungeon** rendering — each room has its own enemies, loot, traps, floor, and branches between rooms.
+:::
+
+An **AI Assistant** (✨ button) is available on the scene to generate atmosphere, narration, or plot twists.
 
 ## Best practices
 

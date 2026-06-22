@@ -4,10 +4,11 @@ sidebar_position: 3
 
 # Player and Non-Player Characters
 
-DM Loremind separates **PCs** (Player Characters) from **NPCs** (Non-Player Characters)
-into two distinct entities — their business invariants differ (an NPC can
-have an "alive/dead/missing" status, a faction affiliation, a
-player-side visibility… none of which makes sense for a PC).
+DM Loremind separates **PCs** (Player Characters) from **NPCs** (Non-Player
+Characters) into two distinct entities. They share the **same structure**
+(driven by the Game System template); the difference: the **NPC** is filed into
+**folders** and is **linked to the Lore** (factions, locations…), which the PC
+is not.
 
 ## Universal Fields
 
@@ -21,7 +22,8 @@ Everything else is driven by the **Game System template** associated with the ca
 
 ## Template Fields
 
-For D&D 5e by default:
+The rest of the fields come from the **Game System template**. DM Loremind
+provides systems that are **pre-filled and editable**; for example, for D&D 5e:
 - Class, Race, Background, Alignment
 - Level, max HP, AC
 - **Ability Scores** (KEY_VALUE_LIST with STR/DEX/CON/INT/WIS/CHA labels)
@@ -53,9 +55,9 @@ Clicking a PC or NPC card from the campaign view opens the
 - Full-width banner at the top
 - Portrait + name + badges for isolated numeric stats (e.g. "Level 2")
 - Sections rendered in the **template's order**:
-  - **TEXT** — paragraphs with a golden drop cap on the first one
-  - **KEY_VALUE_LIST** — compact table or 2-column list depending on the count
-  - **IMAGE** — gallery according to the chosen layout
+  - **Text** — displayed as paragraphs
+  - **Key/value list** — compact table or 2-column list depending on the count
+  - **Image** — gallery according to the chosen layout
 - Toolbar buttons: back, AI Assistant, edit
 
 ## Dedicated AI Assistant

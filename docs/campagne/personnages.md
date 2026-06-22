@@ -4,10 +4,10 @@ sidebar_position: 3
 
 # Personnages joueurs et non-joueurs
 
-DM Loremind sépare les **PJ** (Player Characters) des **PNJ** (Non-Player Characters)
-en deux entités distinctes — leurs invariants métier diffèrent (un PNJ peut
-avoir un statut "vivant/mort/disparu", une faction d'appartenance, une
-visibilité côté joueurs… ce qui n'a pas de sens pour un PJ).
+DM Loremind sépare les **PJ** (personnages joueurs) des **PNJ** (personnages
+non-joueurs) en deux entités distinctes. Elles partagent la **même structure**
+(pilotée par le template du Système de JDR) ; la différence : le **PNJ** se range
+en **dossiers** et se **relie au Lore** (factions, lieux…), ce que le PJ ne fait pas.
 
 ## Champs universels
 
@@ -17,11 +17,12 @@ Quel que soit le système de jeu, chaque fiche porte trois champs hard-codés :
 - **Portrait** — image principale, ratio carré conseillé
 - **Bandeau** — image de header, ratio paysage (3:1)
 
-Tout le reste est piloté par le **template du Game System** associé à la campagne.
+Tout le reste est piloté par le **template du Système de JDR** associé à la campagne.
 
 ## Champs templates
 
-Pour D&D 5e par défaut :
+Le reste des champs vient du **template du Système de JDR**. DM Loremind fournit
+des systèmes **pré-remplis et modifiables** ; par exemple, pour D&D 5e :
 - Classe, Race, Historique, Alignement
 - Niveau, PV max, CA
 - **Caractéristiques** (KEY_VALUE_LIST avec labels FOR/DEX/CON/INT/SAG/CHA)
@@ -31,7 +32,7 @@ Pour D&D 5e par défaut :
 Pour Nimble : Classe, Blessures graves max, Capacités, Équipement, Histoire,
 Objectifs personnels, Galerie.
 
-Le MJ peut **éditer le template** depuis le Game System pour ajouter, retirer
+Le MJ peut **éditer le template** depuis le Système de JDR pour ajouter, retirer
 ou réorganiser les champs.
 
 ## Création / édition
@@ -53,9 +54,9 @@ Cliquer sur la carte d'un PJ ou PNJ depuis la vue campagne ouvre la
 - Bandeau pleine largeur en haut
 - Portrait + nom + badges des stats numériques isolées (ex: "Niveau 2")
 - Sections rendues dans l'**ordre du template** :
-  - **TEXT** — paragraphes avec drop cap dorée sur le 1er
-  - **KEY_VALUE_LIST** — tableau compact ou liste 2 colonnes selon le nombre
-  - **IMAGE** — galerie selon le layout choisi
+  - **Texte** — affiché en paragraphes
+  - **Liste clé/valeur** — tableau compact ou liste 2 colonnes selon le nombre
+  - **Image** — galerie selon le layout choisi
 - Boutons toolbar : retour, Assistant IA, éditer
 
 ## Assistant IA dédié

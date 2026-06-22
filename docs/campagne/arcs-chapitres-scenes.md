@@ -11,6 +11,7 @@ Trois niveaux pour structurer votre récit, avec une granularité croissante.
 Un arc est une grande arche narrative. Champs disponibles :
 
 - **Nom** et **synopsis** — le pitch de l'arc
+- **Structure** — *Linéaire* (chapitres en séquence) ou *Hub* (chapitres accessibles librement depuis un point central)
 - **Thèmes** — les motifs récurrents (ex: "trahison", "descente aux enfers")
 - **Enjeux** — ce qui est en jeu pour les PJ
 - **Notes MJ** — secrets, twists, infos à ne pas révéler aux joueurs
@@ -28,6 +29,7 @@ Champs spécifiques :
 - **Notes MJ** — préparation, transitions
 - **Objectifs joueurs** — ce que les PJ doivent accomplir / découvrir
 - **Enjeux narratifs** — ce qui peut basculer dans ce chapitre
+- **Prérequis** — conditions de déblocage : un **fait** activé, un **chapitre terminé**, ou un **nombre de séances atteint**. Tant qu'ils ne sont pas remplis, le chapitre reste verrouillé (voir [Parties & suivi de session](/docs/campagne/parties)).
 
 ## Scène
 
@@ -39,8 +41,15 @@ de générer du contenu narratif. Champs spécifiques :
 - **Narration aux joueurs** — texte à lire/improviser pour planter le décor
 - **Notes MJ secrètes** — ne s'affichent que pour vous
 - **Choix et conséquences** — alternatives possibles
-- **Difficulté combat** et **ennemis** — si applicable
-- **Branches** — sorties narratives vers d'autres scènes
+- **Difficulté de combat** et **ennemis** — note libre, et/ou ennemis liés depuis le [bestiaire](/docs/campagne/ennemis)
+- **Illustrations** et **cartes** — galeries d'images d'ambiance
+- **Branches** — sorties narratives vers d'autres scènes (voir [Branches narratives](/docs/campagne/branches))
+
+:::info[Lieu explorable (mode donjon)]
+Une scène peut contenir des **pièces** : dès qu'elle en a au moins une, elle bascule sur un rendu **donjon** — chaque pièce a ses propres ennemis, butin, pièges, étage et branches entre pièces.
+:::
+
+Un **Assistant IA** (bouton ✨) est disponible sur la scène pour générer ambiance, narration ou rebondissements.
 
 ## Bonnes pratiques
 

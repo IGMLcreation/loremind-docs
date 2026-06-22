@@ -6,7 +6,9 @@ sidebar_position: 1
 
 La **campagne** est le contenant de votre partie. Elle structure le récit en
 **Arcs** → **Chapitres** → **Scènes**, et regroupe les **personnages**
-(joueurs et non-joueurs) qui y participent.
+(joueurs et non-joueurs) qui y participent. Elle réunit aussi vos **ressources de
+jeu** (bestiaire, objets, tables aléatoires), le **suivi de vos parties** et des
+**outils IA** (atelier RAG, import de PDF).
 
 ## Structure narrative
 
@@ -30,7 +32,7 @@ Campagne
 ## Liens vers le Lore
 
 Une campagne peut être adossée à un **Lore** (univers existant) et à un
-**Game System** (règles de jeu). Ces liens sont des références molles —
+**Système de JDR** (règles de jeu). Ces liens sont des références molles —
 la campagne reste utilisable même si le Lore est supprimé, et vous pouvez la
 ré-attribuer à un autre Lore à tout moment.
 
@@ -42,6 +44,20 @@ ou les bifurcations conditionnelles.
 
 ## Pages détaillées
 
-- [Arcs, Chapitres et Scènes](/docs/campagne/arcs-chapitres-scenes) — la trame narrative
-- [Personnages joueurs (PJ) et non-joueurs (PNJ)](/docs/campagne/personnages) — fiches templatées
+**Trame narrative**
+
+- [Arcs, Chapitres et Scènes](/docs/campagne/arcs-chapitres-scenes) — la structure du récit
 - [Branches narratives](/docs/campagne/branches) — graphe intra-chapitre
+- [Personnages (PJ / PNJ)](/docs/campagne/personnages) — fiches templatées
+
+**Ressources de jeu**
+
+- [Bestiaire (Ennemis)](/docs/campagne/ennemis)
+- [Catalogue d'objets](/docs/campagne/catalogue-objets)
+- [Tables aléatoires](/docs/campagne/tables-aleatoires)
+
+**Jouer & outils IA**
+
+- [Parties & suivi de session](/docs/campagne/parties)
+- [Atelier IA (Notebooks)](/docs/campagne/notebooks)
+- [Import de campagne (PDF)](/docs/campagne/import-campagne)

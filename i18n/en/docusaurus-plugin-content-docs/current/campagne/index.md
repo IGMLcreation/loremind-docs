@@ -6,7 +6,9 @@ sidebar_position: 1
 
 The **campaign** is the container for your game. It structures the story into
 **Arcs** → **Chapters** → **Scenes**, and gathers the **characters**
-(players and non-players) who take part in it.
+(players and non-players) who take part in it. It also brings together your
+**game resources** (bestiary, items, random tables), the **tracking of your
+playthroughs** and **AI tools** (RAG workshop, PDF import).
 
 ## Narrative structure
 
@@ -42,6 +44,20 @@ forks.
 
 ## Detailed pages
 
-- [Arcs, Chapters and Scenes](/docs/campagne/arcs-chapitres-scenes) — the narrative framework
-- [Player characters (PCs) and non-player characters (NPCs)](/docs/campagne/personnages) — templated sheets
+**Narrative framework**
+
+- [Arcs, Chapters and Scenes](/docs/campagne/arcs-chapitres-scenes) — the story structure
 - [Narrative branches](/docs/campagne/branches) — intra-chapter graph
+- [Characters (PCs / NPCs)](/docs/campagne/personnages) — templated sheets
+
+**Game resources**
+
+- [Bestiary (Enemies)](/docs/campagne/ennemis)
+- [Item catalog](/docs/campagne/catalogue-objets)
+- [Random tables](/docs/campagne/tables-aleatoires)
+
+**Playing & AI tools**
+
+- [Playthroughs & session tracking](/docs/campagne/parties)
+- [AI workshop (Notebooks)](/docs/campagne/notebooks)
+- [Campaign import (PDF)](/docs/campagne/import-campagne)

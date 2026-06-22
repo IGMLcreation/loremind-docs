@@ -9,10 +9,10 @@ application is installed.
 
 ## In this section
 
-- [Settings — application settings](/docs/configuration/settings) — AI, language, shortcuts
+- [Settings — application settings](/docs/configuration/settings) — AI, embeddings (RAG), language, data backup
 - [Backups and restore](/docs/configuration/sauvegardes) — protect your data
 - [Patreon private beta](/docs/configuration/beta-patreon) — access to pre-release versions
 
 > For the **initial installation** on Windows / Linux, see the
-> [Installation](/docs/installation/windows) section. For **regular updates**
+> [Installation](/docs/installation/bureau) section. For **regular updates**
 > via Watchtower, see [Updates](/docs/installation/mises-a-jour).

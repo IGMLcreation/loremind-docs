@@ -1,13 +1,18 @@
 ---
 sidebar_position: 3
-title: Ollama Configuration
+title: Ollama configuration
 ---
 
 # Configuring Ollama
 
 [Ollama](https://ollama.com) is the engine that lets you run LLM models locally on your machine. DM Loremind offers three modes depending on your setup.
 
-## Which mode should you choose?
+## If you chose the desktop mode
+
+In this case, you will need to install Ollama separately and configure it so that it is reachable by the DM Loremind Docker container.
+At the time of writing this documentation, the official Ollama page is the following: [Ollama link](https://ollama.com/)
+
+## Which mode should you choose? (Docker part)
 
 During installation, the installer asks two successive questions.
 
@@ -35,7 +40,7 @@ An `ollama` service is added to the stack via the `local-ollama` Docker profile.
 **To download a model**:
 
 ```bash
-docker exec -it loremind-ollama ollama pull gemma3:27b
+docker exec -it loremind-ollama ollama pull gemma4:26b
 docker exec -it loremind-ollama ollama list
 ```
 
@@ -65,7 +70,7 @@ bash secure-host-ollama.sh
 # And: docker compose up -d
 ```
 
-:::tip Safe to re-run
+:::tip[Safe to re-run]
 The helpers remove their old rules before recreating them. This is useful, for example, if you have reset Docker Desktop and the subnets have changed.
 :::
 
