@@ -4,10 +4,12 @@ sidebar_position: 1
 
 # Export
 
-DM Loremind ships a **native export** that is delivered and usable today.
-Other formats (PDF, Markdown, Foundry VTT) are under consideration.
+DM Loremind offers three exports, all shipped: the **global backup**
+(JSON + images), the **PDF booklet** of a campaign and the **Foundry VTT
+export** to play at the virtual table. A **Markdown** export is under
+consideration.
 
-## Available today: global export
+## Global backup (JSON)
 
 The export is launched from **Settings → Data backup / restore →
 Export**. It produces a **`loremind-export.zip`** file containing all
@@ -43,16 +45,29 @@ The import/export procedure is detailed in
   are not bundled.
 :::
 
+## Campaign PDF booklet
+
+From a **campaign page**, the **"Export as PDF"** button generates a
+**printable booklet** of the campaign: cover, **paginated table of contents**,
+narrative structure (arcs, chapters, scenes with their illustrations and
+battlemaps), **quests**, **NPCs** and **bestiary**, **random tables** and
+linked **lore** pages. Ideal for prepping away from the screen or sharing a
+paper handout at the table.
+
+## Foundry VTT export
+
+Also from a **campaign page**, **"Export for Foundry"** produces a `.zip`
+bundle that the companion module **LoreMind Importer** imports into Foundry
+VTT: ready-to-play scenes (walls, doors, lights), journals, random tables and
+enemy tokens.
+
+➡️ See the dedicated page: [Foundry VTT export](/docs/export/foundry).
+
 ## Formats
 
 | Format | Status | Usage |
 |--------|--------|-------|
 | **JSON (+ images, .zip)** | Available | Structured backup, module sharing, migration between instances |
-| **PDF** | Coming soon | Printing sheets, campaign booklets |
-| **Markdown** | Coming soon | Human-readable backup, Git sharing |
-| **Foundry VTT** | Under consideration | Export to Foundry for use at a virtual table |
-
-:::info[Coming soon]
-The **PDF**, **Markdown** and **Foundry VTT** exports are not yet delivered.
-They are on the roadmap and will be documented as releases progress.
-:::
+| **PDF** | Available | Printable campaign booklet |
+| **Foundry VTT** | Available | Play your campaign at the virtual table |
+| **Markdown** | Under consideration | Human-readable backup, Git sharing |

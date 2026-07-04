@@ -4,10 +4,11 @@ sidebar_position: 1
 
 # Export
 
-DM Loremind dispose d'un **export natif** livré et utilisable dès aujourd'hui.
-D'autres formats (PDF, Markdown, Foundry VTT) sont à l'étude.
+DM Loremind propose trois exports, tous livrés : la **sauvegarde globale**
+(JSON + images), le **livret PDF** d'une campagne et l'**export Foundry VTT**
+pour jouer à la table virtuelle. Un export **Markdown** est à l'étude.
 
-## Disponible aujourd'hui : export global
+## Sauvegarde globale (JSON)
 
 L'export se lance depuis **Paramètres → Sauvegarde / Restauration des données →
 Exporter**. Il produit un fichier **`loremind-export.zip`** contenant l'ensemble
@@ -43,16 +44,28 @@ La procédure d'import/export est détaillée dans
   orphelines ne sont pas embarquées.
 :::
 
+## Livret PDF de campagne
+
+Depuis la **page d'une campagne**, le bouton **« Exporter en PDF »** génère un
+**livret imprimable** de la campagne : couverture, **sommaire paginé**, structure
+narrative (arcs, chapitres, scènes avec leurs illustrations et battlemaps),
+**quêtes**, **PNJ** et **bestiaire**, **tables aléatoires** et pages de **lore**
+liées. Idéal pour préparer hors écran ou partager un support papier à la table.
+
+## Export Foundry VTT
+
+Toujours depuis la **page d'une campagne**, **« Exporter pour Foundry »** produit
+un bundle `.zip` que le module compagnon **LoreMind Importer** importe dans
+Foundry VTT : scènes prêtes à jouer (murs, portes, lumières), journaux, tables
+aléatoires et tokens d'ennemis.
+
+➡️ Voir la page dédiée : [Export Foundry VTT](/docs/export/foundry).
+
 ## Formats
 
 | Format | Statut | Usage |
 |--------|--------|-------|
 | **JSON (+ images, .zip)** | Disponible | Sauvegarde structurée, partage de module, migration entre instances |
-| **PDF** | À venir | Impression de fiches, livrets de campagne |
-| **Markdown** | À venir | Sauvegarde lisible humainement, partage Git |
-| **Foundry VTT** | À l'étude | Export vers Foundry pour usage en table virtuelle |
-
-:::info[À venir]
-Les exports **PDF**, **Markdown** et **Foundry VTT** ne sont pas encore livrés.
-Ils figurent sur la roadmap et seront documentés au fil des releases.
-:::
+| **PDF** | Disponible | Livret de campagne imprimable |
+| **Foundry VTT** | Disponible | Jouer sa campagne à la table virtuelle |
+| **Markdown** | À l'étude | Sauvegarde lisible humainement, partage Git |
