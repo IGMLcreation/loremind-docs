@@ -4,38 +4,35 @@ sidebar_position: 1
 
 # Export
 
-DM Loremind offers three exports, all shipped: the **global backup**
-(JSON + images), the **PDF booklet** of a campaign and the **Foundry VTT
-export** to play at the virtual table. A **Markdown** export is under
+DM Loremind offers three exports, all shipped: the **content backup /
+sharing** (JSON + images), the **PDF booklet** of a campaign and the **Foundry
+VTT export** to play at the virtual table. A **Markdown** export is under
 consideration.
 
-## Global backup (JSON)
+## Content backup and sharing (JSON)
 
-The export is launched from **Settings → Data backup / restore →
-Export**. It produces a **`loremind-export.zip`** file containing all
-of your content in **JSON** format, along with the **images**.
+The export is launched from **Settings → Data backup**. It produces a **`.zip`**
+file containing the content in **JSON** format, along with the **images**. Two
+scopes:
 
-### Scope: global and exhaustive
-
-The export is **global** — it bundles **all** of your content, not a single
-sheet or an isolated Lore:
-
-- game systems, lores, pages, templates;
-- campaigns, arcs, chapters, scenes;
-- PCs, NPCs, enemies;
-- item catalogs, random tables;
-- images.
+- **Full backup (everything)** — the whole instance: game systems, lores,
+  pages and templates, campaigns (arcs, chapters, scenes, quests), PCs, NPCs,
+  enemies, catalogs, random tables, playthroughs, and the images.
+- **A single campaign** — a **selective** export of one campaign and its
+  closure, with three options: include the linked **lore (world)**, the **play
+  space** (playthroughs, sessions and journals, facts, quest progression,
+  character sheets) and the **images**.
 
 ### Symmetric import
 
 The same `.zip` can be re-imported on another instance, in **merge mode**:
 the content is **added without replacing** the existing data. Ideal for:
 
-- **sharing a module** with another GM,
-- **migrating** between two installations.
+- **sharing a campaign** or a module with another GM (selective export),
+- **migrating** between two installations (full backup).
 
-The import/export procedure is detailed in
-[Configuration → Backups](/docs/configuration/sauvegardes).
+Exports from older versions can still be imported. The procedure is detailed
+in [Configuration → Backups](/docs/configuration/sauvegardes).
 
 ### Limits
 
@@ -47,12 +44,14 @@ The import/export procedure is detailed in
 
 ## Campaign PDF booklet
 
-From a **campaign page**, the **"Export as PDF"** button generates a
+From a **campaign page**, the **"Export to PDF"** button generates a
 **printable booklet** of the campaign: cover, **paginated table of contents**,
 narrative structure (arcs, chapters, scenes with their illustrations and
 battlemaps), **quests**, **NPCs** and **bestiary**, **random tables** and
 linked **lore** pages. Ideal for prepping away from the screen or sharing a
 paper handout at the table.
+
+➡️ See the dedicated page: [Campaign PDF booklet](/docs/export/pdf).
 
 ## Foundry VTT export
 

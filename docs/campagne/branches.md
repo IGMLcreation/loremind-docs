@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Branches narratives
@@ -26,9 +26,14 @@ Scène "Rencontre avec le messager" :
 
 ## Visualisation graphe
 
-Un mode **chapter-graph** permet de visualiser les scènes d'un chapitre comme
-un graphe orienté avec les branches comme arêtes. Pratique pour vérifier
-qu'aucune scène n'est orpheline (sans entrée) ou impasse (sans sortie).
+La **carte des scènes** d'un chapitre (ou d'une [quête](/docs/campagne/quetes))
+affiche les scènes comme un graphe orienté avec les branches comme arêtes —
+avec **pan/zoom** et **édition des liens directement dans le graphe**. Pratique
+pour vérifier qu'aucune scène n'est orpheline (sans entrée) ou impasse (sans
+sortie).
+
+Pour le graphe des liens vers le Lore à l'échelle de la campagne (PNJ, scènes,
+quêtes), voir [Graphe des liens](/docs/campagne/graphe-liens).
 
 ## Bonnes pratiques
 

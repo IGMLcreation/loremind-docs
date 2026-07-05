@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 ---
 
 # Parties & suivi de session
@@ -7,53 +7,67 @@ sidebar_position: 8
 Une **Partie** (playthrough) est une instance jouée d'une campagne par une
 table de joueurs. Elle sépare nettement deux choses :
 
-- le **Scénario** — la campagne elle-même (arcs, chapitres, scènes), qui reste
-  **statique** ;
-- l'**état de jeu** — la progression, les faits acquis, les sessions, qui est
-  **propre à chaque partie**.
+- le **Scénario** — la campagne elle-même (arcs, chapitres, scènes, quêtes),
+  qui reste **statique** ;
+- l'**état de jeu** — la progression, les faits acquis, les horloges, les
+  sessions, qui est **propre à chaque partie**.
 
 Ainsi, **plusieurs tables** peuvent jouer la même campagne indépendamment, sans
 que la progression de l'une affecte l'autre.
 
 ## Contenu d'une partie
 
-- **Nom** et **Description**
+- **Nom** et **Description** — le nom se renomme en place (crayon) depuis la
+  liste « Mes parties »
 - des **personnages** rattachés
-- des **sessions**
+- des **sessions** avec leur journal
 - des **Faits** (flags)
+- la **progression des quêtes**
+- des **horloges** et **menaces** (voir [Mode séance](/docs/campagne/mode-seance))
 
 ## Les Faits
 
-Les Faits sont des **interrupteurs booléens** (vrai / faux) qui servent à
-débloquer des chapitres via leurs **prérequis**.
+Les Faits sont des **interrupteurs booléens** (vrai / faux) qui pilotent le
+contenu conditionnel : ils débloquent des [quêtes](/docs/campagne/quetes) via
+leurs **conditions de déblocage**, et peuvent faire avancer des
+**horloges** (déclencheur « Quand un Fait devient vrai »).
 
-Ils sont **implicites** : un fait apparaît automatiquement dès qu'un chapitre le
-référence dans ses prérequis — vous n'avez rien à déclarer manuellement. Une
-page dédiée **« Faits »** liste tous les faits de la partie et permet de les
-**activer / désactiver**.
+Ils sont **implicites** : un fait apparaît automatiquement dès qu'une condition
+ou un déclencheur le référence — vous n'avez rien à déclarer manuellement. La
+page **« Faits »** de la partie (ainsi que l'onglet **Partie** en séance) liste
+tous les faits et permet de les **activer / désactiver** d'un toggle.
 
-## Progression des chapitres
+## Progression des quêtes
 
-Chaque chapitre porte, **par partie**, un statut de progression :
+Chaque [quête](/docs/campagne/quetes) porte, **par partie**, un statut :
 
-- **Non démarré**
+- **Verrouillée** — conditions de déblocage non remplies
+- **Disponible**
 - **En cours**
-- **Terminé**
+- **Terminée**
+
+La progression se change depuis la section
+[« Préparer la prochaine séance »](/docs/campagne/preparation) de la partie
+(boutons **« Marquer "en cours" »**, **« Marquer "terminée" »**,
+**« Rouvrir »**).
 
 ## Sessions
 
-Vous pouvez **démarrer** ou **reprendre** une session, avec sa date de début et
+Vous pouvez **lancer** ou **reprendre** une session, avec sa date de début et
 de fin. Chaque session tient un **journal** dont les entrées sont **typées** :
 
 - **Note**
-- **Événement**
+- **Évènement**
 - **Jet de dés**
 - **Action joueur**
 
 Chaque entrée est **horodatée**, ce qui permet aussi de **journaliser
-rétroactivement** après coup.
+rétroactivement** après coup. L'écran de session — scène épinglée, récap
+« précédemment… », panneau de référence, horloges — est détaillé dans
+[Mode séance](/docs/campagne/mode-seance).
 
 :::warning[Suppression en cascade]
 Supprimer une partie supprime **en cascade** ses sessions, ses personnages
-rattachés, ses faits et ses progressions. Une confirmation est demandée.
+rattachés, ses faits, ses horloges et ses progressions. Une confirmation est
+demandée.
 :::

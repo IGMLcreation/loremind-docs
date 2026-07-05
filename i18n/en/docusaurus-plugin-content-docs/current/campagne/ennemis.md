@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Bestiary (Enemies)
@@ -32,6 +32,33 @@ The point of the bestiary is **reuse**. A **scene** — or a dungeon **room** �
 can reference one or more enemies from the bestiary through a selector. No need
 to recreate the same goblin ten times: create it once, point to it everywhere
 it appears.
+
+## Importing your monsters from Foundry VTT
+
+The **"Import Foundry monsters"** button, at the top of the list (dropping the
+file on the toolbar also works), loads a **`.json` monster catalog exported
+from Foundry** by the companion module
+[LoreMind Importer](/docs/export/foundry).
+
+For each monster in the catalog, a sheet is created with:
+
+- its **name** and its **portrait**;
+- its **folder**, mirroring the Foundry folder tree (prefixed with `Foundry/`);
+- a read-only **"Foundry stats"** box: a *snapshot* of the stats, frozen at
+  import time — the live sheet stays in Foundry.
+
+The import is **duplicate-free**: re-importing the same catalog updates the
+existing sheets (name, stats, folder) instead of creating new ones, and leaves
+the existing portrait untouched. On [Foundry export](/docs/export/foundry),
+imported monsters are **linked back to their original actor**.
+
+## Matching the sheet to your Foundry system
+
+In the **Game System** editor, *Enemy sheet fields* section, the **"Import a
+Foundry structure"** button loads an actor structure exported by the module and
+**replaces the enemy template** with the matching fields (the type is recalled:
+*"Foundry actor: npc"*). Your hand-made enemies are then **automatically
+adapted to that format** when exporting to Foundry.
 
 ## List and display
 

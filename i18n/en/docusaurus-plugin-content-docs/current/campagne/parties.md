@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 ---
 
 # Playthroughs & session tracking
@@ -7,38 +7,47 @@ sidebar_position: 8
 A **Playthrough** is a played instance of a campaign by a table of players. It
 clearly separates two things:
 
-- the **Scenario** — the campaign itself (arcs, chapters, scenes), which stays
-  **static**;
-- the **game state** — the progression, the flags acquired, the sessions, which
-  is **specific to each playthrough**.
+- the **Scenario** — the campaign itself (arcs, chapters, scenes, quests),
+  which stays **static**;
+- the **game state** — the progression, the facts acquired, the clocks, the
+  sessions, which is **specific to each playthrough**.
 
 This way, **several tables** can play the same campaign independently, without
 one's progression affecting the other.
 
 ## Contents of a playthrough
 
-- **Name** and **Description**
+- **Name** and **Description** — the name can be renamed in place (pencil)
+  from the playthrough list
 - attached **characters**
-- **sessions**
-- **Flags**
+- **sessions** with their journal
+- **Facts** (flags)
+- the **quest progression**
+- **clocks** and **fronts** (see [Session mode](/docs/campagne/mode-seance))
 
-## Flags
+## Facts
 
-Flags are **boolean switches** (true / false) used to unlock chapters through
-their **prerequisites**.
+Facts are **boolean switches** (true / false) that drive conditional content:
+they unlock [quests](/docs/campagne/quetes) through their **unlock
+conditions**, and can advance **clocks** ("When a Fact becomes true" trigger).
 
-They are **implicit**: a flag appears automatically as soon as a chapter
-references it in its prerequisites — you have nothing to declare manually. A
-dedicated **"Flags"** page lists all the flags of the playthrough and lets you
-**toggle them on / off**.
+They are **implicit**: a fact appears automatically as soon as a condition or a
+trigger references it — you have nothing to declare manually. The playthrough's
+**"Playthrough facts"** page (as well as the **Play** tab during a session)
+lists all the facts and lets you **toggle them on / off**.
 
-## Chapter progression
+## Quest progression
 
-Each chapter carries, **per playthrough**, a progression status:
+Each [quest](/docs/campagne/quetes) carries, **per playthrough**, a status:
 
-- **Not started**
+- **Locked** — unlock conditions not met
+- **Available**
 - **In progress**
 - **Completed**
+
+Progression is changed from the playthrough's
+["Prepare the next session"](/docs/campagne/preparation) section
+(**"Mark as in progress"**, **"Mark as completed"**, **"Reopen"** buttons).
 
 ## Sessions
 
@@ -51,9 +60,12 @@ session keeps a **journal** whose entries are **typed**:
 - **Player action**
 
 Each entry is **timestamped**, which also allows you to **log retroactively**
-after the fact.
+after the fact. The session screen — pinned scene, "previously on…" recap,
+reference panel, clocks — is detailed in
+[Session mode](/docs/campagne/mode-seance).
 
 :::warning[Cascading deletion]
 Deleting a playthrough **cascades** to delete its sessions, its attached
-characters, its flags, and its progressions. A confirmation is requested.
+characters, its facts, its clocks and its progressions. A confirmation is
+requested.
 :::

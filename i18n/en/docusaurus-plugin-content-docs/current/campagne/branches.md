@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Narrative branches
@@ -26,9 +26,13 @@ Scene "Encounter with the Messenger":
 
 ## Graph visualization
 
-A **chapter-graph** mode lets you visualize a chapter's scenes as
-a directed graph with branches as edges. Handy for checking that
-no scene is orphaned (no entry) or a dead end (no exit).
+The **scene map** of a chapter (or of a [quest](/docs/campagne/quetes))
+displays the scenes as a directed graph with branches as edges — with
+**pan/zoom** and **link editing directly in the graph**. Handy for checking
+that no scene is orphaned (no entry) or a dead end (no exit).
+
+For the graph of links to the Lore at the campaign scale (NPCs, scenes,
+quests), see [Relationship graph](/docs/campagne/graphe-liens).
 
 ## Best practices
 

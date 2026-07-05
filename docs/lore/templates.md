@@ -2,10 +2,11 @@
 sidebar_position: 4
 ---
 
-# Templates et types de champs
+# Templates et éditeur de blocs
 
-Un template sert à définir la structure d'un type de page.
-Si vous souhaitez définir une cité avec un champ "Histoire" et un champs "Population" par exemple...
+Un template définit la structure d'un type de page — quels **blocs** la
+composent et **comment ils sont disposés**. Si vous souhaitez définir une cité
+avec un bloc "Histoire" et un bloc "Population" par exemple...
 
 ## Création d'un template
 
@@ -14,30 +15,46 @@ depuis votre lore :
 
 ![bouton nouveau template](/img/screenshots/lore/templates/bouton_new.png)
 
-Un nouvelle page avec un template de base va alors s'ouvrir au milieu de l'écran :
+L'éditeur s'ouvre : nom, description, dossier par défaut, et surtout le
+**builder de blocs** — une palette de types de blocs à gauche, et une toile en
+**grille de 12 colonnes** où vous composez la mise en page de la fiche.
 
-![nouveau template](/img/screenshots/lore/templates/nouveau_template.png)
+## Le builder de blocs
 
-### Types de champs disponibles
+- **Ajouter un bloc** — glissez un type depuis la palette vers la grille.
+- **Déplacer** — attrapez la poignée du bloc et déposez-le où vous voulez
+  (placement libre, pas seulement empilé).
+- **Redimensionner** — poignées sur le bord droit (largeur, de 1 à 12
+  colonnes), le bord bas (hauteur) et le coin (les deux à la fois).
+- **Renommer en place** — cliquez sur le nom du bloc et tapez. Renommer un bloc
+  **ne perd pas le contenu** des pages existantes : les valeurs sont ancrées
+  sur un identifiant stable, pas sur le nom.
+
+### Types de blocs disponibles
 
 | Type | Usage | Rendu |
 |------|-------|-------|
 | **Texte** | Texte libre, paragraphes (Histoire, Description) | Zone de texte |
-| **Image** | Galerie d'images (illustrations, cartes) | Galerie configurable |
+| **Image** | Une ou plusieurs images recadrables | Carrousel plein cadre |
 | **Liste clé/valeur** | Paires libellé → valeur, libellés figés au template (ex. Population, Superficie, Climat) | Liste de champs label/valeur |
 | **Tableau** | Données tabulaires en lignes et colonnes (ex. ressources, statistiques) | Tableau éditable |
 
-Pour les champs **Image**, plusieurs **layouts** sont disponibles :
+### Le bloc Image
 
-- **GALLERY** — grille de vignettes (par défaut)
-- **HERO** — première image en bandeau, suivantes en petit
-- **MASONRY** — mosaïque à hauteurs variables
-- **CAROUSEL** — défilement horizontal
+Le bloc Image remplace l'ancienne galerie sur les pages de lore :
 
-:::tip
-Pour changer le type d'un champ, utilisez le **menu déroulant** à côté du champ
-(Texte, Image, Liste clé/valeur, Tableau).
-Vous pouvez aussi réordonner les champs avec les boutons **↑** / **↓** à côté de chacun.
+- **plusieurs images** par bloc, avec navigation en carrousel (précédente /
+  suivante, points cliquables) ;
+- **recadrage** : glissez l'image dans son cadre pour choisir ce qu'on voit
+  (*« Glisser pour recadrer »*) ;
+- **zoom** à la molette, de 40 % à 400 % ;
+- le cadrage et le zoom sont **mémorisés par image et par page** — la même
+  illustration peut être cadrée différemment sur deux pages.
+
+:::info[Anciens templates]
+Un template dont aucun bloc n'a encore été placé garde le rendu **empilé**
+historique (une colonne). Dès que vous placez ou redimensionnez un premier bloc
+dans l'éditeur, la mise en page en grille prend le relais.
 :::
 
 ## Modification d'un template
@@ -51,6 +68,7 @@ Vous pouvez supprimer un template en cliquant sur le bouton "Supprimer" en haut 
 
 ## Bonnes pratiques
 
-- **Commencez minimal** — 3-4 champs suffisent pour démarrer ; vous pouvez en ajouter plus tard.
+- **Commencez minimal** — 3-4 blocs suffisent pour démarrer ; vous pourrez en ajouter et raffiner la mise en page plus tard.
 - **Nommez clairement** — "Histoire" est plus parlant que "Description longue".
-- **Image = HERO en première position** — donne du cachet visuel à la page.
+- **Bloc Image en tête, pleine largeur** — donne du cachet visuel à la page.
+- **Blocs courts côte à côte** — une Liste clé/valeur en 4 colonnes à côté d'un Texte en 8 colonnes fait une fiche très lisible.

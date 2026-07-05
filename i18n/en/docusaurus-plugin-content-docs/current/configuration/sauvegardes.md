@@ -9,18 +9,40 @@ The recommended way to back up, restore or migrate your data is the
 
 ## Built-in export / import (recommended)
 
-In **Settings → Data backup / restore**, two buttons:
+In **Settings → Data backup**, first choose the **Scope**:
 
-- **Export data** — produces a **portable `.zip` file** containing
-  all of your data as well as the images.
-- **Import a file** — reloads a `.zip` in **merge mode**: the content
-  is added to the existing data **without overwriting anything**.
+- **"Full backup (everything)"** — the whole instance: game systems, worlds,
+  campaigns, playthroughs and images;
+- or **a specific campaign** — a targeted export, to share or archive a single
+  campaign.
+
+For a campaign export, three **"Include"** checkboxes (all checked by default):
+
+- **Lore (world)** — the full linked world (pages, folders, templates);
+- **Play space (playthroughs, sessions, characters)** — the playthroughs with
+  their sessions and journals, the facts, the quest progression and the
+  character sheets;
+- **Images** — the binaries of the referenced images.
+
+Then two buttons:
+
+- **Export data** — produces a **portable `.zip` file**
+  (`loremind-<name>.zip`).
+- **Import a file** — reloads a `.zip` (file picker or drag & drop) in **merge
+  mode**: the content is added to the existing data **without overwriting
+  anything**. A confirmation reminds you: *"Its content will be added to your
+  instance (nothing is deleted)."*
 
 This is the preferred path to back up your work or transfer it
 to another installation.
 
 :::note
-The built-in backup/restore is disabled in demo mode.
+- The built-in backup/restore is disabled in demo mode.
+- Maximum size of an imported file: **2 GB** on the desktop installation,
+  **128 MB** by default on Docker (configurable server-side).
+- Exports created with previous versions of DM Loremind can still be
+  imported — missing sections (e.g. the play space) are simply treated as
+  empty.
 :::
 
 For details about the export file format, see [Export](/docs/export).

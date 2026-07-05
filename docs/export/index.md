@@ -4,37 +4,35 @@ sidebar_position: 1
 
 # Export
 
-DM Loremind propose trois exports, tous livrés : la **sauvegarde globale**
-(JSON + images), le **livret PDF** d'une campagne et l'**export Foundry VTT**
-pour jouer à la table virtuelle. Un export **Markdown** est à l'étude.
+DM Loremind propose trois exports, tous livrés : la **sauvegarde / le partage
+de contenu** (JSON + images), le **livret PDF** d'une campagne et l'**export
+Foundry VTT** pour jouer à la table virtuelle. Un export **Markdown** est à
+l'étude.
 
-## Sauvegarde globale (JSON)
+## Sauvegarde et partage de contenu (JSON)
 
-L'export se lance depuis **Paramètres → Sauvegarde / Restauration des données →
-Exporter**. Il produit un fichier **`loremind-export.zip`** contenant l'ensemble
-de votre contenu au format **JSON**, accompagné des **images**.
+L'export se lance depuis **Paramètres → Sauvegarde des données**. Il produit un
+fichier **`.zip`** contenant le contenu au format **JSON**, accompagné des
+**images**. Deux périmètres :
 
-### Périmètre : global et exhaustif
-
-L'export est **global** — il embarque **tout** votre contenu, pas une fiche ou un
-Lore isolé :
-
-- systèmes de JDR, lores, pages, templates ;
-- campagnes, arcs, chapitres, scènes ;
-- PJ, PNJ, ennemis ;
-- catalogues d'objets, tables aléatoires ;
-- images.
+- **Sauvegarde complète (tout)** — toute l'instance : systèmes de JDR, lores,
+  pages et templates, campagnes (arcs, chapitres, scènes, quêtes), PJ, PNJ,
+  ennemis, catalogues, tables aléatoires, parties, et les images.
+- **Une campagne** — export **sélectif** d'une seule campagne et de sa clôture,
+  avec trois options : inclure l'**univers (lore)** associé, l'**espace de
+  jeu** (parties, séances et journaux, faits, progression de quêtes, feuilles
+  de perso) et les **images**.
 
 ### Import symétrique
 
 Le même `.zip` peut être réimporté sur une autre instance, en **mode fusion** :
 le contenu est **ajouté sans remplacer** l'existant. Idéal pour :
 
-- **partager un module** avec un autre MJ,
-- **migrer** entre deux installations.
+- **partager une campagne** ou un module avec un autre MJ (export sélectif),
+- **migrer** entre deux installations (sauvegarde complète).
 
-La procédure d'import/export est détaillée dans
-[Configuration → Sauvegardes](/docs/configuration/sauvegardes).
+Les exports d'anciennes versions restent importables. La procédure est
+détaillée dans [Configuration → Sauvegardes](/docs/configuration/sauvegardes).
 
 ### Limites
 
@@ -51,6 +49,8 @@ Depuis la **page d'une campagne**, le bouton **« Exporter en PDF »** génère 
 narrative (arcs, chapitres, scènes avec leurs illustrations et battlemaps),
 **quêtes**, **PNJ** et **bestiaire**, **tables aléatoires** et pages de **lore**
 liées. Idéal pour préparer hors écran ou partager un support papier à la table.
+
+➡️ Voir la page dédiée : [Livret PDF de campagne](/docs/export/pdf).
 
 ## Export Foundry VTT
 

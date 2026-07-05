@@ -73,7 +73,12 @@ section indépendamment plutôt que tout générer d'un coup.
 
 Une fois la page créée, vous pouvez :
 
-- **Remplir / éditer les champs** — chaque champ s'édite indépendamment.
+- **Remplir / éditer les champs** — chaque bloc s'édite indépendamment ; la
+  page rendue suit la **mise en page en grille** définie sur le
+  [template](/docs/lore/templates).
+- **Recadrer les images** — dans un bloc Image, glissez l'image pour choisir le
+  cadrage et zoomez à la molette ; le réglage est mémorisé par image et par
+  page.
 - **Lier d'autres pages** via le picker de liens (les liens sont stockés par
   identifiant, donc résistants aux renommages).
 - **Déplacer la page** dans un autre dossier si vous réorganisez votre Lore.

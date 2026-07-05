@@ -10,18 +10,42 @@ d'installation.
 
 ## Export / Import intégré (recommandé)
 
-Dans **Paramètres → Sauvegarde / Restauration des données**, deux boutons :
+Dans **Paramètres → Sauvegarde des données**, choisissez d'abord le
+**Périmètre** :
 
-- **Exporter les données** — produit un **fichier `.zip` portable** contenant
-  toutes vos données ainsi que les images.
-- **Importer un fichier** — recharge un `.zip` en **mode fusion** : le contenu
-  est ajouté à l'existant **sans rien écraser**.
+- **« Sauvegarde complète (tout) »** — toute l'instance : systèmes de JDR,
+  univers, campagnes, parties et images ;
+- ou **une campagne précise** — export ciblé, pour partager ou archiver une
+  seule campagne.
+
+Pour un export de campagne, trois cases **« À inclure »** (toutes cochées par
+défaut) :
+
+- **Univers (lore)** — l'univers associé au complet (pages, dossiers, templates) ;
+- **Espace de jeu (parties, sessions, persos)** — les parties avec leurs
+  séances et journaux, les faits, la progression des quêtes et les feuilles de
+  personnages ;
+- **Images** — les binaires des images référencées.
+
+Puis deux boutons :
+
+- **Exporter les données** — produit un **fichier `.zip` portable**
+  (`loremind-<nom>.zip`).
+- **Importer un fichier** — recharge un `.zip` (sélection ou glisser-déposer)
+  en **mode fusion** : le contenu est ajouté à l'existant **sans rien écraser**.
+  Une confirmation le rappelle : *« Le contenu sera ajouté à votre instance
+  (rien n'est supprimé). »*
 
 C'est la voie à privilégier pour sauvegarder votre travail ou le transférer
 vers une autre installation.
 
 :::note
-La sauvegarde/restauration intégrée est désactivée en mode démo.
+- La sauvegarde/restauration intégrée est désactivée en mode démo.
+- Taille maximale d'un fichier importé : **2 Go** en installation bureau,
+  **128 Mo** par défaut en Docker (configurable côté serveur).
+- Les exports créés avec des versions précédentes de DM Loremind restent
+  importables — les sections absentes (ex. l'espace de jeu) sont simplement
+  traitées comme vides.
 :::
 
 Pour le détail du format du fichier d'export, voir [Export](/docs/export).

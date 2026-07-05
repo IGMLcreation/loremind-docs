@@ -72,7 +72,12 @@ section independently rather than generating everything at once.
 
 Once the page is created, you can:
 
-- **Fill in / edit the fields** — each field is edited independently.
+- **Fill in / edit the fields** — each block is edited independently; the
+  rendered page follows the **grid layout** defined on the
+  [template](/docs/lore/templates).
+- **Reframe the images** — in an Image block, drag the image to choose the
+  framing and zoom with the mouse wheel; the setting is remembered per image
+  and per page.
 - **Link other pages** via the link selector (links are stored by identifier,
   so they are resilient to renames).
 - **Move the page** to another folder if you reorganize your Lore.

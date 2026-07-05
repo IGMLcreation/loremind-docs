@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Bestiaire (Ennemis)
@@ -32,6 +32,34 @@ Le principe du bestiaire est la **réutilisation**. Une **scène** — ou une
 **pièce** de donjon — peut référencer un ou plusieurs ennemis du bestiaire via
 un sélecteur. Inutile de recréer le même gobelin dix fois : créez-le une fois,
 pointez vers lui partout où il apparaît.
+
+## Importer vos monstres depuis Foundry VTT
+
+Le bouton **« Importer des monstres Foundry »**, en haut de la liste (le
+glisser-déposer du fichier fonctionne aussi), charge un **catalogue `.json` de
+monstres exporté depuis Foundry** par le module compagnon
+[LoreMind Importer](/docs/export/foundry).
+
+Pour chaque monstre du catalogue, une fiche est créée avec :
+
+- son **nom** et son **portrait** ;
+- son **dossier**, calqué sur l'arborescence Foundry (préfixé `Foundry/`) ;
+- un encart **« Statistiques Foundry »** en lecture seule : un *instantané*
+  des stats, figé à l'import — la fiche vivante reste côté Foundry.
+
+L'import est **sans doublon** : réimporter le même catalogue met à jour les
+fiches existantes (nom, stats, dossier) au lieu d'en créer de nouvelles, et ne
+touche pas au portrait déjà en place. À l'[export Foundry](/docs/export/foundry),
+les monstres importés sont **reliés à leur acteur d'origine**.
+
+## Caler la fiche sur votre système Foundry
+
+Dans l'éditeur du **Système de JDR**, section *Champs de la fiche Ennemi*, le
+bouton **« Importer une structure Foundry »** charge une structure d'acteur
+exportée par le module et **remplace le template d'ennemi** par les champs
+correspondants (le type est rappelé : *« Acteur Foundry : npc »*). Vos ennemis
+créés à la main sont alors **automatiquement adaptés à ce format** lors de
+l'export vers Foundry.
 
 ## Liste et affichage
 

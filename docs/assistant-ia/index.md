@@ -31,6 +31,25 @@ Cinq fournisseurs LLM sont configurables dans les **Settings → IA** — un loc
 Le choix se fait globalement (un fournisseur actif à la fois), avec un modèle
 sélectionné par défaut. Vous pouvez basculer à tout moment. Détails : [Configuration des fournisseurs](/docs/assistant-ia/fournisseurs).
 
+## L'assistant propose, vous appliquez
+
+Au-delà du chat, l'assistant sait aussi **écrire dans vos fiches** — toujours
+sur le même principe : il propose, **rien n'est appliqué sans votre
+validation**.
+
+- **Étoffage champ par champ** — sur les arcs, chapitres et scènes, un bouton ✨
+  à côté des champs texte propose un contenu qui s'appuie sur le reste de la
+  fiche et le contexte de la campagne. Vous acceptez, régénérez ou ignorez.
+- **Brouillons de scènes** — sur un chapitre, le panneau **« Générer des
+  scènes »** propose des scènes complètes à insérer dans le chapitre. C'est
+  aussi le raccourci qu'ouvre le bouton « Corriger » du
+  [guidage de préparation](/docs/campagne/preparation) face à un chapitre vide.
+- **Récap « précédemment… »** — en [séance](/docs/campagne/mode-seance),
+  l'assistant rédige le résumé de la séance précédente à partir de votre
+  journal, à consigner d'un clic.
+- **Génération de pages Lore** — champ par champ ou en mode wizard à la
+  création (voir [Génération de pages Lore](/docs/assistant-ia/generation-pages)).
+
 ## Contexte injecté automatiquement
 
 Quand vous ouvrez le chat sur une entité, le backend construit un prompt qui

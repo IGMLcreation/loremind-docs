@@ -11,7 +11,7 @@ Three levels for structuring your story, with increasing granularity.
 An arc is a large narrative arch. Available fields:
 
 - **Name** and **synopsis** — the arc's pitch
-- **Structure** — *Linear* (chapters in sequence) or *Hub* (chapters freely accessible from a central point)
+- **Structure** — *Linear* (chapters in sequence) or *Hub* ([quests](/docs/campagne/quetes) freely accessible from a central point)
 - **Themes** — recurring motifs (e.g. "betrayal", "descent into hell")
 - **Stakes** — what is at stake for the PCs
 - **GM notes** — secrets, twists, info not to reveal to the players
@@ -19,17 +19,20 @@ An arc is a large narrative arch. Available fields:
 - **Resolution** — the expected ending (to be adjusted based on actual play)
 - **Linked Lore pages** — cross-context references to the Lore (factions, locations)
 - **Illustrations** — mood images
-- **Maps** — layouts, geography
 
 ## Chapter
 
-A subdivision of an arc. Same linking mechanics to the Lore + maps.
+A subdivision of a linear arc. Same linking mechanics to the Lore.
 Specific fields:
 
 - **GM notes** — preparation, transitions
 - **Player objectives** — what the PCs must accomplish / discover
 - **Narrative stakes** — what may tip over in this chapter
-- **Prerequisites** — unlock conditions: an activated **flag**, a **completed chapter**, or a **number of sessions reached**. As long as they are not met, the chapter stays locked (see [Playthroughs & session tracking](/docs/campagne/parties)).
+
+:::info[Conditional unlocking lives on quests]
+Unlock conditions (an activated fact, a completed quest, a session count
+reached) are now defined on [quests](/docs/campagne/quetes), not on chapters.
+:::
 
 ## Scene
 
@@ -42,7 +45,8 @@ to generate narrative content. Specific fields:
 - **Secret GM notes** — only displayed to you
 - **Choices and consequences** — possible alternatives
 - **Combat difficulty** and **enemies** — free note, and/or enemies linked from the [bestiary](/docs/campagne/ennemis)
-- **Illustrations** and **maps** — galleries of mood images
+- **Illustrations** — gallery of mood images
+- **Battlemaps** — the scene's combat maps (see below)
 - **Branches** — narrative exits toward other scenes (see [Narrative branches](/docs/campagne/branches))
 
 :::info[Explorable location (dungeon mode)]
@@ -51,8 +55,29 @@ A scene can contain **rooms**: as soon as it has at least one, it switches to a 
 
 An **AI Assistant** (✨ button) is available on the scene to generate atmosphere, narration, or plot twists.
 
+### Battlemaps
+
+A scene can carry **several labeled battlemaps** — the variants of a single
+place: the label is free text (*"Day"*, *"Night"*, *"Floor 1"*…). Each map has
+a **source** of your choice:
+
+- **Dungeon Alchemist (image/video + JSON)** — the map's media, plus the
+  `.json` file from Dungeon Alchemist's "Foundry VTT" export (walls, doors,
+  lights);
+- **DungeonDraft (.dd2vtt)** — a single Universal VTT file: the **embedded
+  image is extracted automatically** on upload, walls and lights are kept.
+
+Battlemaps are not displayed in the app: they are carried over to the
+[Foundry export](/docs/export/foundry) — **one Foundry Scene per map** — and
+rendered with their caption in the [PDF booklet](/docs/export/pdf).
+
+:::note
+A `.dd2vtt` without an embedded image is accepted, but the exported map will
+have no background — a warning shows at upload time.
+:::
+
 ## Best practices
 
 - **Prepare by arc, play by scene.** Define the big picture once, then add scenes as your sessions progress.
-- **Don't wait for everything to be "complete".** A scene with just a location + atmosphere + a short piece of narration is playable.
+- **Don't wait for everything to be "complete".** A scene with just a location + atmosphere + a short piece of narration is playable — the ["Next steps"](/docs/campagne/preparation) panel tells you what's actually missing.
 - **GM notes vs. player narration.** Keep them clearly separated — the AI can generate the narration without revealing the secrets if you pass it the right fields.

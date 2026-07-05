@@ -28,6 +28,12 @@ Génération ciblée :
 - **Texte** uniquement — les champs Image / Liste clé-valeur / Tableau ne sont pas générés par l'IA
 - L'IA peut s'appuyer sur la valeur des autres champs **texte** comme contexte
 
+:::info[Le même principe côté campagne]
+La génération champ par champ existe aussi sur les entités de campagne : arcs,
+chapitres et scènes ont leur bouton ✨ par champ texte, et un chapitre peut
+générer des **brouillons de scènes** entiers — toujours en propose → applique.
+:::
+
 ## Astuces
 
 - **Remplissez quelques champs à la main d'abord** — donne du grain à moudre à l'IA
