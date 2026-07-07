@@ -1,24 +1,31 @@
 ---
 slug: bienvenue-sur-le-devlog
-title: Bienvenue sur le Devlog de DM Loremind
+title: À quoi sert ce devlog
 authors: [igmlcreation]
-tags: [devlog, coulisses]
+tags: [devlog]
 ---
 
-Ce devlog est l'endroit où je met les changements entre les versions de l'application loremind.
+Bienvenue sur le devlog de DM Loremind.
 
-L'idée : un rendez-vous régulier, écrit, sans hype ni jargon — juste ce qui se passe dans le projet, et pourquoi.
+Ici, je raconte ce qui change dans DM Loremind d'une version à l'autre :
+les nouveautés, les corrections importantes, et ce qui est en cours.
 
 {/* truncate */}
 
-## Pourquoi un devlog ?
+Le format : un billet par version (ou par grosse fonctionnalité), avec des
+liens vers la [documentation](/docs/intro) pour le détail de chaque écran.
+Les notes de release techniques restent sur
+[GitHub](https://github.com/IGMLcreation/LoreMind/releases) — ici, c'est la
+version lisible, écrite pour les MJ qui utilisent l'appli.
 
-DM Loremind est un projet solo, open source, avec une vision assez précise : un outil de jeu de rôle qui respecte la **souveraineté de tes données** (IA 100% locale via Ollama ou cloud choisi par l'utilisateur), pensé **par un MJ pour les MJ**, et pas par une startup qui découvre le JDR.
+Pour les coulisses techniques (architecture, choix de dev) et l'accès anticipé
+aux bêtas, ça se passe sur le
+[Patreon](https://www.patreon.com/c/IGMLCreation). Pour discuter, remonter un
+bug ou proposer une idée : le [Discord](https://discord.gg/cPpFzCjEzQ) ou encore
+le board consacré au public si vous n'êtes pas sur le Patreon : [Board public](https://feedback.igmlcreation.fr).
 
-Mais une vision, ça se raconte. Un changelog Git, c'est utile pour les développeurs ; ça ne donne pas envie à un MJ de tester l'outil. Le devlog, c'est le pont entre le code et la table de jeu.
+Pour toute la partie bug, n'hésitez pas non plus à ouvrir une issue sur github (ou dans le board, c'est comme vous
+le souhaitez).
+Le projet étant sur mon temps libre, je réagirai aussi rapidement que possible.
 
-## Ce que tu trouveras ici
-
-- **Devlog** — ce qui a changé, ce qui arrive, ce qui galère. Je vais essayé de le mettre à jour aumoins toutes les deux semaines.
-Pour en savoir plus sur l'arrière du décors, je vais faire un devlog sur patreon en expliquant un peu plus en détail la technique.
-- **Annonces de versions** — les notes de release, mais en français et lisiblese
+Merci de votre compréhension et j'espère que vous apprécierez l'application !
