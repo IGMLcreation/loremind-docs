@@ -2,32 +2,25 @@
 sidebar_position: 2
 ---
 
-# Markdown rules and AI selection
+# Creating, editing and system rules
 
-A system's rules are stored as **monolithic markdown**, structured
-by H2 headings (`##`). Each H2 section is extracted and indexed separately.
+## Creating a system
 
-## Expected structure
+To create a system, click the "New system" button on the home page.
 
-```markdown
-## Combat
-- Initiative : 1d20 + mod Dex
-- Action par tour : une action, une action bonus, une réaction, mouvement
-- Critique sur 20 naturel (double dés)
+![creation_systeme](/img/screenshots/game-systeme/creation_systeme.png)
 
-## Classes
-- **Barbare** : d12 PV, rage
-- **Magicien** : d6 PV, livre de sorts
-...
-
-## Monstres
-Stat block standard : CA, PV, FOR/DEX/CON/INT/SAG/CHA, FP.
-```
+Fill in the name of your system, describe which game it is drawn from, and you
+can add the author.
 
 ## Suggested sections
 
+As mentioned on the home page, rules are structured into several sections.
+
 On the UI side, the editor offers default sections:
 **Combat**, **Classes**, **Stats**, **Magic**, **Monsters**, **Progression**.
+
+![regles_systeme](/img/screenshots/game-systeme/regles_systeme.png)
 
 You are free to add others. But **keep in mind**:
 
@@ -36,27 +29,101 @@ You are free to add others. But **keep in mind**:
 > This separation is intentional — the AI injects rules into contexts
 > different from the lore, and mixing the two degrades the relevance of the prompts.
 
-## Contextual selection for the AI
+## Importing a rules PDF
 
-When you ask the AI to generate content, the application **does not inject
-all of the markdown**: it keeps only the sections relevant to reduce the
-size of the prompt and improve quality.
+Rather than retyping your rules by hand, you can **import a PDF**: the
+application extracts the text, splits it into chunks, then the AI automatically
+structures it into sections (Combat, Classes, Stats…) that it adds to your
+editor.
 
-There is **neither semantic intent detection nor embeddings** here. The need is
-simply inferred from the **type of entity** you are generating:
+### Starting an import
 
-- **Scene** → injects the **## Combat** + **## Monsters** sections
-- **Chapter** → injects **## Combat** + **## Classes**
-- **Arc** (and the generic case) → injects **all** sections
+1. In the rules editor, click **Import a PDF**.
+2. Choose a file **in PDF format** (only this format is accepted).
+3. The analysis starts. It can take from a few seconds to several minutes
+   depending on the size of the document and the AI provider used.
 
-The match is made by **substring on the H2 heading** (case-insensitive),
-with FR + EN aliases limited to **combat / class(es) / monster(s)**.
+![Import_IA](/img/screenshots/game-systeme/Import_IA.png)
 
-:::warning
-Consequence: sections such as **Stats**, **Magic** or **Progression** are
-never selected on their own. They only come up via **arcs**, which
-inject all sections.
+During processing, progress is shown in two stages:
+
+- an **extraction** phase for the PDF text (no bar yet, the size is not known
+  at this point);
+- then an **analysis bar** that advances **chunk by chunk**, with the
+  **titles of detected sections** appearing as they are found.
+
+**Here is what it looks like during the import:**
+![Import_IA_encours](/img/screenshots/game-systeme/Import_IA_encours.png)
+
+**And the result:**
+
+![Import_IA_resultat](/img/screenshots/game-systeme/Import_IA_resultat.png)
+
+If your AI provider is momentarily overloaded, a status message informs you of
+the automatic retries: simply let the import continue.
+
+:::warning[Prefer a cloud model]
+Unless you really own an exceptional machine capable of running very heavy AI
+models, I recommend using a cloud provider. PDF processing is quite demanding
+and requires a lot of resources. Even a machine able to run a gemma4:26b, for
+example, is generally not enough — at least for now.
 :::
 
-This is why you should **name your H2 sections clearly** (Combat, Classes,
-Monsters) to benefit from this selection.
+### Sections are merged, not replaced
+
+:::warning[Important]
+The import **adds** the extracted sections to those already present in the
+editor; it does **not** replace them.
+
+- A **brand-new** section title creates a new card.
+- An **already existing** title (e.g. a "Combat" section that already exists)
+  has the imported content **appended after** the existing one.
+
+Re-importing the same PDF therefore **stacks** the contents. If needed, clear
+the relevant sections before starting another import.
+:::
+
+Nothing is saved automatically: the imported sections appear in the editor so
+you can **review, correct or delete them**. Click **Save** to confirm — only
+then are the rules stored.
+
+### Scanned PDFs (images)
+
+:::info[Scans and OCR]
+If the PDF is a **scan** (image pages with no text layer), the application
+automatically falls back to **optical character recognition (OCR)**. Recent
+versions — both **Docker** and the **desktop installer** — bundle the OCR engine
+(French + English), so it works without any extra installation.
+
+That said, OCR is slower and a little less reliable than native text: for the
+best result, prefer a **PDF whose text is selectable** whenever you have the
+choice.
+:::
+
+### Limits and error cases
+
+- **Size**: up to about **60 MB** per file.
+- **Unreadable or corrupted PDF**: the import stops with an error message.
+- **No usable text** (empty PDF, or a scan the OCR cannot read anything from):
+  "no rules found" message, nothing is added.
+- **A chunk that fails**: the problematic passage is skipped and the import
+  continues with the rest; if **all** chunks fail, the import is cancelled.
+
+### Local (Ollama) vs cloud provider
+
+The result differs slightly depending on the configured AI provider:
+
+- **Ollama (local)**: the AI only **detects the section boundaries** and keeps
+  your text **as is** — fast, no rephrasing.
+- **Cloud provider**: the AI **rewrites and formats** the content of each
+  section — cleaner text, but slightly reworded.
+
+### Settings
+
+> The PDF import parameters — **chunk size** and the AI call **timeout** — are
+> configurable in
+> [Configuration → Settings](/docs/configuration/settings#advanced-settings).
+
+If an import **fails with a timeout** or returns truncated sections, try
+**reducing the chunk size** (or increasing the timeout — and the context window
+for the AI you are using).

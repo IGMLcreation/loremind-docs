@@ -4,14 +4,15 @@ sidebar_position: 1
 
 # Systèmes de JDR
 
-Un **Système de JDR** regroupe les règles d'un jeu (D&D 5e, Nimble, Cthulhu,
-votre homebrew…). Il porte deux choses :
+![accueil_systeme](/img/screenshots/game-systeme/accueil_systeme.png)
 
-1. **Les règles** — markdown structuré par titres H2, sélectivement injecté dans les prompts IA
-2. **Les templates de fiches PJ et PNJ** — structure des champs (texte, nombre, images, listes clé/valeur)
+Un système de JDR est un agrégat de plusieurs choses :
 
-Une campagne référence un Système de JDR ; toutes les fiches PJ/PNJ de cette
-campagne suivent les templates du système.
+- **Les règles** : elles sont ajoutées via sections dans la partie "Règles du système". Si 
+vous souhaitez que l'IA ce référence à vos règles pendant que vous structurez votre campagne, vous pourrez 
+les mettres ici.
+- **Les templates de fiches PJ, PNJ et bestiaire** : créez votre propre format de fiche en ajoutant différents types de champs.
+Vous pouvez ainsi structurer ces dernières comme vous le souhaitez !
 
 ## Pourquoi séparer les systèmes ?
 
@@ -24,15 +25,15 @@ Vous pouvez :
 Le système est un **agrégat indépendant** dans le domaine — modifier ses
 règles ou son template n'affecte pas instantanément les fiches existantes.
 
-## Systèmes pré-livrés
+## Systèmes d'exemple
 
-Au premier démarrage, trois systèmes sont seedés :
-
-- **Nimble (extrait)** — narratif léger, 4 classes, monstres simples
-- **D&D 5e SRD (extrait)** — extrait libre du SRD 5.1
-- **Homebrew Exemple** — squelette à dupliquer
+:::warning
+Ces systèmes sont présents par défaut dans l'application juste à titre d'exemple
+pour vous montrer comment un système est structuré. Ils n'ont pas vocation à servir de
+modèle pour vos parties
+:::
 
 ## Pages détaillées
 
-- [Règles markdown et sélection IA](/docs/game-system/regles) — comment l'IA exploite les règles
+- [Règles du système](/docs/game-system/regles) — comment structurer vos règles en sections
 - [Templates de fiches PJ / PNJ](/docs/game-system/templates-fiches) — structure des fiches personnages

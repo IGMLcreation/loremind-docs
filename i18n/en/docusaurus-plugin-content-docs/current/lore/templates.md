@@ -17,7 +17,9 @@ from your lore:
 
 The editor opens: name, description, default folder, and above all the **block
 builder** — a palette of block types on the left, and a canvas on a
-**12-column grid** where you compose the sheet's layout.
+**12-column grid** where you compose the sheet's layout:
+
+![builder](/img/screenshots/lore/templates/builder.png)
 
 ## The block builder
 

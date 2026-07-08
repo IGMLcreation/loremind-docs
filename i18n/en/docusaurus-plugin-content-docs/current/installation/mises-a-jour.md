@@ -11,7 +11,7 @@ DM Loremind notifies you of new versions. How you update depends on your install
 
 The application checks in the background for new versions on the [GitHub releases](https://github.com/IGMLcreation/LoreMind/releases). When a newer version is available:
 
-- a **notification bubble** appears, and the notification-area (systray) icon offers a **"⬇ Download the update"** item;
+- a **notification bubble** appears, and the notification-area (systray) icon offers a **"⬇ Download the update"** item.
 - clicking it opens the release page to get the new installer.
 
 The update is **manual**: re-download the `.msi` (Windows) or the `.AppImage` (Linux) from the [Download](/download) page, then:
@@ -20,6 +20,12 @@ The update is **manual**: re-download the `.msi` (Windows) or the `.AppImage` (L
 - **Linux**: replace the old `.AppImage` with the new one.
 
 Your data (`~/.loremind`) is **kept** in all cases.
+
+:::warning[Quit before updating]
+Before installing the update, quit DM Loremind from the systray. The installer
+will offer to do it for you, but it may not always shut everything down
+cleanly — so I recommend doing it manually.
+:::
 
 ## Docker mode (Watchtower)
 

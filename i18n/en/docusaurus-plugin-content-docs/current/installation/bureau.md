@@ -60,6 +60,11 @@ Alternative without installing anything: launch it with `./DM_Loremind-*.AppImag
 - On the very first launch, the default language is French on a French system, or English for all others.
 - Everything runs **locally**: the interface is served at `http://localhost:8080`.
 
+:::note[Default settings credentials]
+By default, the admin username and password are `admin` / `admin`, and the
+application listens on port `8080` (so the default URL is `http://localhost:8080`).
+:::
+
 ## Controlling the application
 
 A **notification-area icon** (taskbar, on Windows and most Linux desktops) lets you, via a right-click:

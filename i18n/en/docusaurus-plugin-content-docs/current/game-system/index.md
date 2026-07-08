@@ -4,14 +4,15 @@ sidebar_position: 1
 
 # Game System
 
-A **Game System** represents a TTRPG system (D&D 5e, Nimble, Cthulhu,
-your own homebrew…). It carries two things:
+![accueil_systeme](/img/screenshots/game-systeme/accueil_systeme.png)
 
-1. **The rules** — markdown structured by H2 headings, selectively injected into AI prompts
-2. **The PC and NPC sheet templates** — field structure (text, number, images, key/value lists)
+A Game System is an aggregate of several things:
 
-A campaign references a Game System; all the PC/NPC sheets of that
-campaign follow the system's templates.
+- **The rules**: they are added as sections in the "System rules" area. If you
+want the AI to refer to your rules while you build your campaign, this is where
+you put them.
+- **The PC, NPC and bestiary sheet templates**: create your own sheet format by
+adding different types of fields. You can structure them however you like!
 
 ## Why separate systems?
 
@@ -24,15 +25,15 @@ You can:
 The system is an **independent aggregate** within the domain — modifying its
 rules or its template does not instantly affect existing sheets.
 
-## Pre-shipped systems
+## Example systems
 
-On first startup, three systems are seeded:
-
-- **Nimble (excerpt)** — lightweight narrative, 4 classes, simple monsters
-- **D&D 5e SRD (excerpt)** — free excerpt from the SRD 5.1
-- **Homebrew Example** — skeleton to duplicate
+:::warning
+These systems are included in the application by default purely as examples,
+to show you how a system is structured. They are not meant to serve as a
+template for your own games.
+:::
 
 ## Detailed pages
 
-- [Markdown rules and AI selection](/docs/game-system/regles) — how the AI leverages the rules
+- [System rules](/docs/game-system/regles) — how to structure your rules into sections
 - [PC / NPC sheet templates](/docs/game-system/templates-fiches) — character sheet structure

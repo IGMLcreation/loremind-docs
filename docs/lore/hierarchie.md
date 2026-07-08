@@ -39,3 +39,5 @@ Les liens sont stockés par identifiant, donc résistants aux renommages.
 La sidebar du Lore présente l'arborescence repliable. Pour les gros volumes,
 la **recherche globale** (raccourci `Ctrl + K`) est plus efficace que la navigation
 manuelle : elle cherche dans les lores, les dossiers et les pages.
+
+![recherche](/img/screenshots/lore/creation-lore/recherche.png)

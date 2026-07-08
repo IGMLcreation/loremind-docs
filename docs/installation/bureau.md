@@ -60,6 +60,11 @@ Alternative sans installation : lancez-le avec `./DM_Loremind-*.AppImage --appim
 - Au tout premier lancement, la langue par défaut est le français pour un système français, ou anglais pour tous les autres.
 - Tout tourne **en local** : l'interface est servie sur `http://localhost:8080`.
 
+:::note[Identifiants par défaut pour les paramètres]
+Par défaut, l'identifiant et le mot de passe admin sont `admin` / `admin` et 
+l'application écoute sur le port `8080`.(donc url par défaut : `http://localhost:8080`).
+:::
+
 ## Contrôler l'application
 
 Une **icône dans la zone de notification** (barre des tâches, sur Windows et la plupart des bureaux Linux) permet via un clic droit de :

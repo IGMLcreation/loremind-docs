@@ -39,3 +39,5 @@ Links are stored by identifier, so they are resilient to renames.
 The Lore sidebar presents the collapsible tree. For large volumes,
 the **global search** (shortcut `Ctrl + K`) is more efficient than manual
 navigation: it searches across lores, folders and pages.
+
+![recherche](/img/screenshots/lore/creation-lore/recherche.png)

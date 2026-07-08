@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Installation Docker (homelab)
+title: Installation Docker
 ---
 
 # Installation Docker (homelab / serveur)

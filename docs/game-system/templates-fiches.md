@@ -29,6 +29,8 @@ Chaque champ a :
 - Pour IMAGE : un **layout** (GALLERY, HERO, MASONRY, CAROUSEL)
 - Pour KEY_VALUE_LIST : une **liste de labels** figés
 
+![Fiches_personnages](/img/screenshots/game-systeme/Fiches_personnages.png)
+
 ## Champs universels (hard-codés)
 
 Quoi que vous mettiez dans le template, **trois champs sont toujours présents**
@@ -39,43 +41,60 @@ sur toutes les fiches PJ/PNJ/Ennemi et ne sont pas configurables :
 - **Bandeau** (image, ratio paysage)
 
 C'est volontaire — ces champs ont un sens universel quel que soit le système
-de jeu, et leur position dans la vue WorldAnvil-style est figée.
+de jeu, et leur position dans la vue  est figée.
 
-## Type KEY_VALUE_LIST en détail
+## Type Liste clé/valeur en détail
 
 Particulièrement utile pour les **stat blocks**. Vous définissez la liste des
 labels au niveau du template :
 
-```
-Champ "Caractéristiques" (KEY_VALUE_LIST)
-├── Label : FOR
-├── Label : DEX
-├── Label : CON
-├── Label : INT
-├── Label : SAG
-└── Label : CHA
-```
+![cle_valeur_mise_en_place](/img/screenshots/game-systeme/cle_valeur_mise_en_place.png)
 
-Toutes les fiches PJ auront ces 6 labels, et le MJ remplit juste les valeurs.
-Le type **Tableau** existe dans le moteur mais n'est **pas proposé** pour les
-fiches : restez sur Texte, Nombre, Image et Liste clé/valeur.
-À l'affichage :
+Résultat sur la fiche personnage : 
 
-- ≤ 6 entrées → tableau compact 2 rangées
-- > 6 entrées → liste 2 colonnes type "skills" papier
+![cle_valeur_mise_en_place_resultat](/img/screenshots/game-systeme/cle_valeur_mise_en_place_resultat.png)
 
+## Badges sous le nom du personnage
+
+Un badge est un petit rectangle avec un nombre qui s'affiche sous le nom du personnage. Ils sont particulièrement utiles pour afficher des informations 
+importantes comme le niveau, leur armure ou encore l'initiative.
+
+Pour faire un badge, faire un champ de type Nombre entouré d'autres champs de texte.
+Si vous faites deux champs de type Nombre, ils seront transformés en liste clé/valeur.
+Par exemple pour la fiche ci-dessus, voici comment sont organisés les champs niveau, initiative et armure :
+
+![badges](/img/screenshots/game-systeme/badges.png)
+
+:::info[Limite du système]
+Je me rend compte de la limite de ce système pour les badges. Je l'ai dev comme ça
+dans un premier temps parce que c'était pratique, mais je vais essayé de mettre 
+un type badge pour que ce soit explicite et laisser les nombres à part à l'avenir.
+N'hésitez pas à me dire ce que vous en pensez.
+:::
 ## Bonnes pratiques
 
 - **Préférez 1 KEY_VALUE_LIST à 6 NUMBER**. 6 stats D&D dans 1 champ "Caractéristiques" se rendent en joli stat block ; 6 NUMBER séparés se rendent en cards individuelles plus chargées.
 - **Réservez NUMBER aux valeurs isolées** (Niveau, PV max). Ils s'affichent comme des badges discrets dans le hero de la fiche.
 - **Systèmes pré-livrés** : trois systèmes sont fournis au départ — **Nimble** (extrait), **D&D 5e SRD** (extrait) et **Homebrew Exemple**. Partez de là pour comprendre l'esprit, puis adaptez. Notez qu'**aucun template d'ennemi n'est pré-rempli** : le bloc Ennemi existe mais reste vide tant que vous ne le configurez pas.
 
-## Migration des fiches existantes
+## Renommer ou supprimer un champ
 
-Modifier le template **ne supprime pas les valeurs déjà saisies** — elles
-restent en base sous leur ancien nom. Si vous renommez un champ "Histoire" en
-"Récit", les fiches existantes affichent toujours "Histoire" jusqu'à ce que
-vous les ré-éditiez.
+Modifier le template **ne détruit jamais les valeurs déjà saisies** en base de
+données. En revanche, chaque valeur est reliée au **nom** du champ — ce qui a une
+conséquence importante à connaître.
 
-C'est volontaire pour éviter une perte de données accidentelle. À terme, un
-outil de migration assistée sera proposé.
+:::warning[Attention au renommage]
+Si vous **renommez** un champ (ex. « Histoire » → « Récit ») ou le **supprimez**,
+le contenu déjà saisi sous l'ancien nom **disparaît des fiches existantes** : le
+champ renommé apparaît **vide**, et ré-éditer la fiche ne récupère pas l'ancien
+texte (il faudrait le ressaisir).
+:::
+
+La donnée n'est pas perdue pour autant : elle reste stockée sous l'**ancien nom**.
+Concrètement, **redonner au champ son nom d'origine exact** fait réapparaître le
+contenu tel quel — c'est le moyen le plus simple de récupérer une valeur après un
+renommage regretté.
+
+En pratique : **stabilisez le nom de vos champs avant de remplir beaucoup de
+fiches**. Un outil de migration assistée (renommage propagé aux fiches existantes)
+est prévu à terme.

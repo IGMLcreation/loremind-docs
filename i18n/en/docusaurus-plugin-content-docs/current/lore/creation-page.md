@@ -27,6 +27,8 @@ From a folder's view, click **New page**. You arrive on the
 
 ## The form
 
+![formulaire](/img/screenshots/lore/creation-lore/creation_page.png)
+
 - **Page title** *(required)* — the name of the entity: `Master Eldrin`,
   `The Silver City`… This is what will be displayed in the sidebar and in the
   links between pages.
@@ -53,7 +55,9 @@ content yourself.
 Opens a **chat drawer** with an AI assistant in wizard mode. You describe the
 entity in natural language (`a dwarven city carved into a mountain, ruled by a
 council of elders`), the AI may ask questions, then **pre-fills the template's
-fields** from the conversation.
+fields** from the conversation:
+
+![assistant](/img/screenshots/lore/creation-lore/assistant.png)
 
 Preferable for:
 

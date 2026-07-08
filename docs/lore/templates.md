@@ -17,7 +17,9 @@ depuis votre lore :
 
 L'éditeur s'ouvre : nom, description, dossier par défaut, et surtout le
 **builder de blocs** — une palette de types de blocs à gauche, et une toile en
-**grille de 12 colonnes** où vous composez la mise en page de la fiche.
+**grille de 12 colonnes** où vous composez la mise en page de la fiche :
+
+![builder](/img/screenshots/lore/templates/builder.png)
 
 ## Le builder de blocs
 
