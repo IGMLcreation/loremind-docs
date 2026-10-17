@@ -111,6 +111,41 @@ règle**. Les libellés varient selon les versions.
 Pour confirmer que l'antivirus est en cause, désactivez son pare-feu une minute
 (pas l'antivirus) et réessayez depuis la tablette ; réactivez-le ensuite.
 
+## Sur Linux ou un serveur Debian
+
+L'application de bureau existe aussi pour Linux (fichier AppImage) et peut tourner sur
+un serveur sans écran : vos appareils s'y connectent comme à un PC Windows.
+
+1. **Lancez l'application** sur le serveur :
+
+   ```bash
+   chmod +x DM_Loremind*.AppImage
+   ./DM_Loremind*.AppImage --appimage-extract-and-run
+   ```
+
+   `--appimage-extract-and-run` évite d'installer FUSE. Sans écran, les messages sur
+   l'icône de notification ou le navigateur qui ne s'ouvre pas sont normaux.
+2. **Changez le mot de passe admin** : au premier lancement, DM Loremind crée
+   `~/.loremind/loremind.properties` avec `admin` / `admin`. Modifiez
+   `admin.password`, puis relancez.
+3. **Ouvrez les Paramètres depuis votre PC.** Les Paramètres ne s'ouvrent que depuis la
+   machine elle-même : passez par un tunnel SSH, puis ouvrez `http://localhost:8080`
+   sur votre PC.
+
+   ```bash
+   ssh -L 8080:localhost:8080 utilisateur@votre-serveur
+   ```
+
+   Si le port 8080 du serveur était occupé, DM Loremind en a choisi un autre : il est
+   écrit dans `~/.loremind/.port`.
+4. **Activez l'accès** dans **Accès depuis une tablette**. Le bloc
+   **Vérification du réseau** indique si un pare-feu `ufw` ou `firewalld` est actif et
+   donne la commande à lancer sur le serveur pour ouvrir le port, par exemple
+   `sudo ufw allow 8765/tcp`. Avec `ufw`, DM Loremind ne peut pas lire les règles sans
+   droits administrateur : il affiche la commande par précaution.
+5. **Connectez vos appareils** avec l'adresse du serveur, par exemple
+   `http://192.168.1.50:8765`, et un code d'appairage.
+
 ## Hors de chez vous : Tailscale
 
 L'accès est prévu pour le réseau local. Pour consulter vos campagnes en 4G ou

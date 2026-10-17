@@ -109,6 +109,40 @@ between versions.
 To confirm the antivirus is the cause, turn its firewall off for a minute (not the
 antivirus) and try again from the tablet; turn it back on afterwards.
 
+## On Linux or a Debian server
+
+The desktop application also exists for Linux (AppImage file) and can run on a server
+without a screen: your devices connect to it just like to a Windows PC.
+
+1. **Start the application** on the server:
+
+   ```bash
+   chmod +x DM_Loremind*.AppImage
+   ./DM_Loremind*.AppImage --appimage-extract-and-run
+   ```
+
+   `--appimage-extract-and-run` avoids installing FUSE. Without a screen, messages about
+   the tray icon or the browser not opening are expected.
+2. **Change the admin password**: on first launch, DM Loremind creates
+   `~/.loremind/loremind.properties` with `admin` / `admin`. Edit `admin.password`, then
+   restart.
+3. **Open Settings from your PC.** Settings only open from the machine itself: go
+   through an SSH tunnel, then open `http://localhost:8080` on your PC.
+
+   ```bash
+   ssh -L 8080:localhost:8080 user@your-server
+   ```
+
+   If port 8080 was taken on the server, DM Loremind picked another one: it's written in
+   `~/.loremind/.port`.
+4. **Turn access on** in **Access from a tablet**. The **Network check** block says
+   whether a `ufw` or `firewalld` firewall is active and gives the command to run on the
+   server to open the port, for example `sudo ufw allow 8765/tcp`. With `ufw`,
+   DM Loremind can't read the rules without administrator rights: it shows the command
+   as a precaution.
+5. **Connect your devices** with the server's address, for example
+   `http://192.168.1.50:8765`, and a pairing code.
+
 ## Away from home: Tailscale
 
 Access is designed for the local network. To browse your campaigns on 4G or at a
