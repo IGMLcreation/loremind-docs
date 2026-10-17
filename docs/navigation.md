@@ -34,7 +34,7 @@ Les arcs, chapitres et quêtes restent accessibles depuis l'arborescence de camp
 
 ## Utiliser l'arborescence
 
-- Le **chevron** déplie ou replie une branche ; le **nom** ouvre la fiche.
+- Sur grand écran, le **chevron** déplie ou replie une branche ; le **nom** ouvre la fiche. Sur téléphone et tablette, utilisez les niveaux décrits plus bas.
 - Les boutons **+** créent un élément dans le contexte de la branche choisie.
   Cela évite de sélectionner à nouveau son parent.
 - Le titre du volet ramène à l'accueil de l'univers ou de la campagne.
@@ -73,7 +73,23 @@ Sur un écran compact, la barre haute remplace les volets permanents :
 
 Le menu et l'arborescence s'ouvrent chacun dans un tiroir. Touchez le fond assombri,
 le bouton de fermeture ou **Échap** pour le refermer. Choisir une page referme aussi
-le tiroir. Les **+** contextuels restent disponibles dans l'arbre.
+le tiroir.
+
+### Parcourir un niveau à la fois
+
+Dans les versions bêta récentes, l'arborescence compacte affiche **un niveau à
+la fois**. Touchez une ligne avec un chevron pour entrer dans sa branche : un arc
+affiche ses chapitres, puis un chapitre affiche ses scènes. Le bouton de retour
+en haut remonte d'un niveau.
+
+Pour consulter le parent ouvert, choisissez **Ouvrir la fiche**. Une ligne sans
+enfants ouvre directement sa page et ferme le tiroir. Les commandes de création
+du niveau courant sont placées dans son en-tête. Les pastilles de préparation
+et les compteurs restent visibles. À la réouverture, le tiroir se place près de
+la page que vous consultez.
+
+La capture ci-dessus montre l'ancien arbre compact imbriqué. La navigation par
+niveaux le remplace dans les versions suivantes de la bêta.
 
 Sur grand écran, **Replier l'arborescence** réduit le volet secondaire ; **Déplier
 l'arborescence** le restaure. Pour utiliser le bureau depuis un autre appareil,

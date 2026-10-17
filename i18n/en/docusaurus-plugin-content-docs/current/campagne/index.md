@@ -82,11 +82,15 @@ forks.
 - [Explorable locations and dungeon rooms](/docs/campagne/donjons) — prepare rooms and exits.
 - [Clocks and threats](/docs/campagne/horloges) — track pressure and automatic triggers per playthrough.
 - [Writing mentor](/docs/campagne/mentor-ecriture) — field tips, editor review and the guided method on beta.
+- [Publishing and PDF booklet](/docs/export/publication) — prepare a module to share, then choose document options.
 - [Your first game](/docs/prise-en-main) — from creation to a session.
 
 ## Writing aids in beta
 
-- [Editor review](/docs/campagne/relecture-editeur) — ten writing and structural patterns to examine.
+- [Editor review](/docs/campagne/relecture-editeur) — seventeen writing, link, character and structural patterns to examine.
+- [Choose a guided method](/docs/campagne/methodes-guidees) — compare the three workflows and resume a draft.
+- [Node-based investigation](/docs/campagne/methode-enquete) — six scenes and twelve links for varied paths.
+- [The villain's plan](/docs/campagne/methode-plan-mechant) — six stages and an optional manual clock.
 - [Five-room dungeon method](/docs/campagne/methode-cinq-salles) — prepare an adventure step by step without AI.
 
 The **Play** block and **Playthroughs** tree branch shorten session access.

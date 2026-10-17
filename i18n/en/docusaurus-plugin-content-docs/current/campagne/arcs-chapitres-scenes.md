@@ -14,11 +14,28 @@ An arc is a large narrative arch. Available fields:
 - **Structure** — *Linear* (chapters in sequence) or *Hub* ([quests](/docs/campagne/quetes) freely accessible from a central point)
 - **Themes** — recurring motifs (e.g. "betrayal", "descent into hell")
 - **Stakes** — what is at stake for the PCs
+- **Hidden truth** *(beta 1.4.0)* — the truth players will piece together
+- **Hooks** *(beta 1.4.0)* — several reasons to get involved, one per line
 - **GM notes** — secrets, twists, info not to reveal to the players
 - **Rewards** — XP, items, contacts gained
 - **Resolution** — the expected ending (to be adjusted based on actual play)
 - **Linked Lore pages** — cross-context references to the Lore (factions, locations)
 - **Illustrations** — mood images
+
+### Hidden truth and hooks (beta 1.4.0)
+
+In the arc editor, expand **Hidden truth and hooks**. Hidden truth describes what
+really happened; hooks explain why characters get involved. Prepare at least two
+hooks of different kinds, **one per line**, then save the arc. Lightbulbs beside
+the fields offer examples.
+
+For example, a councillor is secretly diverting the harvest. One hook involves
+a missing relative, another a reward for finding the convoys. A single line of
+hooks triggers an [Editor review](/docs/campagne/relecture-editeur) suggestion.
+
+Both fields appear in the arc view and **GM PDF**, and are removed from the
+**player PDF**. Arc hooks are separate from those entered in the
+[publishing sheet](/docs/export/publication).
 
 ## Chapter
 
@@ -39,12 +56,14 @@ reached) are now defined on [quests](/docs/campagne/quetes), not on chapters.
 The playable unit. This is what the AI draws on the most when you ask it
 to generate narrative content. Specific fields:
 
+- **Purpose of the scene** *(beta 1.4.0)* — what the story would lose if you cut it
 - **Location** and **timing** (day/night/season)
 - **Atmosphere** — sensory descriptions, tone
 - **Narration to players** — text to read out/improvise to set the scene
 - **Secret GM notes** — only displayed to you
 - **Choices and consequences** — possible alternatives
 - **Combat difficulty** and **enemies** — free note, and/or enemies linked from the [bestiary](/docs/campagne/ennemis)
+- **Enemy tactics and morale** *(beta 1.4.0)* — how they act and when they flee, negotiate or surrender
 - **Illustrations** — gallery of mood images
 - **Battlemaps** — the scene's combat maps (see below)
 - **Branches** — narrative exits toward other scenes (see [Narrative branches](/docs/campagne/branches))
@@ -54,6 +73,20 @@ A scene can contain **rooms**: as soon as it has at least one, it switches to a 
 :::
 
 An **AI Assistant** (✨ button) is available on the scene to generate atmosphere, narration, or plot twists.
+
+### Give scenes a purpose and opponents behaviour
+
+**Purpose of the scene**, near the description, helps prioritise preparation:
+“discover who funds the cult” or “choose which ally to help”. It guides the GM;
+read-aloud text stays in its usual field.
+
+In the combat section, **Enemy tactics and morale** describes behaviour to play:
+“protect the door, flee if their leader falls, negotiate for safe passage”.
+Written tactics prevent the “combat without purpose” suggestion even when choices
+and secret notes are empty.
+
+After saving, these texts appear in the scene view and
+[GM PDF booklet](/docs/export/pdf). They are excluded from the player edition.
 
 ### Battlemaps
 

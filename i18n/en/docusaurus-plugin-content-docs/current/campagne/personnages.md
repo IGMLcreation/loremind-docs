@@ -18,7 +18,9 @@ Whatever the game system, every sheet carries three hard-coded fields:
 - **Portrait** — main image, square ratio recommended
 - **Banner** — header image, landscape ratio (3:1)
 
-Everything else is driven by the **Game System template** associated with the campaign.
+Game statistics are driven by the **Game System template** associated with the
+campaign. From **1.4.0-beta**, NPCs also have a system-independent story block,
+described below.
 
 ## Template Fields
 
@@ -36,6 +38,32 @@ Personal Goals, Gallery.
 The GM can **edit the template** from the Game System to add, remove,
 or reorganize the fields.
 
+## NPC role in the story (beta 1.4.0)
+
+In an **NPC** editor, below the template fields, **Role in the story** contains
+four optional fields:
+
+| Field | What to prepare |
+|---|---|
+| **Role** | Opponent, Ally, Resource or Extra; leave unspecified if needed |
+| **Motivation** | What they want and what they are willing to do to get it |
+| **What they know** | Information they can reveal, and on what terms |
+| **Distinctive trait** | A gesture, speech pattern or mannerism to play at the table |
+
+Lightbulbs offer advice for each field. Click **Create** or **Save** to store the
+block with the sheet. It also appears in the detailed view, regardless of the
+game system.
+
+For example, an ally wants to protect their sister, knows the tunnels' entrance
+but expects a promise of safety, and counts their words on their fingers.
+[Review](/docs/campagne/relecture-editeur) flags an **Opponent** or **Ally** without
+motivation. Resources, extras and unspecified roles do not receive this suggestion.
+
+The **GM PDF** includes role, motivation, knowledge and distinctive trait. The
+**player PDF** keeps only the **distinctive trait** from this block. Review free
+text in template fields before sharing. These story details are also preserved
+by campaign export/import.
+
 ## Creation / Editing
 
 From the campaign:
@@ -44,7 +72,7 @@ From the campaign:
 - **+ NPC** opens the NPC editor
 
 Both screens dynamically render the form according to the template.
-All fields are optional — you can create a sheet with just a
+Apart from the name, fields are optional — you can create a sheet with just a
 name, and fill it in as you go (or ask the AI to suggest content).
 
 ## Display

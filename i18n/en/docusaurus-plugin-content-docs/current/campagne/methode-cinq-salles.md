@@ -15,7 +15,11 @@ be a crypt, ship, forest or masked ball.
 ## Start
 
 On the campaign home, click **Guided method**, or **Write an adventure step by
-step** on an empty campaign. The **Five-room dungeon** wizard opens.
+step** on an empty campaign. From **1.4.0-beta**, select **Five-room dungeon**,
+then **Start** in the method chooser. Earlier beta builds open this workflow directly.
+
+The [other guided methods](/docs/campagne/methodes-guidees) prepare a Node-based
+investigation or The villain's plan.
 
 ![First step and destination arc, French UI](/img/screenshots/beta/methode-cinq-salles.jpg)
 

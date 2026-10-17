@@ -49,3 +49,10 @@ a threat preserves its clocks, moving them into **Free clocks**.
 [Next-session preparation](/docs/campagne/preparation) flags clocks as **almost
 full** at 75% and **full** at 100%. A full clock does not write a scene or complete
 a quest. Apply its consequence yourself and record what happens in the journal.
+
+## Clock for a villain's plan (beta 1.4.0)
+
+[The villain's plan method](/docs/campagne/methode-plan-mechant) can add a
+**manual six-segment clock** to each existing playthrough. Advance it when the
+enemy makes progress; it does not trigger scenes or advance automatically at
+session end. A playthrough created later needs its clock added manually.

@@ -15,7 +15,12 @@ peut être une crypte, un navire, une forêt ou un bal masqué.
 ## Démarrer
 
 Sur l'accueil de campagne, cliquez sur **Méthode guidée**, ou **Écrire une aventure
-pas à pas** si la campagne est vide. L'assistant **Donjon en 5 salles** s'ouvre.
+pas à pas** si la campagne est vide. Depuis **1.4.0-beta**, choisissez ensuite
+**Donjon en 5 salles**, puis **Commencer** dans le sélecteur de méthodes. Sur les
+bêtas antérieures, ce parcours s'ouvre directement.
+
+Les [autres méthodes guidées](/docs/campagne/methodes-guidees) préparent une
+Enquête en nœuds ou un Plan du méchant.
 
 ![Première étape et arc de destination](/img/screenshots/beta/methode-cinq-salles.jpg)
 

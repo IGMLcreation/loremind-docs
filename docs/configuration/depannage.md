@@ -97,7 +97,8 @@ sauvegarde privée complète.
 Comparez votre installation avec le [récapitulatif bêta](/docs/configuration/nouveautes-beta).
 Après mise à jour, rechargez l'interface et vérifiez que le moteur et le front
 proviennent de la même version. L'accès tablette est réservé au **bureau** ; son
-diagnostic de pare-feu est réservé à **Windows**. Le raccourci de séance n'apparaît
+diagnostic couvre **Windows** et, dans les versions récentes, **Linux** (`ufw` ou
+`firewalld`). Le raccourci de séance n'apparaît
 que si une séance est active.
 
 Si l'onglet **Règles** est vide, associez un système à la campagne et enregistrez

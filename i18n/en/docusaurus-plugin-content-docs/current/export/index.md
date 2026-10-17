@@ -42,16 +42,18 @@ in [Configuration → Backups](/docs/configuration/sauvegardes).
   are not bundled.
 :::
 
-## Campaign PDF booklet
+## PDF booklet and publishing
 
-From a **campaign page**, the **"Export to PDF"** button generates a
-**printable booklet** of the campaign: cover, **paginated table of contents**,
-narrative structure (arcs, chapters, scenes with their illustrations and
-battlemaps), **quests**, **NPCs** and **bestiary**, **random tables** and
-linked **lore** pages. Ideal for prepping away from the screen or sharing a
-paper handout at the table.
+From the campaign home, **Export to PDF** produces a printable booklet.
+Recent beta builds offer **GM or player editions**, included parts, Lore scope,
+**A4 / A5 / US Letter** paper and print mode. Numbered page references, GM
+appendices and full-page maps help during play.
 
-➡️ See the dedicated page: [Campaign PDF booklet](/docs/export/pdf).
+The **publishing sheet** adds a cover, technical page, presentation, GM background
+and credits to share your adventure as a module.
+
+- [Prepare a module to share](/docs/export/publication) — fill in the sheet and save credits.
+- [Campaign PDF booklet](/docs/export/pdf) — select options, understand player filters and appendices.
 
 ## Foundry VTT export
 

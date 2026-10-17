@@ -86,7 +86,8 @@ your `.env`, keys or a complete private backup.
 Compare the installation with [Beta additions](/docs/configuration/nouveautes-beta).
 After updating, reload the interface and check that backend and frontend versions
 match. Tablet access is **desktop-only** and its firewall diagnostics are
-**Windows-only**. The session shortcut only appears when a session is active.
+available on **Windows** and, in recent builds, **Linux** (`ufw` or `firewalld`).
+The session shortcut only appears when a session is active.
 
 If **Rules** is empty, associate a system with the campaign and save its rules.
 If text seems to disappear while searching, clear the filter: only matching

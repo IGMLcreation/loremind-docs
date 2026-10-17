@@ -14,11 +14,29 @@ Un arc est une grande arche narrative. Champs disponibles :
 - **Structure** — *Linéaire* (chapitres en séquence) ou *Hub* (des [quêtes](/docs/campagne/quetes) accessibles librement depuis un point central)
 - **Thèmes** — les motifs récurrents (ex: "trahison", "descente aux enfers")
 - **Enjeux** — ce qui est en jeu pour les PJ
+- **Histoire cachée** *(bêta 1.4.0)* — la vérité que les joueurs reconstitueront
+- **Accroches** *(bêta 1.4.0)* — plusieurs raisons de s'impliquer, une par ligne
 - **Notes MJ** — secrets, twists, infos à ne pas révéler aux joueurs
 - **Récompenses** — XP, objets, contacts gagnés
 - **Résolution** — la fin attendue (à ajuster selon le jeu effectif)
 - **Pages Lore liées** — références cross-context vers le Lore (factions, lieux)
 - **Illustrations** — images d'ambiance
+
+### Histoire cachée et accroches (bêta 1.4.0)
+
+Dans l'éditeur de l'arc, dépliez **Histoire cachée et accroches**. L'histoire cachée
+décrit ce qui s'est vraiment passé ; les accroches disent pourquoi les personnages
+s'en mêlent. Préparez au moins deux accroches de nature différente, **une par ligne**,
+puis enregistrez l'arc. Les ampoules près des champs donnent des exemples.
+
+Exemple : la vérité est qu'un conseiller détourne la récolte ; une accroche vient
+d'un proche disparu, une autre d'une récompense offerte pour retrouver les convois.
+Une seule ligne d'accroche déclenche un conseil de la
+[relecture d'éditeur](/docs/campagne/relecture-editeur).
+
+Ces deux champs apparaissent dans la vue de l'arc et dans le **PDF MJ** ; ils sont
+retirés du **PDF joueurs**. Les accroches de cet arc restent distinctes de celles
+renseignées dans la [fiche de publication](/docs/export/publication).
 
 ## Chapitre
 
@@ -40,12 +58,14 @@ sur les chapitres.
 L'unité jouable. C'est ce que l'IA exploite le plus quand vous lui demandez
 de générer du contenu narratif. Champs spécifiques :
 
+- **Utilité de la scène** *(bêta 1.4.0)* — ce que l'histoire perdrait si vous la coupiez
 - **Lieu** et **timing** (jour/nuit/saison)
 - **Ambiance** — descriptions sensorielles, ton
 - **Narration aux joueurs** — texte à lire/improviser pour planter le décor
 - **Notes MJ secrètes** — ne s'affichent que pour vous
 - **Choix et conséquences** — alternatives possibles
 - **Difficulté de combat** et **ennemis** — note libre, et/ou ennemis liés depuis le [bestiaire](/docs/campagne/ennemis)
+- **Tactique et moral des adversaires** *(bêta 1.4.0)* — comment ils agissent, quand ils fuient, négocient ou se rendent
 - **Illustrations** — galerie d'images d'ambiance
 - **Battlemaps** — les cartes de combat de la scène (voir ci-dessous)
 - **Branches** — sorties narratives vers d'autres scènes (voir [Branches narratives](/docs/campagne/branches))
@@ -55,6 +75,20 @@ Une scène peut contenir des **pièces** : dès qu'elle en a au moins une, elle 
 :::
 
 Un **Assistant IA** (bouton ✨) est disponible sur la scène pour générer ambiance, narration ou rebondissements.
+
+### Donner une utilité et un comportement aux adversaires
+
+**Utilité de la scène**, près de la description, aide à trier la préparation :
+« découvrir qui finance le culte » ou « choisir quel allié aider ». Ce champ guide
+le MJ ; la narration aux joueurs reste dans son champ habituel.
+
+Dans la section combat, **Tactique et moral des adversaires** décrit le comportement
+à jouer : « protègent la porte, fuient si leur chef tombe, négocient contre un
+passage sûr ». Une tactique renseignée évite le conseil « combat sans but » même
+si les champs de choix et de notes secrètes restent vides.
+
+Après enregistrement, ces textes se retrouvent dans la vue de scène et le
+[livret PDF MJ](/docs/export/pdf). Ils sont exclus de l'édition joueurs.
 
 ### Battlemaps
 

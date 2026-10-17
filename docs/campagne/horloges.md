@@ -54,3 +54,11 @@ La [préparation de la prochaine séance](/docs/campagne/preparation) signale le
 horloges proches du terme : **presque pleine** à partir de 75 %, **pleine** à 100 %.
 Une horloge pleine n'écrit pas de scène et ne clôture pas une quête : appliquez
 vous-même sa conséquence et consignez ce qui arrive dans le journal.
+
+## Horloge d'un plan du méchant (bêta 1.4.0)
+
+La [méthode Plan du méchant](/docs/campagne/methode-plan-mechant) peut ajouter
+une horloge **manuelle de six segments** dans chaque partie existante. Avancez-la
+quand l'adversaire progresse ; elle ne déclenche pas les scènes et n'avance pas
+seule en fin de séance. Une partie créée après le plan demande une horloge
+ajoutée manuellement.

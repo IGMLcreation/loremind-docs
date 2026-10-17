@@ -80,8 +80,18 @@ configuration du dépôt et de son hébergement.
 ## Couverture de la bêta
 
 La mise à jour des guides bêta couvre les ajouts applicatifs entre `main`
-(`ad3ea0e`, stable 1.0.3) et `beta` (`8c6b642`) : mentor M1–M3, interface compacte,
-accès aux séances, panneau Règles, appairage bureau et diagnostic réseau Windows.
+(`ad3ea0e`, stable 1.0.3) et `beta` (`9a7e93b`, 1.4.0-beta) : mentor M1–M3,
+dix-sept règles de relecture, trois méthodes guidées, champs d'histoire des arcs,
+scènes et PNJ, interface compacte avec navigation par niveaux, accès aux séances,
+panneau Règles, appairage bureau et diagnostics réseau Windows / Linux,
+fiche de publication et export PDF configurable (éditions, renvois, annexes, cartes).
 La page `docs/configuration/nouveautes-beta.md` sert de point d'entrée ; chaque
 guide indique la disponibilité bêta et les éventuelles limites bureau / Docker.
-Les captures correspondantes sont dans `static/img/screenshots/beta/`.
+Les captures bêta sont dans `static/img/screenshots/beta/` ; la capture mobile
+de l'arbre précède la navigation par niveaux et sa légende le précise.
+
+Lors de la vérification du 17 octobre 2026, l'application servie sur localhost:8080
+ouvrait encore directement le parcours Five-room et ne proposait pas Publication.
+Les nouveaux comportements ont donc été vérifiés dans les composants, méthodes,
+services et filtres PDF du commit ci-dessus. Les captures de l'ancienne interface
+ne représentent pas le sélecteur et les champs de la version 1.4.0-beta.

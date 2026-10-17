@@ -82,11 +82,15 @@ ou les bifurcations conditionnelles.
 - [Lieux explorables et pièces de donjon](/docs/campagne/donjons) — préparer chaque pièce et ses sorties.
 - [Horloges et menaces](/docs/campagne/horloges) — suivre les pressions et leurs déclencheurs par partie.
 - [Mentor d'écriture](/docs/campagne/mentor-ecriture) — conseils dans les champs, relecture et méthode guidée de la bêta.
+- [Publication et livret PDF](/docs/export/publication) — préparer un module à partager, puis choisir les options du document.
 - [Votre première partie](/docs/prise-en-main) — le parcours de création jusqu'à la séance.
 
 ## Aides à l'écriture en bêta
 
-- [Relecture d'éditeur](/docs/campagne/relecture-editeur) — dix motifs de structure et de rédaction à examiner.
+- [Relecture d'éditeur](/docs/campagne/relecture-editeur) — dix-sept motifs de structure, de liens, de personnages et de rédaction à examiner.
+- [Choisir une méthode guidée](/docs/campagne/methodes-guidees) — comparer les trois parcours et reprendre un brouillon.
+- [Enquête en nœuds](/docs/campagne/methode-enquete) — six scènes et douze liens pour varier les chemins.
+- [Plan du méchant](/docs/campagne/methode-plan-mechant) — six étapes et une horloge manuelle facultative.
 - [Méthode Donjon en 5 salles](/docs/campagne/methode-cinq-salles) — préparer une aventure pas à pas sans IA.
 
 Le bloc **Jouer** et la branche **Parties** raccourcissent l'accès aux séances.

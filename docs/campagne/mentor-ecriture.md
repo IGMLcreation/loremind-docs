@@ -30,12 +30,23 @@ Cliquer de nouveau sur l'ampoule du sujet ouvert referme aussi le panneau.
 
 | Fiche | Conseils |
 |---|---|
-| **Arc** | Synopsis, thèmes, enjeux, récompenses et dénouement |
+| **Arc** | Synopsis, thèmes, enjeux, récompenses, dénouement ; histoire cachée et accroches depuis 1.4.0-beta |
 | **Chapitre** | Synopsis, objectifs des joueurs et enjeux narratifs |
-| **Scène** | Description, type de nœud, lieu et moment, ambiance, narration, secrets, choix, branches et combat |
+| **Scène** | Description, type de nœud, lieu et moment, ambiance, narration, secrets, choix, branches et combat ; utilité, tactique et moral depuis 1.4.0-beta |
+| **PNJ (1.4.0-beta)** | Rôle, motivation, savoir et signe distinctif |
+| **Publication (bêta récente)** | Présentation, avertissements, contexte caché, accroches, crédits et licence |
 
 Les sections optionnelles restent repliables. Une pastille sur leur en-tête
 indique qu'elles contiennent déjà du contenu.
+
+Les conseils sur les branches abordent aussi la variété des indices, les chemins
+alternatifs et les scènes de relance. La [fiche de publication](/docs/export/publication)
+possède ses propres ampoules pour préparer le module destiné à un autre MJ.
+
+Depuis **1.4.0-beta**, huit nouveaux conseils accompagnent les champs d'histoire
+[des arcs et scènes](/docs/campagne/arcs-chapitres-scenes) et
+[des PNJ](/docs/campagne/personnages). Ils vous aident à écrire une vérité cachée,
+plusieurs accroches, l'utilité d'une scène et des adversaires qui ont un but.
 
 ## L'utiliser pendant la préparation
 
@@ -53,7 +64,7 @@ le mentor aide à écrire ; l'[assistant IA](/docs/assistant-ia) propose du cont
 
 - **Conseils dans les champs** : les ampoules décrites ci-dessus vous aident pendant la saisie.
 - **[Relecture d'éditeur](/docs/campagne/relecture-editeur)** : sur l'accueil de campagne et dans les éditeurs, des remarques attirent l'attention sur les choix, enjeux, rythme et narration.
-- **[Méthode Donjon en 5 salles](/docs/campagne/methode-cinq-salles)** : un parcours en neuf étapes construit un chapitre et cinq scènes à partir de vos réponses.
+- **[Méthodes guidées](/docs/campagne/methodes-guidees)** : choisissez Donjon en 5 salles, Enquête en nœuds ou Plan du méchant pour construire le chapitre et ses scènes à partir de vos réponses.
 
 Ces trois aides fonctionnent sans IA. Elles complètent **Étoffer avec l'IA**, qui
 nécessite un fournisseur configuré et propose du texte à votre demande.

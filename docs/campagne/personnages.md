@@ -17,7 +17,9 @@ Quel que soit le système de jeu, chaque fiche porte trois champs hard-codés :
 - **Portrait** — image principale, ratio carré conseillé
 - **Bandeau** — image de header, ratio paysage (3:1)
 
-Tout le reste est piloté par le **template du Système de JDR** associé à la campagne.
+Les caractéristiques sont pilotées par le **template du Système de JDR** associé
+à la campagne. Depuis **1.4.0-beta**, les PNJ possèdent en plus un bloc narratif
+indépendant du système, décrit ci-dessous.
 
 ## Champs templates
 
@@ -35,6 +37,33 @@ Objectifs personnels, Galerie.
 Le MJ peut **éditer le template** depuis le Système de JDR pour ajouter, retirer
 ou réorganiser les champs.
 
+## Rôle du PNJ dans l'histoire (bêta 1.4.0)
+
+Dans l'éditeur d'un **PNJ**, après les champs du template, le bloc **Rôle dans
+l'histoire** comporte quatre champs facultatifs :
+
+| Champ | À préparer |
+|---|---|
+| **Rôle** | Opposant, Allié, Ressource ou Figurant ; laissez-le non précisé si nécessaire |
+| **Motivation** | Ce qu'il veut et ce qu'il est prêt à faire pour l'obtenir |
+| **Ce qu'il sait** | Les informations qu'il peut révéler, et à quelle condition |
+| **Signe distinctif** | Un geste, une façon de parler ou un tic à jouer à la table |
+
+Les ampoules donnent des conseils pour chaque champ. Cliquez sur **Créer** ou
+**Enregistrer** pour conserver le bloc avec la fiche ; il apparaît aussi dans
+la vue détaillée, quel que soit le système de JDR.
+
+Exemple : un allié veut protéger sa sœur, connaît l'entrée des souterrains mais
+attend qu'on lui garantisse sa sécurité, et compte ses mots sur ses doigts.
+La [relecture](/docs/campagne/relecture-editeur) signale un **Opposant** ou un
+**Allié** sans motivation. Les ressources, figurants et rôles non précisés ne
+reçoivent pas ce conseil.
+
+Dans le **PDF MJ**, rôle, motivation, savoir et signe distinctif sont présents.
+Dans le **PDF joueurs**, seul le **signe distinctif** de ce bloc est conservé.
+Les champs libres du template restent à relire avant de partager. Ces données
+narratives sont également conservées par l'export/import de campagne.
+
 ## Création / édition
 
 Depuis la campagne :
@@ -43,7 +72,7 @@ Depuis la campagne :
 - **+ PNJ** ouvre l'éditeur PNJ
 
 Les deux écrans rendent dynamiquement le formulaire selon le template.
-Tous les champs sont optionnels — vous pouvez créer une fiche avec juste un
+Hormis le nom, les champs sont optionnels — vous pouvez créer une fiche avec juste un
 nom, et la compléter au fil de l'eau (ou demander à l'IA de proposer).
 
 ## Affichage

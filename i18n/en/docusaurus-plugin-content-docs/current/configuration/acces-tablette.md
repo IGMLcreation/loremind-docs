@@ -22,7 +22,8 @@ tablet; its browser is enough.
    **Connecter une tablette…** (the tray menu is in French).
 2. Check **Allow access from the local network**.
 3. Look at the **Network check** block that appears. DM Loremind checks there the two
-   Windows settings that can stop the tablet from connecting:
+   Windows settings that can stop the tablet from connecting (for Linux, see
+   the dedicated section below):
    - **The firewall.** If it doesn't let DM Loremind through yet, click
      **Allow through the firewall**, then confirm in the Windows administrator
      prompt. The permission only applies to private networks.
@@ -75,7 +76,9 @@ says so: pick another one in **Advanced settings** > **Network port**, then
 
 ## The tablet loads forever
 
-It's almost always Windows silently blocking the connection.
+A firewall, guest network or device isolation can block the connection. The
+steps below apply to Windows; for a Linux host, see
+[On Linux or a Debian server](#on-linux-or-a-debian-server).
 
 1. In **Settings** > **Access from a tablet**, click **Check again** and follow the
    **Network check** block.
@@ -164,9 +167,10 @@ is allowed for the network used by Tailscale.
 - The PC keeps **localhost:8080** unless changed. The tablet uses the displayed
   network address and separate port **8765** by default. Its own localhost does
   not refer to your PC.
-- Built-in firewall and network-profile checks are **Windows-only**. Use the host
-  system's tools elsewhere. A green verdict checks the PC side; guest Wi-Fi or
-  device isolation can still prevent the connection.
+- Checks cover the firewall and network profile **on Windows**, and detect third-party
+  antivirus firewalls without reading their rules. **On Linux**, they check `ufw`
+  or `firewalld` and suggest the appropriate command. Use system tools elsewhere.
+  A green verdict does not rule out Wi-Fi device isolation.
 - **New code** invalidates the previous one. Codes expire after five minutes,
   work once and are invalidated after five incorrect attempts. Generate another
   code on the PC if rejected.

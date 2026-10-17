@@ -42,15 +42,18 @@ détaillée dans [Configuration → Sauvegardes](/docs/configuration/sauvegardes
   orphelines ne sont pas embarquées.
 :::
 
-## Livret PDF de campagne
+## Livret PDF et publication
 
-Depuis la **page d'une campagne**, le bouton **« Exporter en PDF »** génère un
-**livret imprimable** de la campagne : couverture, **sommaire paginé**, structure
-narrative (arcs, chapitres, scènes avec leurs illustrations et battlemaps),
-**quêtes**, **PNJ** et **bestiaire**, **tables aléatoires** et pages de **lore**
-liées. Idéal pour préparer hors écran ou partager un support papier à la table.
+Depuis l'accueil de campagne, **Exporter en PDF** produit un livret imprimable.
+Dans la bêta récente, choisissez une version **MJ ou joueurs**, les parties
+incluses, le périmètre du Lore, le format **A4 / A5 / US Letter** et le mode
+impression. Renvois paginés, annexes MJ et cartes pleine page facilitent le jeu.
 
-➡️ Voir la page dédiée : [Livret PDF de campagne](/docs/export/pdf).
+La **fiche de publication** ajoute couverture, page technique, présentation,
+contexte MJ et crédits pour partager votre aventure sous forme de module.
+
+- [Préparer un module à partager](/docs/export/publication) — renseigner la fiche et enregistrer les crédits.
+- [Livret PDF de campagne](/docs/export/pdf) — choisir les options, comprendre les filtres joueurs et les annexes.
 
 ## Export Foundry VTT
 

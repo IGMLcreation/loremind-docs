@@ -22,7 +22,8 @@ Aucune installation n'est nécessaire sur la tablette, son navigateur suffit.
    puis **Connecter une tablette…**.
 2. Cochez **Autoriser l'accès depuis le réseau local**.
 3. Regardez le bloc **Vérification du réseau** qui apparaît. DM Loremind y contrôle
-   les deux réglages de Windows qui peuvent empêcher la tablette de se connecter :
+   sur Windows les deux réglages qui peuvent empêcher la tablette de se connecter
+   (sur Linux, voir la section dédiée plus bas) :
    - **Le pare-feu.** S'il ne laisse pas encore passer DM Loremind, cliquez sur
      **Autoriser dans le pare-feu**, puis confirmez dans la fenêtre administrateur
      de Windows. L'autorisation ne vaut que pour les réseaux privés.
@@ -76,7 +77,9 @@ DM Loremind l'indique : choisissez-en un autre dans **Réglages avancés** >
 
 ## La tablette charge sans fin
 
-C'est presque toujours Windows qui bloque la connexion sans prévenir.
+Un pare-feu, un réseau invité ou l'isolation des appareils peut bloquer la connexion.
+Les étapes ci-dessous concernent Windows ; pour un hôte Linux, voir
+[Sur Linux ou un serveur Debian](#sur-linux-ou-un-serveur-debian).
 
 1. Dans **Paramètres** > **Accès depuis une tablette**, cliquez sur
    **Vérifier à nouveau** et suivez les indications du bloc **Vérification du réseau**.
@@ -168,10 +171,11 @@ DM Loremind est autorisé pour le réseau utilisé par Tailscale.
 - Le PC conserve son accès **localhost:8080** habituel, sauf port modifié. La
   tablette utilise l'adresse réseau affichée et le port dédié **8765** par défaut.
   Son propre localhost ne désigne pas votre PC.
-- Le diagnostic intégré du pare-feu et du profil réseau est disponible **sur Windows**.
-  Sur un autre système, vérifiez ces réglages avec ses outils habituels. Un verdict
-  vert contrôle le côté PC ; un Wi-Fi invité ou une isolation entre appareils peut
-  encore empêcher la connexion.
+- Le diagnostic contrôle le pare-feu et le profil réseau **sur Windows**, et détecte
+  les pare-feu antivirus tiers sans lire leurs règles. **Sur Linux**, il vérifie
+  `ufw` ou `firewalld` et propose la commande adaptée. Sur les autres systèmes,
+  utilisez leurs outils habituels. Un verdict vert ne garantit pas l'absence
+  d'isolation entre appareils sur le Wi-Fi.
 - **Nouveau code** invalide le précédent. Un code expire après cinq minutes,
   ne sert qu'une fois et est invalidé après cinq essais incorrects. En cas de refus,
   générez-en un autre depuis le PC.

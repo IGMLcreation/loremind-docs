@@ -31,7 +31,7 @@ through the campaign tree.
 
 ## Use the tree
 
-- The **chevron** expands or collapses a branch; its **name** opens the sheet.
+- On wide screens, the **chevron** expands or collapses a branch; its **name** opens the sheet. On phones and tablets, use the levels described below.
 - **+** buttons create an item in the selected branch's context.
 - The sidebar title returns to the setting or campaign home.
 - [Preparation indicators](/docs/campagne/preparation) flag gaps on scenes and
@@ -67,7 +67,19 @@ On compact screens, the top bar replaces permanent sidebars:
 
 The menu and tree open in separate drawers. Tap the dimmed background, close
 button or **Escape** to dismiss one. Choosing a page also closes the drawer.
-Contextual **+** buttons remain available in the tree.
+### Browse one level at a time
+
+Recent beta builds show **one level at a time** in the compact tree. Tap a row
+with a chevron to enter its branch: an arc shows its chapters, then a chapter
+shows its scenes. The back button at the top moves up one level.
+
+Choose **Open sheet** to view the currently opened parent. A row without children
+opens its page directly and closes the drawer. Creation commands for the current
+level sit in its header. Preparation dots and counters remain visible. Reopening
+the drawer positions it near the page you are viewing.
+
+The screenshot above shows the earlier nested compact tree. Level navigation
+replaces it in later beta builds.
 
 On wide screens, **Collapse tree** reduces the secondary sidebar and **Expand tree**
 restores it. To use a desktop installation from another device, configure
