@@ -53,3 +53,11 @@ AI and embeddings settings do not live in the database: they
 are kept in a configuration file on the Brain service side
 (`data/settings.json`). Any change is taken into account starting from the
 next request, without restarting the application.
+
+## Apply settings
+
+Click **Save** to store AI settings. A blank API key field preserves an existing
+key; **Clear saved key** removes it. The language choice is remembered on this device.
+
+See [Embeddings and retrieval](/docs/configuration/embeddings) for Workshop settings,
+and [Troubleshooting](/docs/configuration/depannage) for connection or import failures.

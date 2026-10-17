@@ -31,6 +31,7 @@ const LINKS = {
   demo: 'https://loremind-demo.igmlcreation.fr',
   github: 'https://github.com/IGMLcreation/LoreMind',
   patreon: 'https://www.patreon.com/c/IGMLCreation',
+  discord: 'https://discord.gg/cPpFzCjEzQ',
 };
 
 // Runes du Futhark ancien — décor de l'anneau (cercle magique).
@@ -324,6 +325,10 @@ function FinalCta(): ReactNode {
           <Link className={clsx('button button--lg', styles.btnPrimary)} to={LINKS.download}>
             <Download size={18} aria-hidden />
             <Translate id="home.final.cta.install">Installer maintenant</Translate>
+          </Link>
+          <Link className={clsx('button button--lg', styles.btnGhost)} href={LINKS.discord}>
+            <MessagesSquare size={18} aria-hidden />
+            <Translate id="home.final.cta.discord">Rejoindre le Discord</Translate>
           </Link>
           <Link className={clsx('button button--lg', styles.btnGhost)} href={LINKS.patreon}>
             <Heart size={18} aria-hidden />

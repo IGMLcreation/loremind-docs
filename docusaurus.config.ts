@@ -104,6 +104,11 @@ const config: Config = {
           position: 'right',
         },
         {
+          href: 'https://discord.gg/cPpFzCjEzQ',
+          label: '💬 Discord',
+          position: 'right',
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
@@ -137,6 +142,10 @@ const config: Config = {
         {
           title: 'Projet',
           items: [
+            {
+              label: 'Rejoindre le Discord',
+              href: 'https://discord.gg/cPpFzCjEzQ',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/IGMLcreation/LoreMind',

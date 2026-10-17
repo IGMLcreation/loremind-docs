@@ -33,7 +33,7 @@ Au lieu de saisir du markdown libre, les pages sont structurées par champs.
 Avantages :
 
 1. **Cohérence visuelle** — toutes les "Cités" ont les mêmes sections.
-2. **Génération IA ciblée** — vous pouvez demander à l'IA de générer juste le champ "Histoire" en s'appuyant sur les autres champs comme contexte.
+2. **Génération IA structurée** — le remplissage automatique propose des valeurs pour les champs texte du template ; vous les relisez dans le formulaire avant de sauvegarder.
 3. **Réutilisation** — un template "Cité" sert pour toutes vos cités.
 
 ## Workflow type
@@ -50,3 +50,6 @@ Avantages :
 - [Création d'une page](/docs/lore/creation-page) — créer une fiche manuellement ou avec l'IA
 - [Templates et types de champs](/docs/lore/templates) — Création d'un template et utilité détaillée
 - [Hiérarchie et navigation](/docs/lore/hierarchie) — organiser un gros volume de contenu
+
+Pour poursuivre après la création, voir [Modifier, illustrer et relier les pages](/docs/lore/edition-pages).
+La [recherche globale](/docs/navigation) permet aussi de retrouver une fiche sans parcourir tout l'arbre.

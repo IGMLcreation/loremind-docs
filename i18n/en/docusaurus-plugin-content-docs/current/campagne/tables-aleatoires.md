@@ -24,14 +24,15 @@ a result.
 
 :::info[Probability depends on range width]
 There is **no** "weight" field. An entry is more likely the wider its range is.
-On a `d20`, an entry `1–10` is **twice** as likely as an entry `11–12`.
+On a `d20`, an entry `1–10` is **five times** as likely as an entry `11–12` (50% versus 10%). With multiple dice, such as
+`2d6`, totals are not equally likely: range width alone does not determine probability.
 :::
 
 ## Auto-ranges
 
 The **"Auto-ranges"** button spreads the dice range **uniformly** across
-your entries. Handy for starting from equal probability, then adjusting a few
-bounds by hand afterward.
+your entries. This balances result ranges as closely as possible, rather than
+guaranteeing equal probabilities; adjust them to suit your dice formula.
 
 ## Rolling a result
 

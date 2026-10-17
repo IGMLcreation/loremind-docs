@@ -24,15 +24,17 @@ donne un résultat.
 
 :::info[La probabilité dépend de la largeur de plage]
 Il n'y a **pas** de champ « poids ». Une entrée est d'autant plus probable que
-sa plage est large. Sur un `d20`, une entrée `1–10` est **deux fois** plus
-probable qu'une entrée `11–12`.
+sa plage est large. Sur un `d20`, une entrée `1–10` est **cinq fois** plus
+probable qu'une entrée `11–12` (50 % contre 10 %). Avec plusieurs dés, comme
+`2d6`, les totaux ne sont pas équiprobables : la largeur de plage seule ne suffit
+pas à comparer les probabilités.
 :::
 
 ## Auto-ranges
 
 Le bouton **« Auto-ranges »** répartit **uniformément** la plage des dés sur
-vos entrées. Pratique pour partir d'une probabilité égale, quitte à ajuster
-ensuite quelques bornes à la main.
+vos entrées. Cela égalise les plages de résultats autant que possible, pas
+forcément les probabilités : c'est surtout un point de départ à ajuster.
 
 ## Tirer un résultat
 

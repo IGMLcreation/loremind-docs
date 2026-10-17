@@ -2,89 +2,65 @@
 sidebar_position: 2
 ---
 
-# Configuration des fournisseurs
+# Configurer les fournisseurs IA
 
-Le choix du fournisseur LLM se fait dans **Settings → IA**.
+Ouvrez **Paramètres → Moteur IA**. Un seul fournisseur de conversation est actif
+à la fois. Il sert au chat, aux générations et aux analyses de PDF. Les
+[embeddings](/docs/configuration/embeddings) de l'Atelier se règlent séparément.
 
-## Ollama (local)
+## Procédure commune
 
-[Ollama](https://ollama.com) tourne en local sur votre machine.
+1. Sélectionnez le fournisseur.
+2. Renseignez sa connexion : URL pour Ollama, clé API pour le cloud.
+3. Choisissez un modèle dans son catalogue.
+4. Cliquez sur **Sauvegarder**.
+5. Revenez à une fiche et essayez une question courte dans **Assistant IA**.
 
-**Avantages** :
+Les clés déjà enregistrées ne sont pas réaffichées. Un champ de clé vide conserve
+la clé existante ; utilisez **Effacer la clé enregistrée** pour la retirer.
 
-- 100% privé — vos données ne sortent jamais
-- Pas de coût récurrent
-- Fonctionne offline
+![Paramètres de l'application, clés masquées](/img/screenshots/guides/parametres.jpg)
 
-**Contraintes** :
+## Ollama
 
-- Demande une machine avec GPU (ou patience sur CPU)
-- Les modèles "8B" tournent confortablement sur 8 Go de VRAM ; "70B" demandent 40+ Go
+Ollama doit être installé et accessible depuis le service Brain. Téléchargez
+un modèle de conversation, puis sélectionnez-le dans les Paramètres. Le
+[gestionnaire de modèles](/docs/installation/ollama) permet aussi de lancer
+un téléchargement depuis l'application.
 
-**Configuration** :
+| Installation | Adresse habituelle depuis le Brain |
+|---|---|
+| Bureau, Ollama sur le même PC | `http://localhost:11434` |
+| Ollama du Compose Docker | `http://ollama:11434` |
+| Ollama sur l'hôte d'un déploiement Docker | `http://host.docker.internal:11434` |
 
-1. Installer Ollama (un guide dédié existe : [Ollama](/docs/installation/ollama))
-2. Télécharger un modèle : `ollama pull llama3.1:8b` (ou autre)
-3. Dans DM Loremind → **Settings → IA → Ollama**, renseigner l'URL (par défaut `http://localhost:11434`)
-4. Sélectionner le modèle dans la liste auto-détectée
+La **fenêtre de contexte** détermine combien de texte le modèle peut prendre en
+compte. L'augmenter consomme davantage de mémoire ; réduisez la taille des imports
+ou l'historique si votre machine ne peut pas suivre. Voir [Dépannage](/docs/configuration/depannage).
 
-Le pull du modèle peut aussi être déclenché depuis l'UI DM Loremind.
+## Fournisseurs cloud
 
-## 1min.ai (cloud)
+| Fournisseur | Configuration dans Loremind |
+|---|---|
+| **1min.ai** | Clé API 1min.ai et modèle dans la liste regroupée par fournisseur |
+| **OpenRouter** | Clé API OpenRouter, puis modèle ; filtre de modèles gratuits disponible |
+| **Mistral** | Clé API Mistral et modèle de conversation |
+| **Gemini** | Clé API Google AI Studio et modèle Gemini de conversation |
 
-[1min.ai](https://1min.ai) est un agrégateur qui donne accès à Anthropic Claude,
-OpenAI GPT-4, Google Gemini, Mistral, etc. via un seul abonnement.
+Obtenez votre clé depuis votre compte chez le fournisseur correspondant. Le
+catalogue, les quotas, les tarifs et l'accès à chaque modèle dépendent de ce
+compte. Un libellé « gratuit » ou une clé valide ne garantit pas une capacité
+illimitée. Vérifiez également que le modèle choisi sait produire du texte :
+un catalogue peut exposer des modèles spécialisés image, audio ou embeddings.
 
-**Avantages** :
+Le cloud reçoit les demandes et le contexte utiles à la fonction utilisée.
+Voir [Données et partage](/docs/configuration/donnees-confidentialite).
 
-- Modèles haut-de-gamme accessibles sans hardware costaud
-- Bascule entre fournisseurs sans changer d'abonnement
-- Latence faible
+## Choisir un modèle pour votre usage
 
-**Contraintes** :
-
-- Coût mensuel
-- Vos prompts transitent par les serveurs 1min.ai et le fournisseur sous-jacent (Anthropic, OpenAI…)
-- Dépend de votre connexion internet
-
-**Configuration** :
-
-1. Créer un compte 1min.ai et récupérer une clé API
-2. Dans DM Loremind → **Settings → IA → 1min.ai**, coller la clé
-3. La liste des modèles s'auto-charge, regroupée par fournisseur
-
-## Mistral (cloud)
-
-L'API de [Mistral AI](https://mistral.ai) — modèles européens, particulièrement bons en français et pour produire du JSON fidèle.
-
-1. Créer un compte sur [console.mistral.ai](https://console.mistral.ai) et générer une clé API.
-2. Dans DM Loremind → **Settings → IA → Mistral**, coller la clé.
-3. Sélectionner le modèle (ex. `mistral-large-latest`).
-
-## Gemini / Google AI Studio (cloud)
-
-Les modèles **Gemini** de Google, via l'API de [Google AI Studio](https://aistudio.google.com).
-
-**Avantage** : une **clé API gratuite** (sans carte bancaire), un quota généreux et un très grand contexte — pratique pour les imports volumineux.
-
-1. Aller sur [aistudio.google.com](https://aistudio.google.com) → **Get API key**.
-2. Dans DM Loremind → **Settings → IA → Gemini**, coller la clé.
-3. Sélectionner le modèle (ex. `gemini-2.0-flash`).
-
-## OpenRouter (cloud)
-
-[OpenRouter](https://openrouter.ai) route vos requêtes vers des dizaines de modèles (Anthropic, OpenAI, Google, Meta…) via une seule clé.
-
-**Avantage** : des **modèles gratuits** disponibles. Pour rester gratuit, choisissez un modèle marqué « gratuit », ou le routeur `openrouter/free` qui en sélectionne un automatiquement. Pour les imports (gros documents), préférez un modèle gratuit à **grand contexte**.
-
-1. Créer un compte sur [openrouter.ai](https://openrouter.ai) et générer une clé API.
-2. Dans DM Loremind → **Settings → IA → OpenRouter**, coller la clé.
-3. Sélectionner le modèle.
-
-## Quel modèle choisir ?
-
-Pour DM Loremind, en pratique :
-
-- **Tâches simples** (résumer une scène, proposer 3 idées) : Llama 3.1 8B, Claude Haiku 3.5, GPT-4o-mini suffisent
-- **Tâches narratives** (écrire une backstory cohérente) : Claude Sonnet, GPT-4o donnent les meilleurs résultats
-- **Génération longue** (générer un arc entier) : préférez Claude Sonnet — meilleur respect du contexte
+Essayez d'abord une demande courte, puis un cas représentatif : texte narratif,
+fiche structurée ou import. Pour les imports, vérifiez la capacité de contexte,
+la qualité du résultat structuré et le temps de réponse. Réglez les morceaux
+et le timeout selon les limites de votre modèle, puis relisez les propositions.
+La liste disponible dans votre installation est préférable à un ancien exemple
+de nom de modèle.

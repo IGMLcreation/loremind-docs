@@ -10,6 +10,15 @@ that answers relying only on those sources.
 
 ## Sources
 
+### Create a workshop
+
+Open **Workshops (AI + PDF)** from the campaign sidebar. Enter a name, click
+**New workshop**, then open it. Use **Add PDF** and wait until indexing finishes
+before asking questions. The workshop name can be edited in its header.
+
+Chat and indexing need separate models: a conversation model and an
+[embedding model](/docs/configuration/embeddings).
+
 Sources are **PDF files only**. Each source displays its **status**:
 
 - **indexing** in progress
@@ -30,6 +39,18 @@ the sources to query using **checkboxes**.
 - **Quick** (default) — targeted search within the documents, fast answer.
 - **Deep** — reads the **entire** document: slower but exhaustive, ideal for
   requests like "list all the…". A progress bar tracks the progress.
+
+## Archives and references
+
+**Clear** archives the current conversation. Open **Archives** to read previous
+threads in read-only mode and return to the active chat. Check an archive as a
+reference to include its exchanges in future quick or deep questions; uncheck
+it when it is no longer relevant.
+
+Selected PDF sources and referenced conversation archives are separate inputs.
+An archive provides conversation context, not a new documentary source. Check
+cited pages and proposed fields before creating campaign content, including the
+destination and possible duplicates.
 
 ## Action cards
 

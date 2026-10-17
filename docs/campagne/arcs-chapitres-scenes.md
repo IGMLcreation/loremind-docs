@@ -83,3 +83,10 @@ pas de fond — un avertissement s'affiche à l'upload.
 - **Préparez en arc, jouez en scène.** Définissez le grand cadre une fois, puis ajoutez les scènes au fur et à mesure des séances.
 - **N'attendez pas que tout soit "complet".** Une scène avec juste lieu + ambiance + narration courte est jouable — le panneau [« Prochaines étapes »](/docs/campagne/preparation) vous dit ce qui manque vraiment.
 - **Notes MJ vs narration joueurs.** Séparez clairement — l'IA peut générer la narration sans révéler les secrets si vous lui passez les bons champs.
+
+## Pour aller plus loin
+
+Une aventure courte peut commencer en [mode simple](/docs/campagne/creation-campagne),
+avec des scènes seules. Pour le détail du type de nœud et l'édition des liens,
+voir [Branches narratives](/docs/campagne/branches). Le [guide des lieux explorables](/docs/campagne/donjons)
+détaille les pièces, étages, portes et références au bestiaire.

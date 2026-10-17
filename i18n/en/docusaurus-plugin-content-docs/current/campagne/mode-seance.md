@@ -131,3 +131,11 @@ Clocks, fronts, facts and quest progression belong to the **Playthrough** (one
 table's game state), not to the campaign. Two tables playing the same campaign
 each have their own clocks and facts.
 :::
+
+## Visual reference and quick entry
+
+![Session journal and reference panel, French UI](/img/screenshots/guides/mode-seance.jpg)
+
+**Ctrl + Enter** adds the journal entry being composed. Finish your notes before
+ending the session. For clock creation and trigger details, see
+[Clocks and threats](/docs/campagne/horloges).

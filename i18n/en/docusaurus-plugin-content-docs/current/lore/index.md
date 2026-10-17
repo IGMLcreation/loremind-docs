@@ -33,7 +33,7 @@ Instead of entering free-form markdown, pages are structured by fields.
 Advantages:
 
 1. **Visual consistency** — all "Cities" have the same sections.
-2. **Targeted AI generation** — you can ask the AI to generate only the "History" field, drawing on the other fields as context.
+2. **Structured AI generation** — automatic fill suggests values for template text fields; review them in the form before saving.
 3. **Reuse** — a "City" template serves for all your cities.
 
 ## Typical workflow
@@ -50,3 +50,6 @@ Advantages:
 - [Creating a page](/docs/lore/creation-page) — create a sheet manually or with the AI
 - [Templates and field types](/docs/lore/templates) — Creating a template and its detailed usefulness
 - [Hierarchy and navigation](/docs/lore/hierarchie) — organizing a large volume of content
+
+After creating pages, see [Edit, illustrate and link pages](/docs/lore/edition-pages).
+[Global search](/docs/navigation) also finds sheets without browsing the whole tree.

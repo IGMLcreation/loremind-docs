@@ -81,3 +81,10 @@ have no background — a warning shows at upload time.
 - **Prepare by arc, play by scene.** Define the big picture once, then add scenes as your sessions progress.
 - **Don't wait for everything to be "complete".** A scene with just a location + atmosphere + a short piece of narration is playable — the ["Next steps"](/docs/campagne/preparation) panel tells you what's actually missing.
 - **GM notes vs. player narration.** Keep them clearly separated — the AI can generate the narration without revealing the secrets if you pass it the right fields.
+
+## More detail
+
+A short adventure can start in [simple mode](/docs/campagne/creation-campagne),
+with standalone scenes. See [Narrative branches](/docs/campagne/branches) for node
+types and link editing, and [Explorable locations](/docs/campagne/donjons) for
+rooms, floors, doors and bestiary references.

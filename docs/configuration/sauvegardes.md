@@ -58,49 +58,50 @@ L'emplacement dépend de votre mode d'installation :
   exactement le cas où l'export `.zip` intégré est la bonne voie : il rassemble
   tout dans un seul fichier portable.
 - **Déploiement Docker** — données dans **PostgreSQL** (campagnes, lore, fiches,
-  images en référence) et binaires d'images sur le système de fichiers.
+  images en référence) et binaires dans **MinIO** avec le Compose fourni (volume `minio-data`).
 
 ## Option avancée (Docker uniquement)
 
-Si vous opérez un déploiement Docker et souhaitez un backup au niveau de la base,
-vous pouvez utiliser `pg_dump`. Cette procédure **ne concerne pas** l'installation
-bureau.
+Le Compose fourni utilise le service **postgres** et le stockage objet **MinIO**.
+Les images et fichiers ne sont pas dans un volume `loremind_images`.
+Une sauvegarde technique doit couvrir ensemble la base, les objets et la
+configuration du Brain.
 
-### Données PostgreSQL
+### Export PostgreSQL
 
-```bash
-docker compose exec db pg_dump -U loremind loremind > loremind-$(date +%Y%m%d).sql
-```
-
-### Images uploadées
-
-Les images sont dans le volume Docker `loremind_images` (selon votre
-docker-compose). À copier au même moment que le dump SQL pour rester cohérent :
+Exemple **Bash**, depuis le dossier du Compose : les noms de base et d'utilisateur
+sont lus dans l'environnement du conteneur.
 
 ```bash
-docker run --rm -v loremind_images:/source -v $(pwd):/backup alpine \
-    tar czf /backup/images-$(date +%Y%m%d).tar.gz -C /source .
+docker compose exec -T postgres sh -c 'pg_dump -U "$POSTGRES_USER" "$POSTGRES_DB"' > loremind.sql
 ```
 
-### Restauration
+Ce dump couvre les données relationnelles. Il ne contient pas les binaires de
+MinIO, les fichiers PDF des ateliers, leurs index ni les clés de configuration.
 
-```bash
-# Restaurer la base
-docker compose exec -T db psql -U loremind loremind < loremind-20260101.sql
+### Fichiers et volumes
 
-# Restaurer les images
-docker run --rm -v loremind_images:/dest -v $(pwd):/backup alpine \
-    tar xzf /backup/images-20260101.tar.gz -C /dest
-```
+Repérez les noms réels avec `docker volume ls` et votre fichier Compose : ils
+peuvent avoir un préfixe de projet. Le Compose du dépôt déclare notamment
+`postgres-data`, `minio-data` et `brain-data`.
 
-Redémarrer ensuite le stack : `docker compose restart`.
+- Sauvegardez les **objets MinIO** et les **données Brain** avec votre outil de
+  sauvegarde habituel.
+- Pour une copie brute de volumes, arrêtez les services qui y écrivent pendant
+  la copie. Une copie brute du volume PostgreSQL exige aussi l'arrêt de PostgreSQL ;
+  le dump logique ci-dessus est une autre méthode.
+- Conservez séparément le Compose, le `.env` et les réglages IA. Ils peuvent contenir
+  des secrets et ne doivent pas accompagner une campagne partagée.
 
-### Automatisation (Docker)
+### Restauration technique
 
-Pour automatiser, deux options côté Docker :
+Restaurez d'abord sur une installation isolée avec une version compatible :
+base PostgreSQL, objets MinIO et données Brain issus du même point de sauvegarde.
+Un import SQL brut ne possède pas le mode fusion de l'import ZIP Loremind ;
+ne l'exécutez pas sur une base déjà remplie sans procédure de restauration adaptée.
 
-1. **Cron sur l'hôte** — un script `backup.sh` qui dump SQL + tar images, plus une politique de rétention
-2. **Service tiers** — Restic, Borg, Duplicati pointant vers les volumes Docker
+Contrôlez ensuite une page illustrée, une fiche, une partie et un atelier avant
+de considérer la restauration comme réussie.
 
 ## Bonnes pratiques
 

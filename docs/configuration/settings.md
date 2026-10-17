@@ -53,3 +53,13 @@ Les réglages d'IA et d'embeddings ne vivent pas dans la base de données : ils
 sont conservés dans un fichier de configuration côté service Brain
 (`data/settings.json`). Toute modification est prise en compte dès la requête
 suivante, sans redémarrage de l'application.
+
+## Appliquer les réglages
+
+Cliquez sur **Sauvegarder** pour enregistrer les paramètres IA. Une clé API laissée
+vide conserve la clé déjà configurée ; la case **Effacer la clé enregistrée** la retire.
+Le choix de langue est mémorisé sur cet appareil.
+
+Les paramètres avancés de l'Atelier sont expliqués dans [Embeddings et recherche
+documentaire](/docs/configuration/embeddings). Pour une erreur de connexion ou un
+import interrompu, consultez le [Dépannage](/docs/configuration/depannage).

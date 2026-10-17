@@ -40,9 +40,10 @@ The first answer is rarely the final one. Don't hesitate to ask for:
 
 ## Load the Lore context before complex sessions
 
-If you're preparing a pivotal scene, first open the important Lore pages
-in chat and ask the AI for a summary. This "loads" its understanding of the context
-for the session — subsequent generations will be more consistent.
+For a pivotal scene, fill its related Lore pages and save the important facts
+before generating. Resume the same thread to retain an exchange. Opening chat
+on another page does not transfer its history into other conversations. See
+[Chat and context](/docs/assistant-ia/conversations).
 
 ## Don't ask it to play
 

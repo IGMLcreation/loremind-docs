@@ -75,3 +75,11 @@ forks.
 
 - [AI workshop (Notebooks)](/docs/campagne/notebooks)
 - [Campaign import (PDF)](/docs/campagne/import-campagne)
+
+## More workflows
+
+- [Create and organise a campaign](/docs/campagne/creation-campagne) — start with scenes, then add arcs and quests.
+- [Explorable locations and dungeon rooms](/docs/campagne/donjons) — prepare rooms and exits.
+- [Clocks and threats](/docs/campagne/horloges) — track pressure and automatic triggers per playthrough.
+- [Writing mentor](/docs/campagne/mentor-ecriture) — built-in advice in the development version.
+- [Your first game](/docs/prise-en-main) — from creation to a session.

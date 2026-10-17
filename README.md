@@ -1,41 +1,78 @@
-# Website
+# Documentation DM Loremind
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Site Docusaurus de documentation utilisateur, en français et en anglais.
+La configuration et les dépendances sont définies dans `docusaurus.config.ts`
+et `package.json`. Le projet utilise Node.js 20 ou supérieur et npm.
 
-## Installation
-
-```bash
-yarn
-```
-
-## Local Development
+## Installer et travailler localement
 
 ```bash
-yarn start
+npm ci
+npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+Le serveur de développement affiche la langue française par défaut. Pour travailler
+sur la traduction anglaise :
 
 ```bash
-yarn build
+npm start -- --locale en
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Organisation
 
-## Deployment
+- `docs/` : documentation française ; `intro.mdx`, `prise-en-main.md` et
+  `navigation.md` forment le point d'entrée.
+- `i18n/en/docusaurus-plugin-content-docs/current/` : versions anglaises, avec les
+  **mêmes chemins et identifiants** que les pages françaises.
+- `sidebars.ts` : navigation principale ; les catégories génèrent leurs éléments
+  depuis les dossiers. Le front matter `sidebar_position` ordonne les pages.
+- `static/img/screenshots/` : captures réelles de l'application. Les captures
+  complémentaires de prise en main sont dans `guides/`.
+- `blog/` et `i18n/en/docusaurus-plugin-content-blog/` : devlogs et traductions.
 
-Using SSH:
+Les pages couvrent l'installation, la configuration, le Lore, les systèmes de JDR,
+les campagnes, l'assistant IA et les exports. Les guides distinguent le scénario
+partagé de l'état propre à chaque partie.
+
+## Ajouter ou actualiser un guide
+
+1. Vérifier le comportement dans l'application et dans les composants / services
+   correspondants du dépôt LoreMind.
+2. Modifier la page française et son équivalent anglais. Conserver les chemins
+   existants pour préserver les liens.
+3. Ajouter les liens utiles depuis la page d'accueil de la catégorie ; ajouter
+   une entrée dans `sidebars.ts` seulement pour une nouvelle page à la racine.
+4. Rédiger les liens internes sous la forme `/docs/campagne/quetes` et les images
+   sous la forme `/img/screenshots/guides/nom.jpg`.
+5. Décrire les étapes, les validations qui enregistrent réellement le contenu et
+   les limites observables. Identifier clairement les fonctions de développement
+   qui ne sont pas présentes dans la version distribuée.
+
+### Captures
+
+Utiliser des noms descriptifs et une extension correspondant au fichier réel.
+Contrôler chaque image : contenu chargé, commandes lisibles, aucune clé API ni
+identifiant visible, aucun document privé sans rapport avec le guide. Certaines
+vues de l'application utilisent un défilement interne : une capture de la fenêtre
+visible peut être nécessaire si la capture pleine page produit une zone vide.
+
+Les nouvelles captures sont en français et partagées par les deux langues ;
+les textes alternatifs anglais le précisent. Pour une image partagée, décrire
+le comportement dans le texte du guide, sans dépendre exclusivement de la capture.
+
+## Vérifier et prévisualiser
 
 ```bash
-USE_SSH=true yarn deploy
+npm run typecheck
+npm run build
+npm run serve -- --host 127.0.0.1 --port 3090 --no-open
 ```
 
-Not using SSH:
+La compilation construit les **deux langues**, contrôle les liens et produit
+`build/` avec la version anglaise sous `build/en/`. Ouvrir ensuite
+`http://127.0.0.1:3090/docs/prise-en-main` et
+`http://127.0.0.1:3090/en/docs/prise-en-main` pour vérifier navigation, tableaux,
+encadrés et captures. `build/` et `.docusaurus/` sont générés et ignorés par Git.
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+La prévisualisation locale ne publie pas le site. Le déploiement relève de la
+configuration du dépôt et de son hébergement.

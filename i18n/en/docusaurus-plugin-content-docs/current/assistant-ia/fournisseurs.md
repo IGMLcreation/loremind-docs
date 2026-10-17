@@ -2,89 +2,62 @@
 sidebar_position: 2
 ---
 
-# Provider configuration
+# Configure AI providers
 
-The LLM provider is selected in **Settings → AI**.
+Open **Settings → AI engine**. One conversation provider is active at a time for
+chat, generation and PDF analysis. Workshop [embeddings](/docs/configuration/embeddings)
+are configured separately.
 
-## Ollama (local)
+## Common setup
 
-[Ollama](https://ollama.com) runs locally on your machine.
+1. Select the provider.
+2. Configure its connection: an Ollama URL or a cloud API key.
+3. Choose a model from its catalogue.
+4. Click **Save**.
+5. Return to a sheet and try a short question in **AI Assistant**.
 
-**Advantages**:
+Saved keys are not displayed again. A blank key field preserves an existing key;
+use **Clear saved key** to remove it.
 
-- 100% private — your data never leaves your machine
-- No recurring cost
-- Works offline
+![Application settings with hidden keys, French UI](/img/screenshots/guides/parametres.jpg)
 
-**Constraints**:
+## Ollama
 
-- Requires a machine with a GPU (or patience on CPU)
-- "8B" models run comfortably on 8 GB of VRAM; "70B" models require 40+ GB
+Ollama must be installed and reachable from Brain. Download a conversation model,
+then select it in Settings. The [model manager](/docs/installation/ollama) can also
+start downloads from the application.
 
-**Configuration**:
+| Installation | Usual address from Brain |
+|---|---|
+| Desktop, Ollama on the same PC | `http://localhost:11434` |
+| Compose-managed Ollama | `http://ollama:11434` |
+| Host Ollama with Docker deployment | `http://host.docker.internal:11434` |
 
-1. Install Ollama (a dedicated guide is available: [Ollama](/docs/installation/ollama))
-2. Download a model: `ollama pull llama3.1:8b` (or another)
-3. In DM Loremind → **Settings → AI → Ollama**, enter the URL (default `http://localhost:11434`)
-4. Select the model from the auto-detected list
+The **context window** controls how much text the model can consider. Increasing
+it uses more memory; reduce import chunks or history if the machine cannot keep
+up. See [Troubleshooting](/docs/configuration/depannage).
 
-The model pull can also be triggered from the DM Loremind UI.
+## Cloud providers
 
-## 1min.ai (cloud)
+| Provider | Loremind configuration |
+|---|---|
+| **1min.ai** | 1min.ai API key and a model from the provider-grouped list |
+| **OpenRouter** | OpenRouter API key and model; a free-model filter is available |
+| **Mistral** | Mistral API key and conversation model |
+| **Gemini** | Google AI Studio API key and Gemini conversation model |
 
-[1min.ai](https://1min.ai) is an aggregator that gives access to Anthropic Claude,
-OpenAI GPT-4, Google Gemini, Mistral, etc. through a single subscription.
+Obtain the key from your account with the corresponding provider. Catalogue,
+quotas, pricing and model access depend on that account. A “free” label or valid
+key does not guarantee unlimited capacity. Also check that the selected model
+produces text: catalogues may expose specialised image, audio or embedding models.
 
-**Advantages**:
+Cloud providers receive requests and context relevant to the feature. See
+[Data and sharing](/docs/configuration/donnees-confidentialite).
 
-- High-end models accessible without powerful hardware
-- Switch between providers without changing your subscription
-- Low latency
+## Choose a model for your workflow
 
-**Constraints**:
-
-- Monthly cost
-- Your prompts pass through the 1min.ai servers and the underlying provider (Anthropic, OpenAI, etc.)
-- Depends on your internet connection
-
-**Configuration**:
-
-1. Create a 1min.ai account and obtain an API key
-2. In DM Loremind → **Settings → AI → 1min.ai**, paste the key
-3. The model list loads automatically, grouped by provider
-
-## Mistral (cloud)
-
-[Mistral AI](https://mistral.ai)'s API — European models, particularly good in French and at producing faithful JSON.
-
-1. Create an account on [console.mistral.ai](https://console.mistral.ai) and generate an API key.
-2. In DM Loremind → **Settings → AI → Mistral**, paste the key.
-3. Select the model (e.g. `mistral-large-latest`).
-
-## Gemini / Google AI Studio (cloud)
-
-Google's **Gemini** models, through the [Google AI Studio](https://aistudio.google.com) API.
-
-**Advantage**: a **free API key** (no credit card), a generous quota and a very large context — handy for large imports.
-
-1. Go to [aistudio.google.com](https://aistudio.google.com) → **Get API key**.
-2. In DM Loremind → **Settings → AI → Gemini**, paste the key.
-3. Select the model (e.g. `gemini-2.0-flash`).
-
-## OpenRouter (cloud)
-
-[OpenRouter](https://openrouter.ai) routes your requests to dozens of models (Anthropic, OpenAI, Google, Meta…) through a single key.
-
-**Advantage**: **free models** available. To stay free, choose a model marked "free", or the `openrouter/free` router which selects one automatically. For imports (large documents), prefer a free model with a **large context**.
-
-1. Create an account on [openrouter.ai](https://openrouter.ai) and generate an API key.
-2. In DM Loremind → **Settings → AI → OpenRouter**, paste the key.
-3. Select the model.
-
-## Which model should you choose?
-
-For DM Loremind, in practice:
-
-- **Simple tasks** (summarizing a scene, suggesting 3 ideas): Llama 3.1 8B, Claude Haiku 3.5, GPT-4o-mini are enough
-- **Narrative tasks** (writing a coherent backstory): Claude Sonnet, GPT-4o give the best results
-- **Long-form generation** (generating an entire arc): prefer Claude Sonnet — better context adherence
+Try a short request first, then a representative task: narrative text, a structured
+sheet or an import. For imports, check context capacity, structured output quality
+and response time. Adjust chunks and timeout to the model's limits, then review
+suggestions. Prefer the catalogue available in your installation over an old
+example model name.

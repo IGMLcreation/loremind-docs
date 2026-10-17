@@ -23,6 +23,10 @@
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/IGMLcreation/LoreMind"
   },
+  "link.item.label.Rejoindre le Discord": {
+    "message": "Join the Discord",
+    "description": "The label of footer link with label=Rejoindre le Discord linking to https://discord.gg/cPpFzCjEzQ"
+  },
   "link.item.label.Démo": {
     "message": "Demo",
     "description": "The label of footer link with label=Démo linking to https://loremind-demo.igmlcreation.fr"

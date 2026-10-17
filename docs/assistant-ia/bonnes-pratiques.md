@@ -40,9 +40,10 @@ La première réponse est rarement la finale. N'hésitez pas à :
 
 ## Chargez le contexte du Lore avant les sessions complexes
 
-Si vous préparez une scène cruciale, ouvrez d'abord les pages Lore importantes
-en chat, demandez à l'IA un résumé. Ça "charge" sa compréhension du contexte
-pour la session — les générations suivantes seront plus cohérentes.
+Pour une scène cruciale, renseignez ses pages Lore liées et enregistrez les
+informations importantes avant la génération. Reprenez le même fil si vous
+voulez conserver un échange. Ouvrir un chat sur une autre page ne transmet pas
+son historique aux autres conversations. Voir [Chat et contexte](/docs/assistant-ia/conversations).
 
 ## Ne lui demandez pas de jouer
 

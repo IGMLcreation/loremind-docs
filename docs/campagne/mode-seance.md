@@ -136,3 +136,11 @@ Horloges, menaces, faits et progression de quêtes appartiennent à la **Partie*
 (l'état de jeu d'une table), pas à la campagne. Deux tables qui jouent la même
 campagne ont chacune leurs horloges et leurs faits.
 :::
+
+## Repères visuels et saisie rapide
+
+![Journal et panneau de référence pendant une séance](/img/screenshots/guides/mode-seance.jpg)
+
+Dans le formulaire du journal, **Ctrl + Entrée** ajoute l'entrée saisie. Complétez
+les notes avant de terminer la session. Les instructions détaillées de création
+et de déclenchement des horloges sont dans [Horloges et menaces](/docs/campagne/horloges).

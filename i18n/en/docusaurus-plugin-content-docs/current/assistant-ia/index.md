@@ -20,25 +20,22 @@ The AI does not replace the GM — it assists them. Typical use cases:
 
 ## Supported providers
 
-Five LLM providers can be configured in the **Settings → AI** — one local and four cloud:
+Five providers are available under **Settings → AI engine**: **Ollama**, **1min.ai**,
+**Mistral**, **Gemini** and **OpenRouter**. One conversation provider is active at
+a time. Available models depend on the configured catalogue and account.
+Document embeddings have a separate setting.
 
-- **Ollama** *(local)* — 100% private execution, your data never leaves your machine. Ideal with a GPU (works on CPU, but slowly).
-- **1min.ai** *(cloud)* — aggregator (Anthropic, OpenAI, Google, Mistral…) through a single paid subscription.
-- **Mistral** *(cloud)* — Mistral AI's API (European models, good in French).
-- **Gemini / Google AI Studio** *(cloud)* — Google's Gemini models; **free API key** on aistudio.google.com.
-- **OpenRouter** *(cloud)* — multi-provider router, with **free models** available.
-
-The choice is made globally (one active provider at a time), with a model
-selected by default. You can switch at any time. Details: [Provider configuration](/docs/assistant-ia/fournisseurs).
+Cloud providers receive the context relevant to each request. For local processing,
+configure Ollama for chat and, when using the Workshop, for embeddings too.
+See [Provider configuration](/docs/assistant-ia/fournisseurs).
 
 ## The assistant proposes, you apply
 
 Beyond chat, the assistant can also **write into your sheets** — always on the
 same principle: it proposes, **nothing is applied without your validation**.
 
-- **Field-by-field fleshing out** — on arcs, chapters and scenes, a ✨ button
-  next to the text fields proposes content that builds on the rest of the
-  sheet and the campaign context. You accept, regenerate or ignore.
+- **Flesh out with AI** — on arcs, chapters and scenes, a panel proposes values
+  field by field. Select which suggestions to apply, then review and save the sheet.
 - **Scene drafts** — on a chapter, the **"Generate scenes"** panel proposes
   complete scenes to insert into the chapter. It's also the shortcut opened by
   the "Fix" button of the [guided prep](/docs/campagne/preparation) when facing
@@ -46,8 +43,8 @@ same principle: it proposes, **nothing is applied without your validation**.
 - **"Previously on…" recap** — during a [session](/docs/campagne/mode-seance),
   the assistant writes the recap of the previous session from your journal,
   logged in one click.
-- **Lore page generation** — field by field or in wizard mode at creation time
-  (see [Lore page generation](/docs/assistant-ia/generation-pages)).
+- **Lore page generation** — fill text fields in the editor or use the creation
+  wizard (see [Content generation](/docs/assistant-ia/generation-pages)).
 
 ## Context injected automatically
 
@@ -64,5 +61,13 @@ You **don't need** to manually re-paste this context — it is computed for you.
 ## Detailed pages
 
 - [Provider configuration](/docs/assistant-ia/fournisseurs) — Ollama, 1min.ai, Mistral, Gemini, OpenRouter
-- [Lore page generation](/docs/assistant-ia/generation-pages) — fill / regenerate template fields
+- [Lore page generation](/docs/assistant-ia/generation-pages) — Lore fill and campaign proposals
 - [Prompting best practices](/docs/assistant-ia/bonnes-pratiques) — for better results
+
+## Choose the right tool
+
+- [Chat and conversations](/docs/assistant-ia/conversations) — context, history and thread management.
+- [Generate sheet content](/docs/assistant-ia/generation-pages) — Lore fill, proposal selection and scene creation.
+- [AI Workshop](/docs/campagne/notebooks) — PDF questions, citations and referenced archives.
+- [Embeddings](/docs/configuration/embeddings) — configure indexing separately from chat.
+- [Data and sharing](/docs/configuration/donnees-confidentialite) — understand provider transmissions.

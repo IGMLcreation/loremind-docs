@@ -16,3 +16,9 @@ une fois l'application installée.
 > Pour l'**installation initiale** sur Windows / Linux, voir la section
 > [Installation](/docs/installation/bureau). Pour les **mises à jour
 > régulières** via Watchtower, voir [Mises à jour](/docs/installation/mises-a-jour).
+
+## Guides complémentaires
+
+- [Embeddings et recherche documentaire](/docs/configuration/embeddings) — régler l'indexation et la couverture de l'Atelier.
+- [Données, confidentialité et partage](/docs/configuration/donnees-confidentialite) — comprendre le contexte transmis et les exports.
+- [Dépannage](/docs/configuration/depannage) — diagnostiquer un problème de lancement, d'IA ou d'import.

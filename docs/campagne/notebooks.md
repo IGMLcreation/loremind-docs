@@ -10,6 +10,16 @@ répond en s'appuyant uniquement sur ces sources.
 
 ## Les sources
 
+### Créer un atelier
+
+Dans la sidebar de campagne, ouvrez **Ateliers (IA + PDF)**. Saisissez un nom
+et cliquez sur **Nouvel atelier**, puis ouvrez-le. Utilisez **Ajouter un PDF**
+pour importer une source et attendez la fin de son indexation avant de l'interroger.
+Le nom de l'atelier reste modifiable dans son en-tête.
+
+Le chat et l'indexation nécessitent deux réglages distincts : un modèle de
+conversation et un modèle d'[embeddings](/docs/configuration/embeddings).
+
 Les sources sont des fichiers **PDF uniquement**. Chaque source affiche son
 **état** :
 
@@ -46,6 +56,19 @@ types possibles sont :
 - **Table aléatoire**
 
 :::tip[Effacer le fil]
-Le bouton **« Effacer »** n'efface pas vraiment : il **archive** le fil de
+Le bouton **« Vider »** n'efface pas vraiment : il **archive** le fil de
 discussion, que vous pouvez ainsi mettre de côté sans perdre l'historique.
 :::
+
+## Relire et réutiliser une archive
+
+Le bouton **Archives** ouvre les anciens fils. Vous pouvez les consulter en
+**lecture seule**, puis revenir au chat courant. Cochez une archive comme
+**référence** pour fournir ses échanges comme contexte aux prochaines réponses,
+en mode rapide comme approfondi. Décochez-la quand elle n'est plus utile.
+
+Les sources PDF et les archives de conversation sont deux sélections différentes :
+une archive apporte du contexte d'échange, pas une nouvelle source documentaire.
+Contrôlez les pages citées et les propositions avant de créer une fiche. Un clic
+sur **Créer dans la campagne** crée du contenu ; relisez aussi la cible et les
+champs proposés pour éviter les doublons.

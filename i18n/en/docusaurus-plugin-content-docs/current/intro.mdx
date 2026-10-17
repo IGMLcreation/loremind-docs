@@ -2,27 +2,28 @@
 sidebar_position: 1
 ---
 
-import {ShieldCheck, Sparkles, Dices, Container, RefreshCw} from 'lucide-react';
+import {ShieldCheck, Sparkles, Dices, Download, RefreshCw} from 'lucide-react';
 import IconFeature, {IconFeatureList} from '@site/src/components/IconFeature';
 
 # Welcome to the DM Loremind documentation
 
 **DM Loremind** is a self-hosted tabletop RPG assistant that combines campaign management, character sheets, lore
-and local AI to help you prepare your games.
+and local or cloud AI to help you prepare your games.
 
 ## Key features
 
 <IconFeatureList>
   <IconFeature Icon={Dices} title="Multi-system">manage several campaigns each with their own TTRPG rules.</IconFeature>
-  <IconFeature Icon={Sparkles} title="Local or remote AI">embedded Ollama or remote AI as you prefer (currently 1min.ai supported).</IconFeature>
-  <IconFeature Icon={ShieldCheck} title="100% self-hosted">your data stays on your machine.</IconFeature>
-  <IconFeature Icon={Container} title="One-command Docker install">Windows, Linux, macOS.</IconFeature>
-  <IconFeature Icon={RefreshCw} title="Automatic updates">optional, via Watchtower.</IconFeature>
+  <IconFeature Icon={Sparkles} title="Local or remote AI">Ollama locally, or 1min.ai, Mistral, Gemini and OpenRouter in the cloud.</IconFeature>
+  <IconFeature Icon={ShieldCheck} title="100% self-hosted">content is stored in your installation; cloud AI sends relevant context to the selected provider.</IconFeature>
+  <IconFeature Icon={Download} title="Desktop or Docker">Windows MSI, Linux AppImage, or Docker for a server.</IconFeature>
+  <IconFeature Icon={RefreshCw} title="Updates">desktop release notifications, or optional automatic updates with Docker Watchtower.</IconFeature>
 </IconFeatureList>
 
 ## Where to start?
 
-- **Want to install DM Loremind?** 
+- **Desktop installation:** [Windows MSI or Linux AppImage](/docs/installation/bureau).
+- **Server installation (Docker):**
 - → [Installation guide for Windows](/docs/installation/docker#windows)
 - → [Installation guide for Linux](/docs/installation/docker#linux)
 
@@ -38,3 +39,9 @@ DM Loremind is made up of three services that communicate through Docker Compose
 - **Web** — Angular user interface.
 
 Optionally, a fourth **Ollama** service can be started to serve the LLM models locally.
+
+## Already installed?
+
+Follow [Your first game](/docs/prise-en-main) from campaign creation to a first
+session. [Navigation and search](/docs/navigation) helps find sheets, while
+[Troubleshooting](/docs/configuration/depannage) covers startup, AI, PDFs and backups.

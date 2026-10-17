@@ -20,16 +20,14 @@ L'IA ne remplace pas le MJ — elle assiste. Cas d'usage typiques :
 
 ## Fournisseurs supportés
 
-Cinq fournisseurs LLM sont configurables dans les **Settings → IA** — un local et quatre cloud :
+Cinq fournisseurs sont disponibles dans **Paramètres → Moteur IA** : **Ollama**,
+**1min.ai**, **Mistral**, **Gemini** et **OpenRouter**. Un fournisseur de conversation
+est actif à la fois. Les modèles disponibles dépendent du catalogue et du compte
+configurés. Les embeddings documentaires ont un réglage distinct.
 
-- **Ollama** *(local)* — exécution 100% privée, vos données ne quittent jamais votre machine. Idéal avec un GPU (fonctionne sur CPU, mais lentement).
-- **1min.ai** *(cloud)* — agrégateur (Anthropic, OpenAI, Google, Mistral…) via un seul abonnement payant.
-- **Mistral** *(cloud)* — l'API de Mistral AI (modèles européens, bons en français).
-- **Gemini / Google AI Studio** *(cloud)* — les modèles Gemini de Google ; **clé API gratuite** sur aistudio.google.com.
-- **OpenRouter** *(cloud)* — routeur multi-fournisseurs, avec des **modèles gratuits** disponibles.
-
-Le choix se fait globalement (un fournisseur actif à la fois), avec un modèle
-sélectionné par défaut. Vous pouvez basculer à tout moment. Détails : [Configuration des fournisseurs](/docs/assistant-ia/fournisseurs).
+Avec un fournisseur cloud, le contexte utile est envoyé à ce fournisseur. Pour
+un traitement local, configurez Ollama pour le chat et, si vous utilisez l'Atelier,
+pour les embeddings. Voir [Configuration des fournisseurs](/docs/assistant-ia/fournisseurs).
 
 ## L'assistant propose, vous appliquez
 
@@ -37,9 +35,9 @@ Au-delà du chat, l'assistant sait aussi **écrire dans vos fiches** — toujour
 sur le même principe : il propose, **rien n'est appliqué sans votre
 validation**.
 
-- **Étoffage champ par champ** — sur les arcs, chapitres et scènes, un bouton ✨
-  à côté des champs texte propose un contenu qui s'appuie sur le reste de la
-  fiche et le contexte de la campagne. Vous acceptez, régénérez ou ignorez.
+- **Étoffer avec l'IA** — sur les arcs, chapitres et scènes, un panneau propose
+  plusieurs valeurs, champ par champ. Vous cochez les propositions à appliquer,
+  puis relisez et sauvegardez la fiche.
 - **Brouillons de scènes** — sur un chapitre, le panneau **« Générer des
   scènes »** propose des scènes complètes à insérer dans le chapitre. C'est
   aussi le raccourci qu'ouvre le bouton « Corriger » du
@@ -47,8 +45,8 @@ validation**.
 - **Récap « précédemment… »** — en [séance](/docs/campagne/mode-seance),
   l'assistant rédige le résumé de la séance précédente à partir de votre
   journal, à consigner d'un clic.
-- **Génération de pages Lore** — champ par champ ou en mode wizard à la
-  création (voir [Génération de pages Lore](/docs/assistant-ia/generation-pages)).
+- **Génération de pages Lore** — remplissage des champs texte dans l'éditeur ou
+  wizard à la création (voir [Génération de contenu](/docs/assistant-ia/generation-pages)).
 
 ## Contexte injecté automatiquement
 
@@ -65,5 +63,13 @@ Vous n'avez **pas besoin** de re-coller manuellement ce contexte — il est calc
 ## Pages détaillées
 
 - [Configuration des fournisseurs](/docs/assistant-ia/fournisseurs) — Ollama, 1min.ai, Mistral, Gemini, OpenRouter
-- [Génération de pages Lore](/docs/assistant-ia/generation-pages) — fill / regenerate des champs templates
+- [Génération de pages Lore](/docs/assistant-ia/generation-pages) — remplissage du Lore et propositions de campagne
 - [Bonnes pratiques de prompts](/docs/assistant-ia/bonnes-pratiques) — pour de meilleurs résultats
+
+## Utiliser le bon outil
+
+- [Chat et conversations](/docs/assistant-ia/conversations) — contexte, historique et gestion des fils.
+- [Générer le contenu des fiches](/docs/assistant-ia/generation-pages) — remplissage du Lore, sélection des propositions et création de scènes.
+- [Atelier IA](/docs/campagne/notebooks) — interroger des PDF, relire les citations et référencer les archives.
+- [Embeddings](/docs/configuration/embeddings) — configurer l'indexation séparément du chat.
+- [Données et partage](/docs/configuration/donnees-confidentialite) — comprendre les transmissions au fournisseur.

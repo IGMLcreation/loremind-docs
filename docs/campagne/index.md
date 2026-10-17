@@ -75,3 +75,11 @@ ou les bifurcations conditionnelles.
 
 - [Atelier IA (Notebooks)](/docs/campagne/notebooks)
 - [Import de campagne (PDF)](/docs/campagne/import-campagne)
+
+## Parcours complémentaires
+
+- [Créer et organiser une campagne](/docs/campagne/creation-campagne) — démarrer avec des scènes seules, puis structurer en arcs et quêtes.
+- [Lieux explorables et pièces de donjon](/docs/campagne/donjons) — préparer chaque pièce et ses sorties.
+- [Horloges et menaces](/docs/campagne/horloges) — suivre les pressions et leurs déclencheurs par partie.
+- [Mentor d'écriture](/docs/campagne/mentor-ecriture) — conseils de rédaction de la version de développement.
+- [Votre première partie](/docs/prise-en-main) — le parcours de création jusqu'à la séance.

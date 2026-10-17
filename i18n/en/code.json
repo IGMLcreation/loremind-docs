@@ -486,6 +486,10 @@
     "message": "Support on Patreon",
     "description": "Final CTA button"
   },
+  "home.final.cta.discord": {
+    "message": "Join the Discord",
+    "description": "Final CTA button"
+  },
   "home.meta.description": {
     "message": "DM Loremind: the self-hosted workshop for Game Masters — lore, campaigns, sheets and AI grounded in your own rules.",
     "description": "Homepage <meta> description for SEO"
