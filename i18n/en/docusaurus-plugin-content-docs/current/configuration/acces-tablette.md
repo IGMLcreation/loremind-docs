@@ -88,6 +88,27 @@ It's almost always Windows silently blocking the connection.
    New-NetFirewallRule -DisplayName "DM Loremind (accès tablette)" -Direction Inbound -Program "$env:LOCALAPPDATA\DM Loremind\DM Loremind.exe" -Action Allow -Profile Private
    ```
 
+### Antivirus with its own firewall
+
+Some antivirus products (Bitdefender, Norton, Kaspersky, ESET…) install a firewall
+that filters connections **on top of** the Windows one, with their own rules.
+DM Loremind detects them and says so in **Network check**, but can't read their
+settings: the Windows permission is then not enough.
+
+In the antivirus firewall settings:
+
+1. Classify your Wi-Fi as a **home network** ("Home/Office", "Private"…), not a public
+   network, and turn off **stealth mode** if there is one.
+2. Add a rule that **allows** DM Loremind (`DM Loremind.exe`, in
+   `%LOCALAPPDATA%\DM Loremind`) for **incoming connections** on that network type.
+
+Example with Bitdefender: **Protection** > **Firewall** > **Settings**, **Network
+adapters** tab for the network type, then **Rules** tab > **Add rule**. Labels vary
+between versions.
+
+To confirm the antivirus is the cause, turn its firewall off for a minute (not the
+antivirus) and try again from the tablet; turn it back on afterwards.
+
 ## Away from home: Tailscale
 
 Access is designed for the local network. To browse your campaigns on 4G or at a

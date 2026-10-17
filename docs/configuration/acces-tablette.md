@@ -90,6 +90,27 @@ C'est presque toujours Windows qui bloque la connexion sans prévenir.
    New-NetFirewallRule -DisplayName "DM Loremind (accès tablette)" -Direction Inbound -Program "$env:LOCALAPPDATA\DM Loremind\DM Loremind.exe" -Action Allow -Profile Private
    ```
 
+### Antivirus avec son propre pare-feu
+
+Certains antivirus (Bitdefender, Norton, Kaspersky, ESET…) installent un pare-feu qui
+filtre les connexions **en plus** de celui de Windows, avec leurs propres règles.
+DM Loremind les détecte et l'indique dans **Vérification du réseau**, mais ne peut pas
+lire leurs réglages : l'autorisation Windows ne suffit alors pas.
+
+Dans les réglages du pare-feu de l'antivirus :
+
+1. Classez votre Wi-Fi en **réseau domestique** (« Domicile/Bureau », « Privé »…), pas
+   en réseau public, et désactivez le **mode furtif** s'il existe.
+2. Ajoutez une règle qui **autorise** DM Loremind (`DM Loremind.exe`, dans
+   `%LOCALAPPDATA%\DM Loremind`) en **connexions entrantes** sur ce type de réseau.
+
+Exemple avec Bitdefender : **Protection** > **Pare-feu** > **Paramètres**, onglet
+**Adaptateurs réseau** pour le type de réseau, puis onglet **Règles** > **Ajouter une
+règle**. Les libellés varient selon les versions.
+
+Pour confirmer que l'antivirus est en cause, désactivez son pare-feu une minute
+(pas l'antivirus) et réessayez depuis la tablette ; réactivez-le ensuite.
+
 ## Hors de chez vous : Tailscale
 
 L'accès est prévu pour le réseau local. Pour consulter vos campagnes en 4G ou
