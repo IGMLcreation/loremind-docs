@@ -53,3 +53,23 @@ its screen position, not its narrative list order. To change connections, see
 Choose French or English under **Settings → Interface language**. The change is
 immediate and remembered **on this device**. Screenshots use the French interface;
 controls occupy the same locations in English.
+
+## Phone and tablet (beta)
+
+On compact screens, the top bar replaces permanent sidebars:
+
+- **Open menu** shows Lore, Campaign, Game Systems and Settings;
+- **Open tree** shows the current setting or campaign;
+- the **magnifier** opens global search;
+- **Session in progress** appears when a session is active, with a chooser when several are running.
+
+![Campaign tree in the mobile drawer, French UI](/img/screenshots/beta/navigation-mobile.jpg)
+
+The menu and tree open in separate drawers. Tap the dimmed background, close
+button or **Escape** to dismiss one. Choosing a page also closes the drawer.
+Contextual **+** buttons remain available in the tree.
+
+On wide screens, **Collapse tree** reduces the secondary sidebar and **Expand tree**
+restores it. To use a desktop installation from another device, configure
+[tablet access](/docs/configuration/acces-tablette). Responsive layout alone does
+not connect a tablet to the PC.

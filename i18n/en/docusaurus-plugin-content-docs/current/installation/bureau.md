@@ -91,3 +91,11 @@ You can adjust these settings via the systray icon → **"Edit the configuration
 - [Ollama configuration](/docs/installation/ollama) — for a **100% local** AI.
 - [Updates](/docs/installation/mises-a-jour) — the application **notifies** you of new versions.
 - [Settings](/docs/configuration/settings) — the application settings (AI providers, etc.).
+
+## Access from another device (beta)
+
+**Settings → Access from a tablet**, or the tray's **Connecter une tablette…** item,
+authorises a browser on the local network. Desktop keeps its usual address;
+paired devices use a separate port, **8765** by default. Follow the
+[tablet guide](/docs/configuration/acces-tablette) for pairing, Windows network
+checks and revoking access.

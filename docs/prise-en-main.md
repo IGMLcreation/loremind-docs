@@ -73,3 +73,12 @@ aide à reprendre le fil.
 Enfin, créez une [sauvegarde ZIP](/docs/configuration/sauvegardes) depuis les
 Paramètres. Le [PDF](/docs/export/pdf) sert de livret de préparation ; le ZIP
 sert à réimporter vos données dans Loremind.
+
+## Raccourcis de la bêta
+
+Vous pouvez aussi préparer votre premier chapitre avec la
+[méthode Donjon en 5 salles](/docs/campagne/methode-cinq-salles), sans configurer d'IA.
+Après la création, consultez la [relecture d'éditeur](/docs/campagne/relecture-editeur).
+Le bloc **Jouer** de l'accueil permet ensuite de choisir votre partie et de démarrer
+ou reprendre une séance. Les autres entrées restent disponibles dans **Mes parties**
+et dans la branche **Parties** de l'arbre.

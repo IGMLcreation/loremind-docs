@@ -76,3 +76,12 @@ encadrés et captures. `build/` et `.docusaurus/` sont générés et ignorés pa
 
 La prévisualisation locale ne publie pas le site. Le déploiement relève de la
 configuration du dépôt et de son hébergement.
+
+## Couverture de la bêta
+
+La mise à jour des guides bêta couvre les ajouts applicatifs entre `main`
+(`ad3ea0e`, stable 1.0.3) et `beta` (`8c6b642`) : mentor M1–M3, interface compacte,
+accès aux séances, panneau Règles, appairage bureau et diagnostic réseau Windows.
+La page `docs/configuration/nouveautes-beta.md` sert de point d'entrée ; chaque
+guide indique la disponibilité bêta et les éventuelles limites bureau / Docker.
+Les captures correspondantes sont dans `static/img/screenshots/beta/`.

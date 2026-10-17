@@ -87,3 +87,10 @@ sur le contenu à venir. Lancez la prochaine séance quand vous voulez. »*
 Le « contenu probable » est déduit des quêtes actives. Si votre campagne
 n'utilise pas les quêtes, l'ensemble du contenu est considéré comme probable.
 :::
+
+## Complétude et relecture
+
+La bêta ajoute une [Relecture d'éditeur](/docs/campagne/relecture-editeur) distincte
+de **Prochaines étapes**. Une campagne peut être structurellement prête et recevoir
+encore des conseils d'écriture sur ses choix, son rythme ou ses enjeux. Ces
+remarques ne sont pas des blocages de préparation.

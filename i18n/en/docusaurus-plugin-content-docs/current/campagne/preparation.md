@@ -84,3 +84,9 @@ content. Start the next session whenever you like."*
 The "likely content" is inferred from active quests. If your campaign doesn't
 use quests, all content is considered likely.
 :::
+
+## Completeness and review
+
+Beta adds [Editor review](/docs/campagne/relecture-editeur) separately from **Next
+steps**. A structurally ready campaign can still receive advice on choices,
+pacing or stakes. These remarks are not preparation blockers.

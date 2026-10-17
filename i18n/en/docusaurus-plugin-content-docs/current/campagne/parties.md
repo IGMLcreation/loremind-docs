@@ -69,3 +69,10 @@ Deleting a playthrough **cascades** to delete its sessions, its attached
 characters, its facts, its clocks and its progressions. A confirmation is
 requested.
 :::
+
+## Direct access in beta
+
+The tree's **Play → Playthroughs** branch opens each campaign playthrough. The
+home's **Play** block offers active sessions to resume or starts one on the selected
+playthrough. From another page, use **Session in progress**, or its list when several
+are active. On mobile, it appears in the top bar. See [Session mode](/docs/campagne/mode-seance).

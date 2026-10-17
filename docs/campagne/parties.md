@@ -71,3 +71,11 @@ Supprimer une partie supprime **en cascade** ses sessions, ses personnages
 rattachés, ses faits, ses horloges et ses progressions. Une confirmation est
 demandée.
 :::
+
+## Accès direct en bêta
+
+La branche **Jeu → Parties** de l'arbre ouvre chaque partie de la campagne.
+Le bloc **Jouer** de l'accueil propose les séances à reprendre ou le démarrage
+sur la partie sélectionnée. Depuis une autre page, utilisez **Séance en cours**
+(ou la liste si plusieurs séances tournent). Sur mobile, ce raccourci est dans la
+barre haute. Voir [Mode séance](/docs/campagne/mode-seance).

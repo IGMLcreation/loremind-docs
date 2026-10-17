@@ -49,3 +49,15 @@ le bureau utilise `loremind.properties` dans son dossier de données.
 Gardez ces fichiers à part, avec un accès limité, pour reconstruire votre
 installation. Ne les joignez pas à un rapport de bug ni à un module partagé.
 Voir [Sauvegardes et restauration](/docs/configuration/sauvegardes).
+
+## Appareils appairés en bêta
+
+L'[accès tablette du bureau](/docs/configuration/acces-tablette) autorise un
+navigateur à lire et modifier le contenu du MJ. Ce n'est pas un compte joueur
+avec un filtrage des secrets. Les réglages, les clés et l'administration restent
+réservés au PC. Depuis celui-ci, **Retirer l'accès** révoque un appareil ; désactiver
+l'accès réseau ferme le connecteur pour tous sans oublier les appareils autorisés.
+
+Les brouillons de la méthode guidée et les épingles des règles sont mémorisés
+par navigateur. Ils ne se retrouvent pas automatiquement sur la tablette et ne
+remplacent pas une sauvegarde ZIP.

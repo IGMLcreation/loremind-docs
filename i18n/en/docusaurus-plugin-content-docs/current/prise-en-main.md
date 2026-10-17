@@ -68,3 +68,10 @@ Next time, **Prepare the next session** on the playthrough helps you pick up the
 Finally, create a [ZIP backup](/docs/configuration/sauvegardes) from Settings.
 The [PDF](/docs/export/pdf) is a preparation booklet; the ZIP allows you to
 reimport your data into Loremind. Screenshots in these guides use the French UI.
+
+## Beta shortcuts
+
+You can prepare a first chapter with the [Five-room dungeon method](/docs/campagne/methode-cinq-salles)
+without configuring AI, then consult [Editor review](/docs/campagne/relecture-editeur).
+The campaign home's **Play** block selects your playthrough and starts or resumes
+a session. **My playthroughs** and the tree's **Playthroughs** branch remain available.

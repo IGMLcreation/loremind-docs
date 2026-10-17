@@ -29,7 +29,7 @@ Vous ne récupérez pas le JWT « à la main » sur le site Patreon : c'est le r
 ## Mise à jour automatique
 
 Une fois sur le canal bêta, si vous utilisez **Watchtower** (recommandé), il
-récupère la dernière image `:beta` à chaque check. La **bascule de canal**
+récupère les nouvelles images du canal bêta configuré à chaque vérification. La **bascule de canal**
 (stable ↔ bêta), elle, passe par la recréation des conteneurs déclenchée depuis
 **Paramètres → Mises à jour** — pas seulement par Watchtower.
 
@@ -45,3 +45,10 @@ Les versions bêta peuvent contenir des bugs ou des *breaking changes*.
 Sauvegardez vos données (voir [Sauvegardes et restauration](/docs/configuration/sauvegardes))
 avant de basculer.
 :::
+
+## Utiliser les nouveautés
+
+Le [récapitulatif de la branche bêta](/docs/configuration/nouveautes-beta) mène aux
+guides du mentor, de la relecture, des méthodes guidées, du mode séance et du mobile.
+Les fonctions d'accès tablette sont propres à l'application de bureau ; la bascule
+de conteneurs décrite ici concerne l'installation Docker.

@@ -61,3 +61,10 @@ key; **Clear saved key** removes it. The language choice is remembered on this d
 
 See [Embeddings and retrieval](/docs/configuration/embeddings) for Workshop settings,
 and [Troubleshooting](/docs/configuration/depannage) for connection or import failures.
+
+## Desktop tablet access (beta)
+
+**Access from a tablet** controls the network listener, pairing codes, authorised
+devices and Windows diagnostics. It does not apply to Docker. These controls
+apply independently: the toggle changes access immediately, while **Apply** confirms
+a port change. See [Tablet access](/docs/configuration/acces-tablette).

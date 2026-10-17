@@ -4,10 +4,10 @@ sidebar_position: 5.5
 
 # Accès depuis une tablette
 
-:::info[Disponibilité]
-Cette fonction concerne l'**application de bureau** et fait partie des sources de
-développement. Si la section n'apparaît pas dans vos paramètres, votre version ne
-l'embarque pas encore. Elle n'existe pas dans l'installation Docker.
+:::info[Bêta — application de bureau]
+L'accès tablette fait partie de **beta**, au jalon **1.2.0-beta** et dans ses
+correctifs réseau suivants. Il n'est pas présent en stable 1.0.3. Il concerne
+l'**application de bureau**, pas le déploiement Docker.
 :::
 
 L'application de bureau peut être consultée depuis une tablette ou un téléphone
@@ -106,3 +106,27 @@ personnel.
 
 Si la tablette n'arrive pas à joindre le PC, vérifiez dans le pare-feu Windows que
 DM Loremind est autorisé pour le réseau utilisé par Tailscale.
+
+## Repères pour la bêta
+
+- Le PC conserve son accès **localhost:8080** habituel, sauf port modifié. La
+  tablette utilise l'adresse réseau affichée et le port dédié **8765** par défaut.
+  Son propre localhost ne désigne pas votre PC.
+- Le diagnostic intégré du pare-feu et du profil réseau est disponible **sur Windows**.
+  Sur un autre système, vérifiez ces réglages avec ses outils habituels. Un verdict
+  vert contrôle le côté PC ; un Wi-Fi invité ou une isolation entre appareils peut
+  encore empêcher la connexion.
+- **Nouveau code** invalide le précédent. Un code expire après cinq minutes,
+  ne sert qu'une fois et est invalidé après cinq essais incorrects. En cas de refus,
+  générez-en un autre depuis le PC.
+- L'autorisation est mémorisée dans le **navigateur appairé**, via un cookie d'une
+  durée maximale d'un an. Effacer les cookies, changer de navigateur ou utiliser une
+  session privée peut demander un nouvel appairage. Si l'adresse du PC change,
+  rouvrez l'adresse affichée et reconnectez le navigateur si nécessaire.
+- L'appareil autorisé est un **outil du MJ**, avec lecture et modification du contenu.
+  Il ne devient pas un compte joueur limité aux éléments publics. Voir
+  [Données et partage](/docs/configuration/donnees-confidentialite).
+
+Une fois connecté, utilisez la [navigation mobile](/docs/navigation#téléphone-et-tablette-bêta)
+et le [mode séance](/docs/campagne/mode-seance). L'accès s'active et se désactive
+à chaud depuis le PC, sans changer son port de consultation habituel.

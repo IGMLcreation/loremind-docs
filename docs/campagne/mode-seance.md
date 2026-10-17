@@ -14,6 +14,19 @@ Depuis la page d'une [Partie](/docs/campagne/parties) : bouton **« Lancer une
 session »** (ou **« Reprendre la session en cours »** s'il y en a une d'ouverte).
 Chaque session porte un badge **En cours** / **Terminée** et sa date de démarrage.
 
+## Accéder au jeu plus vite (bêta)
+
+Depuis l'accueil de campagne, le bloc **Jouer** adapte son action :
+
+- une séance est active : **Reprendre la séance**, avec le nom de la séance et de sa partie ;
+- aucune séance active : choisir la partie si vous en avez plusieurs, puis **Démarrer une séance** ;
+- aucune partie : **Créer une partie** avant de lancer la séance.
+
+L'arbre de campagne donne aussi accès aux **Parties** dans la section **Jeu**.
+Le raccourci **Séance en cours** du menu principal ramène directement à la séance.
+S'il y en a plusieurs, il ouvre une liste avec leur contexte ; sans séance active,
+il ne s'affiche pas. Sur mobile, ce raccourci est dans la barre haute.
+
 ## Le journal
 
 La colonne principale est une **timeline horodatée**. Chaque entrée est typée :
@@ -62,11 +75,12 @@ démarré ? »*.
 
 ## Le panneau de référence
 
-Sept onglets, pensés pour ne jamais quitter l'écran en cours de jeu :
+Huit onglets dans la bêta (sept en stable 1.0.3), pour garder le contenu à portée de main :
 
 | Onglet | Contenu |
 |--------|---------|
 | **Partie** | Horloges et Faits de la partie (voir ci-dessous) |
+| **Règles** *(bêta)* | Règles du système associé, recherche et sections épinglées (voir ci-dessous) |
 | **IA** | Chat assistant en direct (univers, campagne, règles, journal en contexte) |
 | **Dés** | Lanceur de dés avec modificateur et historique |
 | **Tables** | Vos [tables aléatoires](/docs/campagne/tables-aleatoires), prêtes à tirer |
@@ -78,6 +92,36 @@ Sept onglets, pensés pour ne jamais quitter l'écran en cours de jeu :
 L'onglet **Partie** n'a de contenu que si la session est rattachée à une
 [Partie](/docs/campagne/parties).
 :::
+
+## Consulter les règles en séance (bêta)
+
+L'onglet **Règles** lit les règles enregistrées du **Système de JDR associé à la
+campagne**. Cette consultation et sa recherche ne nécessitent pas d'IA. Elle
+n'interroge pas les PDF de l'Atelier.
+
+![Onglet Règles dans le panneau de référence](/img/screenshots/beta/regles-seance.jpg)
+
+- Le **Sommaire** ouvre et rejoint une section ; les sections sont repliables.
+- **Chercher dans les règles…** filtre les passages et surligne les termes, sans
+  distinguer majuscules ni accents. Les mots d'au moins deux caractères sont pris
+  en compte ; plusieurs mots se combinent pour préciser la recherche.
+- Les titres correspondent aux sections de règles. Une recherche dans le corps
+  réduit l'affichage aux passages utiles ; un titre correspondant peut afficher
+  toute sa section. **Effacer** ou **Échap** rétablit la vue complète.
+- L'**épingle** conserve une section à portée de main : hors recherche, les sections
+  épinglées passent en tête et sont ouvertes à leur prochain chargement.
+
+Les épingles sont mémorisées **par système et par navigateur** : elles ne se
+synchronisent pas entre PC et tablette.
+
+**Demander à l'IA** bascule vers l'onglet IA avec une question préremplie depuis
+la recherche ou le titre de section. Elle n'est **pas envoyée automatiquement** :
+complétez-la et validez l'envoi. Cette action utilise votre fournisseur IA habituel.
+
+Si aucun système n'est associé, **Choisir le système de la campagne** ouvre son
+réglage dans un nouvel onglet. Si le système n'a pas de règles, **Ajouter des règles
+au système** ouvre l'éditeur. Le lien **Modifier les règles du système** permet
+également de le compléter sans quitter la séance.
 
 ## Horloges & menaces
 

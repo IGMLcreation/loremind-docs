@@ -63,3 +63,11 @@ Le choix de langue est mémorisé sur cet appareil.
 Les paramètres avancés de l'Atelier sont expliqués dans [Embeddings et recherche
 documentaire](/docs/configuration/embeddings). Pour une erreur de connexion ou un
 import interrompu, consultez le [Dépannage](/docs/configuration/depannage).
+
+## Accès tablette de la version bureau (bêta)
+
+La section **Accès depuis une tablette** gère l'activation du port réseau, les
+codes d'appairage, les appareils autorisés et le diagnostic Windows. Elle ne
+concerne pas Docker. Ces commandes ont leurs propres validations : l'interrupteur
+applique l'accès immédiatement et **Appliquer** valide un changement de port.
+Voir [Accès depuis une tablette](/docs/configuration/acces-tablette).

@@ -22,3 +22,8 @@ application is installed.
 - [Embeddings and retrieval](/docs/configuration/embeddings) — configure Workshop indexing and coverage.
 - [Data, privacy and sharing](/docs/configuration/donnees-confidentialite) — understand transmitted context and exports.
 - [Troubleshooting](/docs/configuration/depannage) — diagnose startup, AI and import problems.
+
+## On the beta branch
+
+- [Beta additions](/docs/configuration/nouveautes-beta) — full mentor, session access, rules reference and mobile.
+- [Tablet access](/docs/configuration/acces-tablette) — desktop pairing and Windows network checks.

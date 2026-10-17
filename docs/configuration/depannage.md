@@ -91,3 +91,19 @@ pour reproduire, le résultat attendu et le message observé. Une capture et un
 court extrait de journal nettoyé suffisent souvent. Utilisez les liens de support
 ou du dépôt proposés par le site ; ne publiez pas votre `.env`, vos clés ou une
 sauvegarde privée complète.
+
+## Une nouveauté bêta n'apparaît pas
+
+Comparez votre installation avec le [récapitulatif bêta](/docs/configuration/nouveautes-beta).
+Après mise à jour, rechargez l'interface et vérifiez que le moteur et le front
+proviennent de la même version. L'accès tablette est réservé au **bureau** ; son
+diagnostic de pare-feu est réservé à **Windows**. Le raccourci de séance n'apparaît
+que si une séance est active.
+
+Si l'onglet **Règles** est vide, associez un système à la campagne et enregistrez
+ses règles. Si un texte semble disparaître pendant une recherche, effacez le
+filtre : seuls les passages correspondants sont affichés. Les épingles et les
+brouillons de méthode guidée restent propres au navigateur.
+
+Pour une tablette qui n'arrive pas à joindre le PC, ou un code expiré ou refusé,
+consultez le [dépannage tablette](/docs/configuration/acces-tablette#la-tablette-charge-sans-fin).

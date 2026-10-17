@@ -127,3 +127,11 @@ Le résultat diffère légèrement selon le fournisseur d'IA configuré :
 Si un import **échoue par timeout** ou renvoie des sections tronquées, essayez de
 **réduire la taille des morceaux** (ou d'augmenter le timeout — et la fenêtre de
 contexte pour l'IA que vous utilisez).
+
+## Consulter les règles pendant le jeu (bêta)
+
+Associez ce système à la campagne pour retrouver son contenu dans l'onglet
+**Règles** du [mode séance](/docs/campagne/mode-seance#consulter-les-règles-en-séance-bêta) : recherche
+locale avec surlignage, sommaire, sections repliables et épingles. La consultation
+n'utilise pas l'IA. **Demander à l'IA** prépare une question ; vous décidez ensuite
+de l'envoyer depuis l'onglet IA.

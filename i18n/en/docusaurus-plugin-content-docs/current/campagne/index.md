@@ -81,5 +81,13 @@ forks.
 - [Create and organise a campaign](/docs/campagne/creation-campagne) — start with scenes, then add arcs and quests.
 - [Explorable locations and dungeon rooms](/docs/campagne/donjons) — prepare rooms and exits.
 - [Clocks and threats](/docs/campagne/horloges) — track pressure and automatic triggers per playthrough.
-- [Writing mentor](/docs/campagne/mentor-ecriture) — built-in advice in the development version.
+- [Writing mentor](/docs/campagne/mentor-ecriture) — field tips, editor review and the guided method on beta.
 - [Your first game](/docs/prise-en-main) — from creation to a session.
+
+## Writing aids in beta
+
+- [Editor review](/docs/campagne/relecture-editeur) — ten writing and structural patterns to examine.
+- [Five-room dungeon method](/docs/campagne/methode-cinq-salles) — prepare an adventure step by step without AI.
+
+The **Play** block and **Playthroughs** tree branch shorten session access.
+[Session mode](/docs/campagne/mode-seance) explains these entry points and the new Rules tab.

@@ -58,3 +58,9 @@ automatically align rooms with map coordinates.
 
 The [PDF booklet](/docs/export/pdf) includes rooms with enemies, loot, traps,
 notes and exits. Review it before sharing with players.
+
+## Prepare five narrative highlights instead
+
+Beta's [Five-room dungeon method](/docs/campagne/methode-cinq-salles) builds **one
+chapter and five scenes** from your answers. To create rooms within one location,
+use the editor described in this guide.

@@ -81,5 +81,13 @@ ou les bifurcations conditionnelles.
 - [Créer et organiser une campagne](/docs/campagne/creation-campagne) — démarrer avec des scènes seules, puis structurer en arcs et quêtes.
 - [Lieux explorables et pièces de donjon](/docs/campagne/donjons) — préparer chaque pièce et ses sorties.
 - [Horloges et menaces](/docs/campagne/horloges) — suivre les pressions et leurs déclencheurs par partie.
-- [Mentor d'écriture](/docs/campagne/mentor-ecriture) — conseils de rédaction de la version de développement.
+- [Mentor d'écriture](/docs/campagne/mentor-ecriture) — conseils dans les champs, relecture et méthode guidée de la bêta.
 - [Votre première partie](/docs/prise-en-main) — le parcours de création jusqu'à la séance.
+
+## Aides à l'écriture en bêta
+
+- [Relecture d'éditeur](/docs/campagne/relecture-editeur) — dix motifs de structure et de rédaction à examiner.
+- [Méthode Donjon en 5 salles](/docs/campagne/methode-cinq-salles) — préparer une aventure pas à pas sans IA.
+
+Le bloc **Jouer** et la branche **Parties** raccourcissent l'accès aux séances.
+Le [mode séance](/docs/campagne/mode-seance) explique ces entrées et le nouvel onglet Règles.

@@ -4,10 +4,10 @@ sidebar_position: 5.5
 
 # Access from a tablet
 
-:::info[Availability]
-This feature applies to the **desktop application** and is part of the development
-sources. If the section doesn't appear in your settings, your version doesn't
-include it yet. It doesn't exist in the Docker installation.
+:::info[Beta — desktop installation]
+Tablet access is part of **beta**, at **1.2.0-beta** and its subsequent network
+fixes. It is absent from stable 1.0.3. It applies to the **desktop application**,
+not Docker hosting.
 :::
 
 The desktop application can be used from a tablet or phone connected to the
@@ -103,3 +103,26 @@ personal use.
 
 If the tablet can't reach the PC, check in the Windows firewall that DM Loremind
 is allowed for the network used by Tailscale.
+
+## Beta details
+
+- The PC keeps **localhost:8080** unless changed. The tablet uses the displayed
+  network address and separate port **8765** by default. Its own localhost does
+  not refer to your PC.
+- Built-in firewall and network-profile checks are **Windows-only**. Use the host
+  system's tools elsewhere. A green verdict checks the PC side; guest Wi-Fi or
+  device isolation can still prevent the connection.
+- **New code** invalidates the previous one. Codes expire after five minutes,
+  work once and are invalidated after five incorrect attempts. Generate another
+  code on the PC if rejected.
+- Authorisation is stored in the **paired browser**, in a cookie lasting up to one
+  year. Clearing cookies, changing browsers or using private browsing may require
+  pairing again. If the PC address changes, reopen the displayed address and
+  reconnect the browser if needed.
+- An authorised device is a **GM tool** with read and edit access, rather than a
+  player account limited to public material. See
+  [Data and sharing](/docs/configuration/donnees-confidentialite).
+
+Once connected, use [mobile navigation](/docs/navigation#phone-and-tablet-beta)
+and [session mode](/docs/campagne/mode-seance). Access can be enabled or disabled
+on the PC without restarting or changing its usual local viewing port.

@@ -91,3 +91,11 @@ Vous pouvez ajuster ces réglages via l'icône systray → **« Modifier la conf
 - [Configuration Ollama](/docs/installation/ollama) — pour une IA **100 % locale**.
 - [Mises à jour](/docs/installation/mises-a-jour) — l'application vous **notifie** des nouvelles versions.
 - [Settings](/docs/configuration/settings) — les paramètres applicatifs (fournisseurs IA, etc.).
+
+## Accès depuis un autre appareil (bêta)
+
+**Paramètres → Accès depuis une tablette**, ou l'icône de notification →
+**Connecter une tablette…**, permet d'autoriser un navigateur du réseau local.
+Le bureau conserve son adresse habituelle ; un port dédié, **8765** par défaut,
+sert aux appareils appairés. Suivez le [guide tablette](/docs/configuration/acces-tablette)
+pour le code, le contrôle réseau Windows et le retrait d'accès.

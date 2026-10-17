@@ -59,3 +59,23 @@ Dans **Paramètres → Langue de l'interface**, choisissez français ou anglais.
 La modification est immédiate et mémorisée **sur cet appareil**. Les captures de
 ces guides montrent l'interface française ; le placement des commandes est identique
 dans la version anglaise.
+
+## Téléphone et tablette (bêta)
+
+Sur un écran compact, la barre haute remplace les volets permanents :
+
+- **Ouvrir le menu** affiche Lore, Campagne, Systèmes de JDR et Paramètres ;
+- **Ouvrir l'arborescence** affiche l'univers ou la campagne en cours ;
+- la **loupe** ouvre la recherche globale ;
+- le raccourci **Séance en cours** apparaît lorsqu'une séance est active. Avec plusieurs séances, il permet de choisir laquelle rejoindre.
+
+![Arborescence de campagne dans le tiroir mobile](/img/screenshots/beta/navigation-mobile.jpg)
+
+Le menu et l'arborescence s'ouvrent chacun dans un tiroir. Touchez le fond assombri,
+le bouton de fermeture ou **Échap** pour le refermer. Choisir une page referme aussi
+le tiroir. Les **+** contextuels restent disponibles dans l'arbre.
+
+Sur grand écran, **Replier l'arborescence** réduit le volet secondaire ; **Déplier
+l'arborescence** le restaure. Pour utiliser le bureau depuis un autre appareil,
+configurez l'[accès tablette](/docs/configuration/acces-tablette). La présentation
+mobile seule ne connecte pas la tablette au PC.

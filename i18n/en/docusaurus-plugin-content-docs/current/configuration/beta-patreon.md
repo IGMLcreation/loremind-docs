@@ -29,7 +29,7 @@ You do not retrieve the JWT "by hand" on the Patreon site: the OAuth relay is wh
 ## Automatic updates
 
 Once on the beta channel, if you use **Watchtower** (recommended), it
-pulls the latest `:beta` image on every check. The **channel switch**
+pulls new images from the configured beta channel on every check. The **channel switch**
 (stable ↔ beta) itself goes through the container recreation triggered from
 **Settings → Updates** — not just through Watchtower.
 
@@ -45,3 +45,9 @@ Beta versions may contain bugs or *breaking changes*.
 Back up your data (see [Backups and restore](/docs/configuration/sauvegardes))
 before switching.
 :::
+
+## Use the additions
+
+[What's new on beta](/docs/configuration/nouveautes-beta) links to mentor, review,
+guided methods, session and mobile guides. Tablet access belongs to desktop
+installations; the container-switching procedure above applies to Docker.

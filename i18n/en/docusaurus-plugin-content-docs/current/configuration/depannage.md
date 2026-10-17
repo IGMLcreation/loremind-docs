@@ -80,3 +80,17 @@ Include version, operating system, installation type, steps to reproduce, expect
 result and observed message. A screenshot and short sanitised log excerpt are
 often sufficient. Use the site's support or repository links; do not publish
 your `.env`, keys or a complete private backup.
+
+## A beta feature is missing
+
+Compare the installation with [Beta additions](/docs/configuration/nouveautes-beta).
+After updating, reload the interface and check that backend and frontend versions
+match. Tablet access is **desktop-only** and its firewall diagnostics are
+**Windows-only**. The session shortcut only appears when a session is active.
+
+If **Rules** is empty, associate a system with the campaign and save its rules.
+If text seems to disappear while searching, clear the filter: only matching
+passages are shown. Rule pins and guided-method drafts are browser-specific.
+
+For an unreachable PC or an expired or rejected pairing code, see the
+[tablet troubleshooting guide](/docs/configuration/acces-tablette).

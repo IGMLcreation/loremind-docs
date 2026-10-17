@@ -46,3 +46,14 @@ in Brain's `data/settings.json` and can contain API keys. Docker also uses a
 Keep these files separately with restricted access so you can rebuild the
 installation. Do not attach them to bug reports or shared modules. See
 [Backups and restoration](/docs/configuration/sauvegardes).
+
+## Paired devices in beta
+
+[Desktop tablet access](/docs/configuration/acces-tablette) authorises a browser
+to read and edit GM content. It is not a player account with filtered secrets.
+Settings, keys and administration remain restricted to the PC. **Remove access**
+revokes a device there; disabling network access closes the connector for everyone
+without forgetting authorised devices.
+
+Guided-method drafts and rule pins are stored per browser. They do not appear
+automatically on a tablet or replace a ZIP backup.

@@ -127,3 +127,10 @@ The result differs slightly depending on the configured AI provider:
 If an import **fails with a timeout** or returns truncated sections, try
 **reducing the chunk size** (or increasing the timeout — and the context window
 for the AI you are using).
+
+## Consult rules during play (beta)
+
+Associate this system with the campaign to read its content in the
+[session mode Rules tab](/docs/campagne/mode-seance#consult-rules-during-a-session-beta): local search
+with highlights, contents, collapsible sections and pins. Reading does not use AI.
+**Ask AI** drafts a question; you decide whether to send it from the AI tab.

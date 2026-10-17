@@ -4,13 +4,14 @@ sidebar_position: 11.5
 
 # Writing mentor
 
-:::info[Availability]
-This guide covers the mentor present in development sources. If your installation
-does not show lightbulb buttons, your version does not include it yet.
+:::info[Beta]
+The complete mentor is available on **beta** from the **1.1.0-beta** milestone,
+after stable 1.0.3. If lightbulbs are missing, check that your installed version
+includes these additions.
 :::
 
 The mentor provides built-in advice while writing arcs, chapters and scenes.
-It works **without AI or network requests**.
+Lightbulb tips work **without AI or calls to an external provider**.
 
 ## Open a tip
 
@@ -45,3 +46,14 @@ not fill the form or score your writing.
 [Guided preparation](/docs/campagne/preparation) detects structural gaps; the mentor
 helps you write; the [AI assistant](/docs/assistant-ia) suggests content on request.
 Each aid can be used independently.
+
+## Three ways to use the mentor
+
+![Writing tips opened on a scene, French UI](/img/screenshots/beta/mentor-ecriture.jpg)
+
+- **Field tips**: the lightbulbs described above help while entering content.
+- **[Editor review](/docs/campagne/relecture-editeur)**: the campaign home and editors highlight choices, stakes, pacing and narration worth revisiting.
+- **[Five-room dungeon method](/docs/campagne/methode-cinq-salles)**: nine steps build a chapter and five scenes from your answers.
+
+All three work without AI. They complement **Flesh out with AI**, which needs a
+configured provider and suggests text on request.

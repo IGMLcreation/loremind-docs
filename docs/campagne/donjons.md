@@ -63,3 +63,9 @@ dessine pas de plan et n'aligne pas automatiquement les pièces sur une carte.
 
 Le [livret PDF](/docs/export/pdf) présente les pièces avec leurs ennemis, butins,
 pièges, notes et sorties. Vérifiez son contenu avant de le transmettre aux joueurs.
+
+## Préparer plutôt cinq temps narratifs
+
+La [méthode guidée Donjon en 5 salles](/docs/campagne/methode-cinq-salles) de la
+bêta construit **un chapitre et cinq scènes**, à partir de vos réponses. Pour
+obtenir des pièces dans un lieu unique, utilisez l'éditeur décrit dans ce guide.

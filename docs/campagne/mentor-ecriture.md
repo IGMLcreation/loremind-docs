@@ -4,14 +4,14 @@ sidebar_position: 11.5
 
 # Mentor d'écriture
 
-:::info[Disponibilité]
-Ce guide décrit le mentor présent dans les sources de développement. Si les
-boutons en forme d'ampoule n'apparaissent pas dans votre installation, votre
-version ne l'embarque pas encore.
+:::info[Bêta]
+Le mentor complet est présent dans la branche **beta** depuis le jalon
+**1.1.0-beta**, après la version stable 1.0.3. Si les ampoules n'apparaissent pas,
+vérifiez que votre version inclut ces nouveautés.
 :::
 
 Le mentor accompagne la rédaction des arcs, chapitres et scènes avec des
-conseils intégrés. Il fonctionne **sans IA et sans appel réseau**.
+conseils intégrés. Les conseils des ampoules sont **sans IA et sans appel à un fournisseur externe**.
 
 ## Ouvrir un conseil
 
@@ -46,3 +46,14 @@ le champ. Le mentor ne remplit pas le formulaire et ne note pas votre texte.
 La [préparation guidée](/docs/campagne/preparation) repère des manques de structure ;
 le mentor aide à écrire ; l'[assistant IA](/docs/assistant-ia) propose du contenu
 à votre demande. Vous pouvez utiliser ces aides séparément.
+
+## Le mentor en trois usages
+
+![Conseils d'écriture ouverts sur une scène](/img/screenshots/beta/mentor-ecriture.jpg)
+
+- **Conseils dans les champs** : les ampoules décrites ci-dessus vous aident pendant la saisie.
+- **[Relecture d'éditeur](/docs/campagne/relecture-editeur)** : sur l'accueil de campagne et dans les éditeurs, des remarques attirent l'attention sur les choix, enjeux, rythme et narration.
+- **[Méthode Donjon en 5 salles](/docs/campagne/methode-cinq-salles)** : un parcours en neuf étapes construit un chapitre et cinq scènes à partir de vos réponses.
+
+Ces trois aides fonctionnent sans IA. Elles complètent **Étoffer avec l'IA**, qui
+nécessite un fournisseur configuré et propose du texte à votre demande.

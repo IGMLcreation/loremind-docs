@@ -14,6 +14,18 @@ From a [Playthrough](/docs/campagne/parties) page: **"Start a session"** button
 (or **"Resume current session"** if one is open). Each session carries an **In
 progress** / **Ended** badge and its start date.
 
+## Faster access to play (beta)
+
+On the campaign home, the **Play** block adapts its action:
+
+- active session: **Resume session**, showing the session and playthrough names;
+- no active session: select a playthrough if there are several, then **Start session**;
+- no playthrough: **Create a playthrough** first.
+
+The tree also lists **Playthroughs** under **Play**. The main menu's **Session in
+progress** shortcut opens the active session directly. With several sessions,
+it opens a contextual list; with none, it is hidden. On mobile, it is in the top bar.
+
 ## The journal
 
 The main column is a **timestamped timeline**. Each entry is typed:
@@ -60,12 +72,13 @@ running?"*.
 
 ## The reference panel
 
-Seven tabs, designed so you never leave the screen mid-game:
+Eight tabs in beta (seven in stable 1.0.3) keep content within reach:
 
 | Tab | Contents |
 |-----|----------|
 | **Play** | Clocks and Facts of the playthrough (see below) |
 | **AI** | Live assistant chat (world, campaign, rules, journal in context) |
+| **Rules** *(beta)* | Associated system rules, search and pinned sections (see below) |
 | **Dice** | Dice roller with modifier and history |
 | **Tables** | Your [random tables](/docs/campagne/tables-aleatoires), ready to roll |
 | **Items** | The [item catalogs](/docs/campagne/catalogue-objets) (shops, loot) |
@@ -76,6 +89,31 @@ Seven tabs, designed so you never leave the screen mid-game:
 The **Play** tab only has content if the session is attached to a
 [Playthrough](/docs/campagne/parties).
 :::
+
+## Consult rules during a session (beta)
+
+The **Rules** tab reads saved rules from the campaign's **associated game system**.
+Reading and searching do not require AI. This does not query Workshop PDFs.
+
+![Rules reference panel, French UI](/img/screenshots/beta/regles-seance.jpg)
+
+- **Contents** opens and jumps to a section; sections can be collapsed.
+- **Search the rules…** filters passages and highlights terms, ignoring case and
+  accents. Words of at least two characters are used; multiple words narrow results.
+- A matching section title can show its whole section, while body matches show
+  relevant passages. **Clear** or **Escape** restores the full view.
+- **Pin** keeps sections handy: outside search, pinned sections move to the top
+  and are opened when the panel next loads.
+
+Pins are remembered **per system and browser**, without syncing between PC and tablet.
+
+**Ask AI** switches to the AI tab with a question drafted from the search or section
+title. It is **not sent automatically**: complete it and send it yourself. This
+uses your usual AI provider.
+
+Without an associated system, **Choose the campaign system** opens the campaign
+setting in a new tab. For an empty ruleset, **Add rules to the system** opens its
+editor. **Edit system rules** also opens that editor without leaving the session.
 
 ## Clocks & fronts
 
