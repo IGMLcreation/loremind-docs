@@ -64,7 +64,18 @@ const config: Config = {
     ],
   ],
 
-  plugins: ['plugin-image-zoom'],
+  plugins: [
+    'plugin-image-zoom',
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        // Ancienne page de la bêta Patreon, renommée quand la bêta est devenue libre.
+        redirects: [
+          {from: '/docs/configuration/beta-patreon', to: '/docs/configuration/canal-beta'},
+        ],
+      },
+    ],
+  ],
 
   themeConfig: {
     image: 'img/loremind-social-card.png',
@@ -99,11 +110,6 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://loremind-patreon.igmlcreation.fr',
-          label: '⭐ Espace Patrons',
-          position: 'right',
-        },
-        {
           href: 'https://discord.gg/cPpFzCjEzQ',
           label: '💬 Discord',
           position: 'right',
@@ -133,10 +139,6 @@ const config: Config = {
               label: 'Devlog',
               to: '/devlog',
             },
-            {
-              label: '⭐ Espace Patrons',
-              href: 'https://loremind-patreon.igmlcreation.fr',
-            },
           ],
         },
         {
@@ -153,10 +155,6 @@ const config: Config = {
             {
               label: 'Démo',
               href: 'https://loremind-demo.igmlcreation.fr',
-            },
-            {
-              label: 'Soutenir sur Patreon',
-              href: 'https://www.patreon.com/c/IGMLCreation',
             },
           ],
         },

@@ -18,11 +18,10 @@ Les notes de release techniques restent sur
 [GitHub](https://github.com/IGMLcreation/LoreMind/releases) — ici, c'est la
 version lisible, écrite pour les MJ qui utilisent l'appli.
 
-Pour les coulisses techniques (architecture, choix de dev) et l'accès anticipé
-aux bêtas, ça se passe sur le
-[Patreon](https://www.patreon.com/c/IGMLCreation). Pour discuter, remonter un
-bug ou proposer une idée : le [Discord](https://discord.gg/cPpFzCjEzQ) ou encore
-le board consacré au public si vous n'êtes pas sur le Patreon : [Board public](https://feedback.igmlcreation.fr).
+L'accès anticipé aux nouveautés passe par le [canal bêta](/docs/configuration/canal-beta),
+gratuit et ouvert à tous. Pour discuter, remonter un bug ou proposer une idée :
+le [Discord](https://discord.gg/cPpFzCjEzQ) ou encore le
+[board public](https://feedback.igmlcreation.fr).
 
 Pour toute la partie bug, n'hésitez pas non plus à ouvrir une issue sur github (ou dans le board, c'est comme vous
 le souhaitez).

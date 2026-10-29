@@ -18,12 +18,10 @@ release notes stay on
 [GitHub](https://github.com/IGMLcreation/LoreMind/releases) — this is the
 readable version, written for the GMs who use the app.
 
-For the technical behind-the-scenes (architecture, dev choices) and early
-access to betas, head to the
-[Patreon](https://www.patreon.com/c/IGMLCreation). To chat, report a bug or
-suggest an idea: the [Discord](https://discord.gg/cPpFzCjEzQ) — or the public
-feedback board if you're not on Patreon:
-[Public board](https://feedback.igmlcreation.fr).
+Early access to new features goes through the [beta channel](/docs/configuration/canal-beta),
+free and open to everyone. To chat, report a bug or suggest an idea: the
+[Discord](https://discord.gg/cPpFzCjEzQ) — or the
+[public feedback board](https://feedback.igmlcreation.fr).
 
 For bugs, feel free to open a GitHub issue as well (or use the board,
 whichever you prefer). The project lives on my free time, so I'll respond as

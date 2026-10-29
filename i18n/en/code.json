@@ -475,15 +475,11 @@
     "description": "Final CTA title"
   },
   "home.final.text": {
-    "message": "Installable in one double-click (desktop) or via Docker (homelab). Free and open source — support development on Patreon for betas and behind-the-scenes.",
+    "message": "Installable in one double-click (desktop) or via Docker (homelab). Free and open source — betas included, open to everyone.",
     "description": "Final CTA text"
   },
   "home.final.cta.install": {
     "message": "Install now",
-    "description": "Final CTA button"
-  },
-  "home.final.cta.patreon": {
-    "message": "Support on Patreon",
     "description": "Final CTA button"
   },
   "home.final.cta.discord": {

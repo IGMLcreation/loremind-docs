@@ -15,10 +15,6 @@
     "message": "Devlog",
     "description": "Navbar item with label Devlog"
   },
-  "item.label.⭐ Espace Patrons": {
-    "message": "⭐ Patron Area",
-    "description": "Navbar item with label ⭐ Espace Patrons"
-  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"

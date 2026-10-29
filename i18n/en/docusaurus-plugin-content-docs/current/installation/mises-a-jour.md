@@ -7,6 +7,8 @@ title: Updates
 
 DM Loremind notifies you of new versions. How you update depends on your installation mode.
 
+To get new features before the stable version, see the [beta channel](/docs/configuration/canal-beta), free and open to everyone.
+
 ## Desktop mode (installer)
 
 The application checks in the background for new versions on the [GitHub releases](https://github.com/IGMLcreation/LoreMind/releases). When a newer version is available:

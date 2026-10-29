@@ -109,6 +109,6 @@ Les Paramètres restent réservés à l'hôte.
 L'appairage bureau est distinct de Docker : l'interface responsive fonctionne
 dans les deux modes, mais Docker ne possède pas ce connecteur d'appairage.
 
-Pour le canal de préversion, voir [Bêta privée Patreon](/docs/configuration/beta-patreon).
+Pour le canal de préversion, voir [Canal bêta](/docs/configuration/canal-beta).
 Sauvegardez votre contenu avant de changer de version ; un retour au stable
 n'est pas une restauration de données.

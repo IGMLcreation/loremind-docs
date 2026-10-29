@@ -11,7 +11,7 @@ application is installed.
 
 - [Settings — application settings](/docs/configuration/settings) — AI, embeddings (RAG), language, data backup
 - [Backups and restore](/docs/configuration/sauvegardes) — protect your data
-- [Patreon private beta](/docs/configuration/beta-patreon) — access to pre-release versions
+- [Beta channel](/docs/configuration/canal-beta) — pre-release versions, free and open to everyone
 
 > For the **initial installation** on Windows / Linux, see the
 > [Installation](/docs/installation/bureau) section. For **regular updates**

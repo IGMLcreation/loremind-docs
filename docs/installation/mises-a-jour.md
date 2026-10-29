@@ -7,6 +7,8 @@ title: Mises à jour
 
 DM Loremind vous prévient des nouvelles versions. La façon de mettre à jour dépend de votre mode d'installation.
 
+Pour recevoir les nouveautés avant la version stable, voir le [canal bêta](/docs/configuration/canal-beta), gratuit et ouvert à tous.
+
 ## Mode bureau (installeur)
 
 L'application vérifie en arrière-plan les nouvelles versions sur les [releases GitHub](https://github.com/IGMLcreation/LoreMind/releases). Quand une version plus récente est disponible :

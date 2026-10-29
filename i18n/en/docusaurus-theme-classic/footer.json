@@ -15,10 +15,6 @@
     "message": "Devlog",
     "description": "The label of footer link with label=Devlog linking to /devlog"
   },
-  "link.item.label.⭐ Espace Patrons": {
-    "message": "⭐ Patron Area",
-    "description": "The label of footer link with label=⭐ Espace Patrons linking to https://loremind-patreon.igmlcreation.fr"
-  },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/IGMLcreation/LoreMind"
@@ -30,10 +26,6 @@
   "link.item.label.Démo": {
     "message": "Demo",
     "description": "The label of footer link with label=Démo linking to https://loremind-demo.igmlcreation.fr"
-  },
-  "link.item.label.Soutenir sur Patreon": {
-    "message": "Support on Patreon",
-    "description": "The label of footer link with label=Soutenir sur Patreon linking to https://www.patreon.com/c/IGMLCreation"
   },
   "copyright": {
     "message": "Copyright © 2026 IGMLcreation — DM Loremind. Content licensed under CC BY-SA 4.0.",

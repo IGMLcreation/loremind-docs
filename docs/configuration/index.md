@@ -11,7 +11,7 @@ une fois l'application installée.
 
 - [Settings — paramètres applicatifs](/docs/configuration/settings) — IA, embeddings (RAG), langue, sauvegarde des données
 - [Sauvegardes et restauration](/docs/configuration/sauvegardes) — protéger vos données
-- [Bêta privée Patreon](/docs/configuration/beta-patreon) — accès aux versions de pré-release
+- [Canal bêta](/docs/configuration/canal-beta) — versions de pré-release, gratuites et ouvertes à tous
 
 > Pour l'**installation initiale** sur Windows / Linux, voir la section
 > [Installation](/docs/installation/bureau). Pour les **mises à jour

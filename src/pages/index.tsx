@@ -15,7 +15,6 @@ import {
   Map as MapIcon,
   Download,
   PlayCircle,
-  Heart,
   BookOpen,
   ChevronDown,
   type LucideIcon,
@@ -30,7 +29,6 @@ const LINKS = {
   docs: '/docs/intro',
   demo: 'https://loremind-demo.igmlcreation.fr',
   github: 'https://github.com/IGMLcreation/LoreMind',
-  patreon: 'https://www.patreon.com/c/IGMLCreation',
   discord: 'https://discord.gg/cPpFzCjEzQ',
 };
 
@@ -318,7 +316,7 @@ function FinalCta(): ReactNode {
         <p className={styles.finalText}>
           <Translate id="home.final.text">
             Installable en un double-clic (bureau) ou via Docker (homelab). Gratuit et open source —
-            soutenez le développement sur Patreon pour les bêtas et les coulisses.
+            bêtas comprises, ouvertes à tous.
           </Translate>
         </p>
         <div className={styles.buttons}>
@@ -329,10 +327,6 @@ function FinalCta(): ReactNode {
           <Link className={clsx('button button--lg', styles.btnGhost)} href={LINKS.discord}>
             <MessagesSquare size={18} aria-hidden />
             <Translate id="home.final.cta.discord">Rejoindre le Discord</Translate>
-          </Link>
-          <Link className={clsx('button button--lg', styles.btnGhost)} href={LINKS.patreon}>
-            <Heart size={18} aria-hidden />
-            <Translate id="home.final.cta.patreon">Soutenir sur Patreon</Translate>
           </Link>
         </div>
       </div>

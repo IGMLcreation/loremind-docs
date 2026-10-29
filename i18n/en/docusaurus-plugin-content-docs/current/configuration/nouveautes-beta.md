@@ -104,5 +104,5 @@ remain restricted to the host.
 Desktop pairing is separate from Docker: responsive layout works in both modes,
 but Docker does not include this pairing connector.
 
-For the preview channel, see [Private Patreon beta](/docs/configuration/beta-patreon).
+For the preview channel, see [Beta channel](/docs/configuration/canal-beta).
 Back up content before switching versions; returning to stable is not a data restore.
