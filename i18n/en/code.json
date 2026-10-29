@@ -609,5 +609,13 @@
   "download.privacy.link": {
     "message": "Privacy",
     "description": "Download page: link to the privacy policy"
+  },
+  "download.signing.text": {
+    "message": "Free code signing provided by",
+    "description": "Download page: SignPath mention (before the SignPath.io link)"
+  },
+  "download.signing.cert": {
+    "message": ", certificate by",
+    "description": "Download page: SignPath mention (before the SignPath Foundation link)"
   }
 }

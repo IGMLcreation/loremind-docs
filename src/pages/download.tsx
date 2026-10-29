@@ -116,6 +116,13 @@ export default function DownloadPage(): ReactNode {
           <Translate id="download.help">Besoin d'aide pour installer ? Consultez le</Translate>{' '}
           <Link to="/docs/intro"><Translate id="download.help.link">guide d'installation</Translate></Link>.
         </p>
+        {/* Mention exigée par SignPath Foundation sur la page de téléchargement. */}
+        <p className={styles.note}>
+          <Translate id="download.signing.text">Signature de code gratuite fournie par</Translate>{' '}
+          <Link href="https://about.signpath.io">SignPath.io</Link>
+          <Translate id="download.signing.cert">, certificat de</Translate>{' '}
+          <Link href="https://signpath.org">SignPath Foundation</Link>.
+        </p>
         <p className={styles.note}>
           <Link to="/docs/signature-du-code"><Translate id="download.signing.link">Politique de signature du code</Translate></Link>
           {' · '}
