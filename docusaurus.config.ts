@@ -156,6 +156,14 @@ const config: Config = {
               label: 'Démo',
               href: 'https://loremind-demo.igmlcreation.fr',
             },
+            {
+              label: 'Politique de signature du code',
+              to: '/docs/signature-du-code',
+            },
+            {
+              label: 'Confidentialité',
+              to: '/docs/confidentialite',
+            },
           ],
         },
       ],

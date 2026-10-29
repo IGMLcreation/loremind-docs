@@ -601,5 +601,13 @@
   "home.hero.scroll.aria": {
     "message": "Scroll down",
     "description": "Scroll cue aria-label"
+  },
+  "download.signing.link": {
+    "message": "Code signing policy",
+    "description": "Download page: link to the code signing policy"
+  },
+  "download.privacy.link": {
+    "message": "Privacy",
+    "description": "Download page: link to the privacy policy"
   }
 }

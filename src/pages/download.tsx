@@ -116,6 +116,11 @@ export default function DownloadPage(): ReactNode {
           <Translate id="download.help">Besoin d'aide pour installer ? Consultez le</Translate>{' '}
           <Link to="/docs/intro"><Translate id="download.help.link">guide d'installation</Translate></Link>.
         </p>
+        <p className={styles.note}>
+          <Link to="/docs/signature-du-code"><Translate id="download.signing.link">Politique de signature du code</Translate></Link>
+          {' · '}
+          <Link to="/docs/confidentialite"><Translate id="download.privacy.link">Confidentialité</Translate></Link>
+        </p>
       </main>
     </Layout>
   );
